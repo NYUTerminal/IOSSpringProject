@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60CF396C1AE4489A0070E537 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF396B1AE4489A0070E537 /* settingsViewController.swift */; };
 		CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70C1A941FDB00D7997D /* AppDelegate.swift */; };
 		CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70E1A941FDB00D7997D /* ViewController.swift */; };
 		CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7101A941FDB00D7997D /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60CF396B1AE4489A0070E537 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		CB08C7071A941FDB00D7997D /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C70B1A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C70C1A941FDB00D7997D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				CB95BA391ACB5AC000DDEB65 /* Controller */,
 				CB08C70C1A941FDB00D7997D /* AppDelegate.swift */,
 				CB08C70E1A941FDB00D7997D /* ViewController.swift */,
+				60CF396B1AE4489A0070E537 /* settingsViewController.swift */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
 				CB60D4F61AE34AEF0026CD01 /* Cars-100.png */,
@@ -364,6 +367,7 @@
 			files = (
 				CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */,
 				CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */,
+				60CF396C1AE4489A0070E537 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
