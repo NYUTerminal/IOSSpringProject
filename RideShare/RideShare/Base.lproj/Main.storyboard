@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Offer-->
@@ -136,24 +135,60 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyD-x0-DAQ" userLabel="SearchNavigation">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.69440511165892504" green="0.98469065656565657" blue="0.71193629474267228" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ENG-zB-AkA">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Search" id="ArI-FE-6an"/>
                                 </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ENG-zB-AkA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ENG-zB-AkA"/>
+                                    </mask>
+                                </variation>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iyD-x0-DAQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4E1-09-1r0"/>
-                            <constraint firstItem="iyD-x0-DAQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="92m-Yx-VTm"/>
-                            <constraint firstAttribute="trailing" secondItem="iyD-x0-DAQ" secondAttribute="trailing" id="vIk-ma-EqD"/>
+                            <constraint firstItem="iyD-x0-DAQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gas-Ke-NQY"/>
+                            <constraint firstAttribute="trailing" secondItem="iyD-x0-DAQ" secondAttribute="trailing" id="WdY-kt-e1t"/>
+                            <constraint firstItem="iyD-x0-DAQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tGh-Ta-gbo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iyD-x0-DAQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Gas-Ke-NQY"/>
+                                <exclude reference="WdY-kt-e1t"/>
+                                <exclude reference="tGh-Ta-gbo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iyD-x0-DAQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Gas-Ke-NQY"/>
+                                <include reference="WdY-kt-e1t"/>
+                                <include reference="tGh-Ta-gbo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="PVj-FL-4dQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="755"/>
+            <point key="canvasLocation" x="-471" y="754.5"/>
         </scene>
     </scenes>
 </document>
