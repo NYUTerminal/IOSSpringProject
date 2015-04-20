@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Offer-->
@@ -21,12 +21,232 @@
                                 <items>
                                     <navigationItem title="Offer" id="Qya-fg-ezl"/>
                                 </items>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LaQ-EV-9op">
+                                <rect key="frame" x="157" y="188" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XM4-ET-bQJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="b2c-sx-9ZR"/>
+                                    <constraint firstAttribute="width" constant="300" id="k18-4g-Xrj"/>
+                                    <constraint firstAttribute="width" constant="200" id="knQ-0Y-vzc">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XM4-ET-bQJ"/>
+                                        <exclude reference="knQ-0Y-vzc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XM4-ET-bQJ"/>
+                                        <include reference="knQ-0Y-vzc"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-7M-6sG">
+                                <rect key="frame" x="157" y="243" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0lg-ZD-THs"/>
+                                    <constraint firstAttribute="width" constant="200" id="hlV-tf-ZSb">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="jUZ-Gv-BcL"/>
+                                    <constraint firstAttribute="width" constant="125" id="qhV-oe-xQc"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hlV-tf-ZSb"/>
+                                        <exclude reference="jUZ-Gv-BcL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hlV-tf-ZSb"/>
+                                        <include reference="jUZ-Gv-BcL"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNX-Nq-Cod">
+                                <rect key="frame" x="332" y="243" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ANt-0X-BKd"/>
+                                    <constraint firstAttribute="width" constant="125" id="CEQ-qa-3Na"/>
+                                    <constraint firstAttribute="width" constant="200" id="NM5-wz-rG8">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="SOg-wz-XRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SOg-wz-XRe"/>
+                                        <exclude reference="NM5-wz-rG8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SOg-wz-XRe"/>
+                                        <include reference="NM5-wz-rG8"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Via" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-ot-GOz">
+                                <rect key="frame" x="157" y="298" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bf8-45-NYi"/>
+                                    <constraint firstAttribute="height" constant="30" id="JiZ-cV-WAi"/>
+                                    <constraint firstAttribute="width" constant="200" id="MM0-8a-ueW">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="PVN-X9-IPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MM0-8a-ueW"/>
+                                        <exclude reference="JiZ-cV-WAi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="MM0-8a-ueW"/>
+                                        <include reference="JiZ-cV-WAi"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Car Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykw-kZ-3XO">
+                                <rect key="frame" x="157" y="353" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="AgH-mw-WUJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="PTd-t4-cYw">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="bt5-1l-yG4"/>
+                                    <constraint firstAttribute="height" constant="30" id="fKb-rv-qfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PTd-t4-cYw"/>
+                                        <exclude reference="bt5-1l-yG4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="PTd-t4-cYw"/>
+                                        <include reference="bt5-1l-yG4"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Car Type" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTt-vJ-GWn">
+                                <rect key="frame" x="157" y="408" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AN4-lw-nPF">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="ckc-wM-Qeo"/>
+                                    <constraint firstAttribute="width" constant="300" id="iPM-Tf-I9r"/>
+                                    <constraint firstAttribute="height" constant="30" id="iRq-kw-Yc8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iRq-kw-Yc8"/>
+                                        <exclude reference="AN4-lw-nPF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iRq-kw-Yc8"/>
+                                        <include reference="AN4-lw-nPF"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r82-Sa-DKR">
+                                <rect key="frame" x="294" y="463" width="46" height="30"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Source" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-nX-pHI">
+                                <rect key="frame" x="157" y="133" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I2N-xD-IDb"/>
+                                    <constraint firstAttribute="width" constant="300" id="I2c-2k-Ezb"/>
+                                    <constraint firstAttribute="width" constant="200" id="MKa-4H-XWo">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="qLX-TE-DWK"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MKa-4H-XWo"/>
+                                        <exclude reference="qLX-TE-DWK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="MKa-4H-XWo"/>
+                                        <include reference="qLX-TE-DWK"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Name your ride" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGQ-xE-df0">
+                                <rect key="frame" x="157" y="78" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bmz-M7-hEK"/>
+                                    <constraint firstAttribute="width" constant="200" id="FYl-Kb-hRh">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="ceo-Rn-TP5"/>
+                                    <constraint firstAttribute="height" constant="30" id="kGb-Fq-QIG"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kGb-Fq-QIG"/>
+                                        <exclude reference="FYl-Kb-hRh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="kGb-Fq-QIG"/>
+                                        <include reference="FYl-Kb-hRh"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hBg-ot-GOz" firstAttribute="top" secondItem="aNX-Nq-Cod" secondAttribute="bottom" constant="25" id="PCD-c1-zEK"/>
+                            <constraint firstItem="WTt-vJ-GWn" firstAttribute="top" secondItem="ykw-kZ-3XO" secondAttribute="bottom" constant="25" id="VtX-QV-Rxy"/>
+                            <constraint firstItem="aNX-Nq-Cod" firstAttribute="top" secondItem="LaQ-EV-9op" secondAttribute="bottom" constant="25" id="YDd-Tc-ACy"/>
+                            <constraint firstItem="LaQ-EV-9op" firstAttribute="top" secondItem="xnZ-nX-pHI" secondAttribute="bottom" constant="25" id="eNc-18-fyw"/>
+                            <constraint firstItem="xnZ-nX-pHI" firstAttribute="top" secondItem="SGQ-xE-df0" secondAttribute="bottom" constant="25" id="h3c-g4-3wP"/>
+                            <constraint firstItem="r82-Sa-DKR" firstAttribute="top" secondItem="WTt-vJ-GWn" secondAttribute="bottom" constant="25" id="zBH-od-Hu7"/>
+                            <constraint firstItem="ykw-kZ-3XO" firstAttribute="top" secondItem="hBg-ot-GOz" secondAttribute="bottom" constant="25" id="zLm-ky-x8M"/>
+                            <constraint firstItem="ByI-7M-6sG" firstAttribute="top" secondItem="LaQ-EV-9op" secondAttribute="bottom" constant="25" id="zjq-UC-wEV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Offer" id="TqS-MX-tzj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
