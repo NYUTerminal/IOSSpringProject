@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60CF396C1AE4489A0070E537 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF396B1AE4489A0070E537 /* settingsViewController.swift */; };
 		CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70C1A941FDB00D7997D /* AppDelegate.swift */; };
 		CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70E1A941FDB00D7997D /* ViewController.swift */; };
 		CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7101A941FDB00D7997D /* Main.storyboard */; };
@@ -36,6 +35,11 @@
 		CB60D4FB1AE34AEF0026CD01 /* Search-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F71AE34AEF0026CD01 /* Search-100.png */; };
 		CB60D4FC1AE34AEF0026CD01 /* Settings-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F81AE34AEF0026CD01 /* Settings-100.png */; };
 		CB60D4FD1AE34AEF0026CD01 /* User Male4-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */; };
+		CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */; };
+		CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5001AE58B260026CD01 /* SettingsViewController.swift */; };
+		CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5021AE58B360026CD01 /* OfferViewController.swift */; };
+		CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */; };
+		CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5061AE58B610026CD01 /* ProfileViewController.swift */; };
 		CB8283411AE08D8200645AD3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8283401AE08D8200645AD3 /* GoogleMaps.framework */; };
 		CB8283431AE08E2300645AD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8283421AE08E2300645AD3 /* AVFoundation.framework */; };
 		CB8283451AE08E3000645AD3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8283441AE08E3000645AD3 /* CoreData.framework */; };
@@ -58,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60CF396B1AE4489A0070E537 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		CB08C7071A941FDB00D7997D /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C70B1A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C70C1A941FDB00D7997D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +95,11 @@
 		CB60D4F71AE34AEF0026CD01 /* Search-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-100.png"; sourceTree = "<group>"; };
 		CB60D4F81AE34AEF0026CD01 /* Settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-100.png"; sourceTree = "<group>"; };
 		CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Male4-100.png"; sourceTree = "<group>"; };
+		CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
+		CB60D5001AE58B260026CD01 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
+		CB60D5021AE58B360026CD01 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
+		CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTripsViewController.swift; path = ../FriendTripsViewController.swift; sourceTree = "<group>"; };
+		CB60D5061AE58B610026CD01 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		CB8283401AE08D8200645AD3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "GoogleMaps-iOS-1.9.2/GoogleMaps.framework"; sourceTree = "<group>"; };
 		CB8283421AE08E2300645AD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB8283441AE08E3000645AD3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -172,17 +180,7 @@
 			children = (
 				CB44B5221A9BF98A000C66DF /* RideShare-Bridging-Header.h */,
 				CB95BA391ACB5AC000DDEB65 /* Controller */,
-				CB08C70C1A941FDB00D7997D /* AppDelegate.swift */,
-				CB08C70E1A941FDB00D7997D /* ViewController.swift */,
-				60CF396B1AE4489A0070E537 /* settingsViewController.swift */,
-				CB08C7101A941FDB00D7997D /* Main.storyboard */,
-				CB08C7131A941FDB00D7997D /* Images.xcassets */,
-				CB60D4F61AE34AEF0026CD01 /* Cars-100.png */,
-				CB60D4F71AE34AEF0026CD01 /* Search-100.png */,
-				CB60D4F81AE34AEF0026CD01 /* Settings-100.png */,
-				CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */,
 				CB95BA381ACB5AB400DDEB65 /* View */,
-				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C70A1A941FDB00D7997D /* Supporting Files */,
 			);
 			path = RideShare;
@@ -250,6 +248,13 @@
 		CB95BA381ACB5AB400DDEB65 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
+				CB08C7101A941FDB00D7997D /* Main.storyboard */,
+				CB08C7131A941FDB00D7997D /* Images.xcassets */,
+				CB60D4F61AE34AEF0026CD01 /* Cars-100.png */,
+				CB60D4F71AE34AEF0026CD01 /* Search-100.png */,
+				CB60D4F81AE34AEF0026CD01 /* Settings-100.png */,
+				CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -257,6 +262,13 @@
 		CB95BA391ACB5AC000DDEB65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB08C70C1A941FDB00D7997D /* AppDelegate.swift */,
+				CB08C70E1A941FDB00D7997D /* ViewController.swift */,
+				CB60D5061AE58B610026CD01 /* ProfileViewController.swift */,
+				CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */,
+				CB60D5021AE58B360026CD01 /* OfferViewController.swift */,
+				CB60D5001AE58B260026CD01 /* SettingsViewController.swift */,
+				CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -365,9 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */,
 				CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */,
+				CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */,
 				CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */,
-				60CF396C1AE4489A0070E537 /* settingsViewController.swift in Sources */,
+				CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */,
+				CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */,
+				CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
