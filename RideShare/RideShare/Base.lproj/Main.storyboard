@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< Updated upstream
+
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xi-hb-rYK">
                                 <rect key="frame" x="0.0" y="60" width="600" height="491"/>
                                 <subviews>
@@ -194,7 +194,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-=======
+
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYF-SE-Z5f" userLabel="SearchNavigation">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
@@ -364,7 +364,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Source" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-nX-pHI">
                                 <rect key="frame" x="157" y="133" width="300" height="30"/>
->>>>>>> Stashed changes
+
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="rFk-lz-JVA" secondAttribute="bottom" id="9a6-Jm-0XT"/>
                                     <constraint firstItem="rFk-lz-JVA" firstAttribute="leading" secondItem="6xi-hb-rYK" secondAttribute="leading" id="A5A-1j-316"/>
@@ -391,13 +391,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9qR-Oi-tcN"/>
                                 </constraints>
-<<<<<<< Updated upstream
+
                                 <items>
                                     <navigationItem title="Offer" id="Qya-fg-ezl"/>
                                 </items>
                             </navigationBar>
-=======
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="default">
@@ -413,7 +412,7 @@
                                     </mask>
                                 </variation>
                             </textField>
->>>>>>> Stashed changes
+
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -479,12 +478,11 @@
                             </view>
                             <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pj-dG-y7P">
                                 <rect key="frame" x="0.0" y="50" width="600" height="501"/>
-<<<<<<< Updated upstream
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-=======
+
                             </scrollView>
->>>>>>> Stashed changes
+
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -505,11 +503,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uN3-Kb-Yvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< Updated upstream
+
             <point key="canvasLocation" x="44" y="33"/>
-=======
+
             <point key="canvasLocation" x="1047" y="235.5"/>
->>>>>>> Stashed changes
+
         </scene>
         <!--Profile-->
         <scene sceneID="VBq-hf-MIJ">
