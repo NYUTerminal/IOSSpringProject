@@ -18,17 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyB5S5g1jiQu2oX30WQBKBsav9B7YZasqnY");
         Parse.setApplicationId("KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH", clientKey: "gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl")
-        
-        var pfObject : PFObject = PFObject(className: "UserObject")
-        
-        pfObject["address"] = "7311 4 th ave"
-        pfObject.setValue("praveen", forKey: "name")
-        pfObject.setValue("pm2374@nyu.edu", forKey: "email")
-        pfObject.saveInBackgroundWithBlock { (success : Bool, error : NSError!) -> Void in
-            if(success){
-                println("Saved macha")
-            }
-        }
        //[Parse setApplicationId:@"KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH"clientKey:@"gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl"];
         return true
     }

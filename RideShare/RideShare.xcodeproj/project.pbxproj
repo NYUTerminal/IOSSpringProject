@@ -30,6 +30,7 @@
 		CB44B51D1A9BF508000C66DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51C1A9BF508000C66DF /* SystemConfiguration.framework */; };
 		CB44B51F1A9BF511000C66DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51E1A9BF511000C66DF /* libz.dylib */; };
 		CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */; };
+		CB4B92091AE845910017A579 /* Singelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B92081AE845910017A579 /* Singelton.swift */; };
 		CB60D4FA1AE34AEF0026CD01 /* Cars-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F61AE34AEF0026CD01 /* Cars-100.png */; };
 		CB60D4FB1AE34AEF0026CD01 /* Search-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F71AE34AEF0026CD01 /* Search-100.png */; };
 		CB60D4FC1AE34AEF0026CD01 /* Settings-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F81AE34AEF0026CD01 /* Settings-100.png */; };
@@ -89,6 +90,7 @@
 		CB44B51E1A9BF511000C66DF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CB44B5221A9BF98A000C66DF /* RideShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RideShare-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		CB4B92081AE845910017A579 /* Singelton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singelton.swift; sourceTree = "<group>"; };
 		CB60D4F61AE34AEF0026CD01 /* Cars-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cars-100.png"; sourceTree = "<group>"; };
 		CB60D4F71AE34AEF0026CD01 /* Search-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-100.png"; sourceTree = "<group>"; };
 		CB60D4F81AE34AEF0026CD01 /* Settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-100.png"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		CB08C6FE1A941FDB00D7997D = {
 			isa = PBXGroup;
 			children = (
+				CB4B92081AE845910017A579 /* Singelton.swift */,
 				CB44B4FD1A9BF417000C66DF /* Frameworks */,
 				CB08C7091A941FDB00D7997D /* RideShare */,
 				CB08C71F1A941FDB00D7997D /* RideShareTests */,
@@ -384,6 +387,7 @@
 				CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */,
 				CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */,
 				CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */,
+				CB4B92091AE845910017A579 /* Singelton.swift in Sources */,
 				CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */,
 				CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */,
 			);
