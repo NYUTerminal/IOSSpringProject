@@ -27,7 +27,6 @@
 		CB44B5151A9BF4E4000C66DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5141A9BF4E4000C66DF /* QuartzCore.framework */; };
 		CB44B5171A9BF4EC000C66DF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5161A9BF4EC000C66DF /* Security.framework */; };
 		CB44B5191A9BF4F4000C66DF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5181A9BF4F4000C66DF /* Social.framework */; };
-		CB44B51B1A9BF4FE000C66DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51A1A9BF4FE000C66DF /* StoreKit.framework */; };
 		CB44B51D1A9BF508000C66DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51C1A9BF508000C66DF /* SystemConfiguration.framework */; };
 		CB44B51F1A9BF511000C66DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51E1A9BF511000C66DF /* libz.dylib */; };
 		CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */; };
@@ -86,7 +85,6 @@
 		CB44B5141A9BF4E4000C66DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB44B5161A9BF4EC000C66DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CB44B5181A9BF4F4000C66DF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		CB44B51A1A9BF4FE000C66DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CB44B51C1A9BF508000C66DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB44B51E1A9BF511000C66DF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -130,7 +128,6 @@
 				CB8283431AE08E2300645AD3 /* AVFoundation.framework in Frameworks */,
 				CB8283411AE08D8200645AD3 /* GoogleMaps.framework in Frameworks */,
 				CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */,
-				CB44B51B1A9BF4FE000C66DF /* StoreKit.framework in Frameworks */,
 				CB44B5191A9BF4F4000C66DF /* Social.framework in Frameworks */,
 				CB44B5171A9BF4EC000C66DF /* Security.framework in Frameworks */,
 				CB44B5131A9BF4D9000C66DF /* MobileCoreServices.framework in Frameworks */,
@@ -226,7 +223,6 @@
 				CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */,
 				CB44B51E1A9BF511000C66DF /* libz.dylib */,
 				CB44B51C1A9BF508000C66DF /* SystemConfiguration.framework */,
-				CB44B51A1A9BF4FE000C66DF /* StoreKit.framework */,
 				CB44B5181A9BF4F4000C66DF /* Social.framework */,
 				CB44B5161A9BF4EC000C66DF /* Security.framework */,
 				CB44B5141A9BF4E4000C66DF /* QuartzCore.framework */,
@@ -322,6 +318,12 @@
 				TargetAttributes = {
 					CB08C7061A941FDB00D7997D = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6QN349HHUB;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					CB08C71B1A941FDB00D7997D = {
 						CreatedOnToolsVersion = 6.1;
@@ -509,6 +511,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -518,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RideShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -528,6 +533,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -537,6 +544,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RideShare-Bridging-Header.h";
 			};
 			name = Release;
