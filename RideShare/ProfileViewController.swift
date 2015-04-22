@@ -65,7 +65,7 @@ class ProfileViewController : UIViewController, GMSMapViewDelegate {
                 Singelton.sharedInstance.loginUserName = user.username
                 // Do stuff after successful login.
             } else {
-                status.text = "Please verify your email and password"
+                //status.text = "Please verify your email and password"
             }
         }
     }
