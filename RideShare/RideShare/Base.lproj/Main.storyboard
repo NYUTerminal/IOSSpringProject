@@ -636,6 +636,7 @@
                                             <constraint firstItem="IIZ-il-nR1" firstAttribute="top" secondItem="GGh-7z-xTY" secondAttribute="top" constant="233" id="A4v-0G-pvy"/>
                                             <constraint firstItem="L0x-sC-ElT" firstAttribute="top" secondItem="a7A-cG-tUs" secondAttribute="bottom" constant="8" id="CYv-Ea-Itf"/>
                                             <constraint firstItem="a7A-cG-tUs" firstAttribute="top" secondItem="rrC-sl-njx" secondAttribute="bottom" constant="8" id="Cp3-dG-JSd"/>
+                                            <constraint firstItem="IIZ-il-nR1" firstAttribute="top" secondItem="MC4-ZG-JNM" secondAttribute="bottom" constant="94" id="FRZ-e5-sbP"/>
                                             <constraint firstItem="IIZ-il-nR1" firstAttribute="leading" secondItem="GGh-7z-xTY" secondAttribute="leading" constant="146" id="IoB-aM-UHN"/>
                                             <constraint firstItem="rrC-sl-njx" firstAttribute="top" secondItem="Ppj-LY-TOA" secondAttribute="bottom" constant="8" id="NRj-7w-Fp7"/>
                                             <constraint firstItem="QfO-Hd-7T5" firstAttribute="leading" secondItem="GGh-7z-xTY" secondAttribute="leading" constant="25" id="Z7o-cb-yfc"/>
@@ -673,7 +674,6 @@
                             <constraint firstItem="Ql1-DX-oJi" firstAttribute="top" secondItem="uMi-si-lRq" secondAttribute="top" id="FSo-e9-XEw"/>
                             <constraint firstItem="dfy-5l-hPu" firstAttribute="top" secondItem="Jn8-Iz-Uo9" secondAttribute="bottom" id="HHn-6k-CBT"/>
                             <constraint firstAttribute="trailing" secondItem="NPx-zh-uAG" secondAttribute="trailing" id="W8e-Ja-qz6"/>
-                            <constraint firstItem="MC4-ZG-JNM" firstAttribute="top" secondItem="NPx-zh-uAG" secondAttribute="bottom" constant="76" id="cuR-H6-5d4"/>
                             <constraint firstItem="NPx-zh-uAG" firstAttribute="leading" secondItem="uMi-si-lRq" secondAttribute="leading" id="fXM-Dj-KUf"/>
                             <constraint firstItem="Jn8-Iz-Uo9" firstAttribute="leading" secondItem="uMi-si-lRq" secondAttribute="leading" id="isa-Eh-74X"/>
                             <constraint firstAttribute="trailing" secondItem="Jn8-Iz-Uo9" secondAttribute="trailing" id="itH-c5-cVg"/>
