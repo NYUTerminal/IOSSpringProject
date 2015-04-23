@@ -31,6 +31,8 @@
 		CB44B51F1A9BF511000C66DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B51E1A9BF511000C66DF /* libz.dylib */; };
 		CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */; };
 		CB4B92091AE845910017A579 /* Singelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B92081AE845910017A579 /* Singelton.swift */; };
+		CB4B920B1AE991D90017A579 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B920A1AE991D90017A579 /* 13.jpg */; };
+		CB4B920D1AE992690017A579 /* ios-linen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B920C1AE992690017A579 /* ios-linen.jpg */; };
 		CB60D4FA1AE34AEF0026CD01 /* Cars-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F61AE34AEF0026CD01 /* Cars-100.png */; };
 		CB60D4FB1AE34AEF0026CD01 /* Search-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F71AE34AEF0026CD01 /* Search-100.png */; };
 		CB60D4FC1AE34AEF0026CD01 /* Settings-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB60D4F81AE34AEF0026CD01 /* Settings-100.png */; };
@@ -91,10 +93,12 @@
 		CB44B5201A9BF51A000C66DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CB44B5221A9BF98A000C66DF /* RideShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RideShare-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CB4B92081AE845910017A579 /* Singelton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singelton.swift; sourceTree = "<group>"; };
-		CB60D4F61AE34AEF0026CD01 /* Cars-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cars-100.png"; sourceTree = "<group>"; };
-		CB60D4F71AE34AEF0026CD01 /* Search-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-100.png"; sourceTree = "<group>"; };
-		CB60D4F81AE34AEF0026CD01 /* Settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-100.png"; sourceTree = "<group>"; };
-		CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Male4-100.png"; sourceTree = "<group>"; };
+		CB4B920A1AE991D90017A579 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		CB4B920C1AE992690017A579 /* ios-linen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ios-linen.jpg"; sourceTree = "<group>"; };
+		CB60D4F61AE34AEF0026CD01 /* Cars-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cars-100.png"; path = "RideShare/Cars-100.png"; sourceTree = "<group>"; };
+		CB60D4F71AE34AEF0026CD01 /* Search-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Search-100.png"; path = "RideShare/Search-100.png"; sourceTree = "<group>"; };
+		CB60D4F81AE34AEF0026CD01 /* Settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings-100.png"; path = "RideShare/Settings-100.png"; sourceTree = "<group>"; };
+		CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Male4-100.png"; path = "RideShare/User Male4-100.png"; sourceTree = "<group>"; };
 		CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 		CB60D5001AE58B260026CD01 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		CB60D5021AE58B360026CD01 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		CB08C6FE1A941FDB00D7997D = {
 			isa = PBXGroup;
 			children = (
+				CB4B920E1AE9927A0017A579 /* Images */,
 				CB4B92081AE845910017A579 /* Singelton.swift */,
 				CB44B4FD1A9BF417000C66DF /* Frameworks */,
 				CB08C7091A941FDB00D7997D /* RideShare */,
@@ -244,16 +249,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB4B920E1AE9927A0017A579 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CB60D4F61AE34AEF0026CD01 /* Cars-100.png */,
+				CB60D4F71AE34AEF0026CD01 /* Search-100.png */,
+				CB60D4F81AE34AEF0026CD01 /* Settings-100.png */,
+				CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */,
+				CB4B920A1AE991D90017A579 /* 13.jpg */,
+				CB4B920C1AE992690017A579 /* ios-linen.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		CB95BA381ACB5AB400DDEB65 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
-				CB60D4F61AE34AEF0026CD01 /* Cars-100.png */,
-				CB60D4F71AE34AEF0026CD01 /* Search-100.png */,
-				CB60D4F81AE34AEF0026CD01 /* Settings-100.png */,
-				CB60D4F91AE34AEF0026CD01 /* User Male4-100.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -359,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */,
+				CB4B920D1AE992690017A579 /* ios-linen.jpg in Resources */,
+				CB4B920B1AE991D90017A579 /* 13.jpg in Resources */,
 				CB60D4FB1AE34AEF0026CD01 /* Search-100.png in Resources */,
 				CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */,
 				CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */,
