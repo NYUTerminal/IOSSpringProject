@@ -33,7 +33,35 @@ class SettingsViewController: ViewController {
     }
     
     @IBAction func saveSettings(sender: AnyObject) {
-
+        
+        if(validateSettings()){
+            
+            var settingsClass = PFObject(className:"Settings")
+            settingsClass["address"] = address.text
+            settingsClass["city"] = city.text
+            settingsClass["state"] = state.text
+            settingsClass["country"] = country.text
+            settingsClass["mobile"] = mobile.text
+            if onlyFriends.on {
+                settingsClass["onlyFriends"] = true
+                }
+            else{
+                settingsClass["onlyFriends"] = false
+                }
+            settingsClass["username"] = Singelton.sharedInstance.loginUserName
+            settingsClass.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                    } else {
+                    
+                    // There was a problem, check error.description
+                    }
+                }
+            }else{
+              return
+            }
+        
     }
     
     func validateSettings() -> Bool {
