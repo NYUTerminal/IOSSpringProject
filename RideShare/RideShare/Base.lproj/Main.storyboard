@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Offer-->
@@ -300,7 +301,27 @@
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9y-4A-vC4">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                         <items>
-                                            <navigationItem title="Settings" id="4I6-jm-Gv3"/>
+                                            <navigationItem title="Settings" id="4I6-jm-Gv3">
+                                                <barButtonItem key="rightBarButtonItem" style="plain" id="vnr-Gw-MuZ">
+                                                    <view key="customView" contentMode="scaleToFill" id="Lyj-aF-cic">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="37"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-tt-qYb">
+                                                                <rect key="frame" x="109" y="7" width="16" height="22"/>
+                                                                <state key="normal" image="Save-50">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="centerY" secondItem="u0f-tt-qYb" secondAttribute="centerY" id="6SG-Mh-lNv"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="u0f-tt-qYb" secondAttribute="trailing" id="ifb-oS-eLQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </barButtonItem>
+                                            </navigationItem>
                                         </items>
                                     </navigationBar>
                                 </subviews>
@@ -384,17 +405,7 @@
                                             <constraint firstAttribute="height" constant="10" id="ceZ-bl-KHW"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUF-54-elb">
-                                        <rect key="frame" x="531" y="15" width="34" height="30"/>
-                                        <state key="normal" title="Save">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveSettings:" destination="BhR-xx-ttd" eventType="touchUpInside" id="GQJ-cD-Xem"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="RmA-Ix-JB2" secondAttribute="centerX" id="1TN-CX-7I8"/>
                                     <constraint firstItem="hhk-i1-zUG" firstAttribute="leading" secondItem="irA-zn-RCv" secondAttribute="trailing" constant="41" id="3yo-vt-R9d"/>
@@ -406,17 +417,15 @@
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="centerY" secondItem="hhk-i1-zUG" secondAttribute="centerY" id="BJi-0E-c6c"/>
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="top" secondItem="RmA-Ix-JB2" secondAttribute="bottom" constant="78" id="Baf-1K-O0G"/>
                                     <constraint firstItem="k2C-M3-3r6" firstAttribute="top" secondItem="GwR-tD-MYf" secondAttribute="bottom" constant="25" id="DYf-T9-AtG"/>
-                                    <constraint firstAttribute="bottom" secondItem="hhk-i1-zUG" secondAttribute="bottom" constant="39" id="DqE-99-NZ3"/>
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="leading" secondItem="DXE-Kg-3Eq" secondAttribute="leading" id="Et3-k1-sCR"/>
                                     <constraint firstItem="DXE-Kg-3Eq" firstAttribute="top" secondItem="4YV-i8-s8Q" secondAttribute="bottom" constant="24" id="Iqj-lq-Ams"/>
                                     <constraint firstItem="SFw-kU-xHB" firstAttribute="top" secondItem="qCT-w6-KVG" secondAttribute="bottom" constant="25" id="MU1-j7-y8V"/>
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="leading" secondItem="DXE-Kg-3Eq" secondAttribute="leading" id="OX1-XL-8MX"/>
                                     <constraint firstItem="RmA-Ix-JB2" firstAttribute="leading" secondItem="DXE-Kg-3Eq" secondAttribute="trailing" constant="35" id="QhY-vc-7JH"/>
                                     <constraint firstItem="hhk-i1-zUG" firstAttribute="leading" secondItem="irA-zn-RCv" secondAttribute="trailing" constant="41" id="Qw0-kd-jcF"/>
+                                    <constraint firstItem="hhk-i1-zUG" firstAttribute="top" secondItem="4YV-i8-s8Q" secondAttribute="bottom" constant="121" id="Tyv-2P-tGI"/>
                                     <constraint firstItem="RmA-Ix-JB2" firstAttribute="top" secondItem="4YV-i8-s8Q" secondAttribute="bottom" constant="22" id="UR4-yj-Q4Y"/>
-                                    <constraint firstAttribute="trailing" secondItem="pUF-54-elb" secondAttribute="trailing" constant="35" id="W08-HD-yJf"/>
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="top" secondItem="DXE-Kg-3Eq" secondAttribute="bottom" constant="81" id="XqO-Ab-Qtr"/>
-                                    <constraint firstItem="pUF-54-elb" firstAttribute="top" secondItem="r9K-Ma-VVx" secondAttribute="top" constant="15" id="b3N-Lc-0sa"/>
                                     <constraint firstAttribute="centerX" secondItem="GwR-tD-MYf" secondAttribute="centerX" id="exy-ZC-nJ1"/>
                                     <constraint firstAttribute="centerX" secondItem="4YV-i8-s8Q" secondAttribute="centerX" id="rSK-Oj-0K2"/>
                                     <constraint firstItem="irA-zn-RCv" firstAttribute="top" secondItem="DXE-Kg-3Eq" secondAttribute="bottom" constant="81" id="sb4-le-JUo"/>
@@ -839,5 +848,6 @@
     </scenes>
     <resources>
         <image name="Image" width="16" height="16"/>
+        <image name="Save-50" width="16" height="16"/>
     </resources>
 </document>
