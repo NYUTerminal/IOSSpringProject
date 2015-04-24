@@ -858,9 +858,6 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="hCf-vs-emP" kind="presentation" id="6Hi-XI-sDl"/>
-                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-Tx-KlH" userLabel="Profile Navigation Bar">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
