@@ -1023,6 +1023,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hCf-vs-emP" id="dz2-at-0qH"/>
+                                    <outlet property="delegate" destination="hCf-vs-emP" id="7kl-LX-vEq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
