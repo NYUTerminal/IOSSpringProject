@@ -60,6 +60,8 @@
 		CB4B924A1AE9D0310017A579 /* Search-25.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92471AE9D0310017A579 /* Search-25.png */; };
 		CB4B924B1AE9D0310017A579 /* Search-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92481AE9D0310017A579 /* Search-50.png */; };
 		CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92491AE9D0310017A579 /* Search-75.png */; };
+		CB4B924E1AE9D5A20017A579 /* BrooklynBridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */; };
+		CB4B92521AE9D7230017A579 /* tanrantulNebula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */; };
 		CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */; };
 		CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5001AE58B260026CD01 /* SettingsViewController.swift */; };
 		CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5021AE58B360026CD01 /* OfferViewController.swift */; };
@@ -145,6 +147,8 @@
 		CB4B92471AE9D0310017A579 /* Search-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-25.png"; sourceTree = "<group>"; };
 		CB4B92481AE9D0310017A579 /* Search-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-50.png"; sourceTree = "<group>"; };
 		CB4B92491AE9D0310017A579 /* Search-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-75.png"; sourceTree = "<group>"; };
+		CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrooklynBridge.jpg; sourceTree = "<group>"; };
+		CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tanrantulNebula.jpg; sourceTree = "<group>"; };
 		CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 		CB60D5001AE58B260026CD01 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		CB60D5021AE58B360026CD01 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */,
 				CB4B92471AE9D0310017A579 /* Search-25.png */,
 				CB4B92481AE9D0310017A579 /* Search-50.png */,
 				CB4B92491AE9D0310017A579 /* Search-75.png */,
@@ -310,6 +315,7 @@
 				CB4B92231AE9CAB70017A579 /* Cars-25.png */,
 				CB4B92241AE9CAB70017A579 /* Cars-50.png */,
 				CB4B92251AE9CAB70017A579 /* Cars-75.png */,
+				CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */,
 				CB4B92261AE9CAB70017A579 /* Group-25.png */,
 				CB4B92271AE9CAB70017A579 /* Group-50.png */,
 				CB4B92281AE9CAB70017A579 /* Group-75.png */,
@@ -443,6 +449,7 @@
 			files = (
 				CB4B924B1AE9D0310017A579 /* Search-50.png in Resources */,
 				CB4B92311AE9CAB70017A579 /* Cars-75.png in Resources */,
+				CB4B92521AE9D7230017A579 /* tanrantulNebula.jpg in Resources */,
 				CB4B923F1AE9CEFA0017A579 /* Offer-50.png in Resources */,
 				CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */,
 				CB4B921C1AE9C46D0017A579 /* music.png in Resources */,
@@ -454,6 +461,7 @@
 				CB4B92381AE9CAB70017A579 /* User Male Circle-25.png in Resources */,
 				CB4B922F1AE9CAB70017A579 /* Cars-25.png in Resources */,
 				CB4B920D1AE992690017A579 /* ios-linen.jpg in Resources */,
+				CB4B924E1AE9D5A20017A579 /* BrooklynBridge.jpg in Resources */,
 				CB4B920B1AE991D90017A579 /* 13.jpg in Resources */,
 				CB4B92351AE9CAB70017A579 /* Settings-25.png in Resources */,
 				CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */,

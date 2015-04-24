@@ -173,7 +173,7 @@
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vac-hp-1r9">
                                                 <rect key="frame" x="255" y="298" width="50" height="30"/>
-                                                <color key="backgroundColor" red="1" green="0.21063825470636066" blue="0.3285211287062455" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Cce-sv-2aw"/>
                                                     <constraint firstAttribute="width" constant="50" id="OoN-Nu-cBi"/>
@@ -305,7 +305,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Offer" image="Carpool-75.png" id="rhi-qt-b2n" userLabel="Offer"/>
+                    <tabBarItem key="tabBarItem" title="Offer" image="Carpool-75" id="rhi-qt-b2n" userLabel="Offer"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="carNumber" destination="3We-0L-Rbw" id="FQo-z5-Lht"/>
@@ -475,7 +475,7 @@
                             <constraint firstAttribute="trailing" secondItem="Ygl-FE-04P" secondAttribute="trailing" id="l5V-qR-wly"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="Settings-75.png" id="wu2-M4-1Tq"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings-75" id="wu2-M4-1Tq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="address" destination="GwR-tD-MYf" id="hfi-Q9-yzB"/>
@@ -637,12 +637,6 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7A-cG-tUs">
-                                                <rect key="frame" x="25" y="133.5" width="61" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0x-sC-ElT">
                                                 <rect key="frame" x="25" y="162" width="49.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -658,6 +652,12 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7A-cG-tUs">
+                                                <rect key="frame" x="25" y="133" width="61" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.77828683030759427" blue="0.74437047680205182" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -717,7 +717,7 @@
                             <constraint firstAttribute="trailing" secondItem="Ql1-DX-oJi" secondAttribute="trailing" id="yIA-BE-FaF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="User Male Circle-75.png" id="Fgi-15-csU"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="User Male Circle-75" id="Fgi-15-csU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cF3-6O-0nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -760,7 +760,7 @@
                             <constraint firstAttribute="trailing" secondItem="F0b-Qv-DIF" secondAttribute="trailing" id="wV9-ON-dFZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FriendsTrip" image="Group-75.png" id="axM-Re-fpp"/>
+                    <tabBarItem key="tabBarItem" title="FriendsTrip" image="Group-75" id="axM-Re-fpp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hT-AS-X4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -801,15 +801,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-J6-CS3" userLabel="BackGround">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-J6-CS3" userLabel="BackGround">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-bk-Drf">
                                 <rect key="frame" x="10" y="60" width="580" height="481"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.90344854797979801" green="0.90344854797979801" blue="0.90344854797979801" alpha="0.94000000000000006" colorSpace="calibratedRGB"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Source" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-d6-DDz" userLabel="Source">
-                                <rect key="frame" x="150" y="152" width="300" height="30"/>
+                                <rect key="frame" x="150" y="190" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7bT-bs-eNk"/>
                                     <constraint firstAttribute="height" constant="30" id="WIp-jm-uMd"/>
@@ -818,7 +818,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-2p-CSp" userLabel="Destination">
-                                <rect key="frame" x="150" y="214" width="300" height="30"/>
+                                <rect key="frame" x="150" y="245" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aaP-Df-AdN"/>
                                     <constraint firstAttribute="width" constant="300" id="ls8-GO-d4w"/>
@@ -827,7 +827,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjC-3B-zbT" userLabel="Date">
-                                <rect key="frame" x="150" y="297" width="125" height="30"/>
+                                <rect key="frame" x="150" y="328" width="125" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aLW-dt-LNc"/>
                                     <constraint firstAttribute="width" constant="125" id="gDI-9O-dZD"/>
@@ -836,7 +836,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InM-8V-RVA" userLabel="Time">
-                                <rect key="frame" x="325" y="297" width="125" height="30"/>
+                                <rect key="frame" x="325" y="328" width="125" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="VQN-aE-Hqx"/>
                                     <constraint firstAttribute="height" constant="30" id="rLN-cS-Mec"/>
@@ -846,7 +846,7 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-UD-eGf" userLabel="GapBetweendateandtime">
                                 <rect key="frame" x="275" y="285" width="50" height="30"/>
-                                <color key="backgroundColor" red="0.35907466312352343" green="1" blue="0.56939385812776777" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0bu-7c-IHb"/>
                                     <constraint firstAttribute="width" constant="50" id="gav-4C-nZi"/>
@@ -857,6 +857,9 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hCf-vs-emP" kind="presentation" id="6Hi-XI-sDl"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-Tx-KlH" userLabel="Profile Navigation Bar">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
@@ -905,7 +908,7 @@
                             <constraint firstAttribute="bottom" secondItem="8jN-J6-CS3" secondAttribute="bottom" id="Gev-nt-xWx"/>
                             <constraint firstAttribute="trailing" secondItem="8jN-J6-CS3" secondAttribute="trailing" id="Kau-fT-pPU"/>
                             <constraint firstAttribute="centerX" secondItem="Dgd-1V-QCt" secondAttribute="centerX" id="Ore-mX-e7S"/>
-                            <constraint firstItem="NVF-2p-CSp" firstAttribute="top" secondItem="UGG-d6-DDz" secondAttribute="bottom" constant="32" id="QpJ-4Z-UCa"/>
+                            <constraint firstItem="NVF-2p-CSp" firstAttribute="top" secondItem="UGG-d6-DDz" secondAttribute="bottom" constant="25" id="QpJ-4Z-UCa"/>
                             <constraint firstItem="EjC-3B-zbT" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="53" id="Spw-Mi-AbY"/>
                             <constraint firstAttribute="centerX" secondItem="NVF-2p-CSp" secondAttribute="centerX" id="TLU-qP-j2Z"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9BW-bk-Drf" secondAttribute="bottom" constant="10" id="TRo-l4-04W"/>
@@ -915,7 +918,7 @@
                             <constraint firstItem="InM-8V-RVA" firstAttribute="leading" secondItem="cL8-UD-eGf" secondAttribute="trailing" id="cYj-Mu-nCd"/>
                             <constraint firstItem="8jN-J6-CS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f5u-pl-ylc"/>
                             <constraint firstItem="9BW-bk-Drf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fTb-9o-emV"/>
-                            <constraint firstItem="cL8-UD-eGf" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="41" id="jan-e4-eab"/>
+                            <constraint firstItem="cL8-UD-eGf" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="10" id="jan-e4-eab"/>
                             <constraint firstItem="XSg-Tx-KlH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o4e-Uj-UEa"/>
                             <constraint firstItem="iyD-x0-DAQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tGh-Ta-gbo"/>
                             <constraint firstItem="cL8-UD-eGf" firstAttribute="leading" secondItem="EjC-3B-zbT" secondAttribute="trailing" id="tmG-7m-Mr7"/>
@@ -942,7 +945,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Search" image="Search-75.png" id="PVj-FL-4dQ"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Search" image="Search-75" id="PVj-FL-4dQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -960,7 +963,23 @@
                     <view key="view" contentMode="scaleToFill" id="3jE-qW-Vmh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="FAL-iX-fVl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ShU-Yd-YVR"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Search Results" id="VR1-B9-sN9"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FAL-iX-fVl" firstAttribute="top" secondItem="3jE-qW-Vmh" secondAttribute="top" id="9gY-9J-RYF"/>
+                            <constraint firstAttribute="trailing" secondItem="FAL-iX-fVl" secondAttribute="trailing" id="bTC-fH-P6y"/>
+                            <constraint firstItem="FAL-iX-fVl" firstAttribute="leading" secondItem="3jE-qW-Vmh" secondAttribute="leading" id="whH-8Z-IFQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nw-Sj-8P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -971,10 +990,11 @@
     <resources>
         <image name="13.jpg" width="2560" height="1920"/>
         <image name="BlackBackGround" width="2000" height="2000"/>
-        <image name="Carpool-75.png" width="75" height="75"/>
-        <image name="Group-75.png" width="75" height="75"/>
-        <image name="Search-75.png" width="75" height="75"/>
-        <image name="Settings-75.png" width="75" height="75"/>
-        <image name="User Male Circle-75.png" width="75" height="75"/>
+        <image name="BrooklynBridge" width="1440" height="900"/>
+        <image name="Carpool-75" width="25" height="25"/>
+        <image name="Group-75" width="25" height="25"/>
+        <image name="Search-75" width="25" height="25"/>
+        <image name="Settings-75" width="25" height="25"/>
+        <image name="User Male Circle-75" width="25" height="25"/>
     </resources>
 </document>
