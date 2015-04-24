@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
+		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
 		CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70C1A941FDB00D7997D /* AppDelegate.swift */; };
 		CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70E1A941FDB00D7997D /* ViewController.swift */; };
 		CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7101A941FDB00D7997D /* Main.storyboard */; };
@@ -62,7 +64,6 @@
 		CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92491AE9D0310017A579 /* Search-75.png */; };
 		CB4B924E1AE9D5A20017A579 /* BrooklynBridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */; };
 		CB4B92521AE9D7230017A579 /* tanrantulNebula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */; };
-		CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */; };
 		CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5001AE58B260026CD01 /* SettingsViewController.swift */; };
 		CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5021AE58B360026CD01 /* OfferViewController.swift */; };
 		CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */; };
@@ -89,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsTableViewController.swift; path = ../SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		0068C8321AEA118F0028870A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
 		CB08C7071A941FDB00D7997D /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C70B1A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C70C1A941FDB00D7997D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +152,6 @@
 		CB4B92491AE9D0310017A579 /* Search-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-75.png"; sourceTree = "<group>"; };
 		CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrooklynBridge.jpg; sourceTree = "<group>"; };
 		CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tanrantulNebula.jpg; sourceTree = "<group>"; };
-		CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
 		CB60D5001AE58B260026CD01 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		CB60D5021AE58B360026CD01 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
 		CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTripsViewController.swift; path = ../FriendTripsViewController.swift; sourceTree = "<group>"; };
@@ -350,13 +352,14 @@
 		CB95BA391ACB5AC000DDEB65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0068C8321AEA118F0028870A /* SearchTableViewCell.swift */,
+				0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */,
 				CB08C70C1A941FDB00D7997D /* AppDelegate.swift */,
 				CB08C70E1A941FDB00D7997D /* ViewController.swift */,
 				CB60D5061AE58B610026CD01 /* ProfileViewController.swift */,
 				CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */,
 				CB60D5021AE58B360026CD01 /* OfferViewController.swift */,
 				CB60D5001AE58B260026CD01 /* SettingsViewController.swift */,
-				CB60D4FE1AE58B140026CD01 /* SearchViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -502,10 +505,11 @@
 				CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */,
 				CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */,
 				CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */,
-				CB60D4FF1AE58B140026CD01 /* SearchViewController.swift in Sources */,
+				0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */,
 				CB4B92091AE845910017A579 /* Singelton.swift in Sources */,
 				CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */,
 				CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */,
+				0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

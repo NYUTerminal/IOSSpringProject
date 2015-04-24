@@ -9,7 +9,7 @@
 import Foundation
 
 
-class OfferViewController: ViewController, GMSMapViewDelegate {
+class OfferViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var rideName: UITextField!
     
