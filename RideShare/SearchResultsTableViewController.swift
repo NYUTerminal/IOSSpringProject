@@ -14,6 +14,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     var searchResults:[PFObject] = []
     
     @IBOutlet weak var SearchTableView: UITableView!
+    
     func loadData() {
         searchResults = []
         var findSearchResults = PFQuery(className: "Offer")
@@ -27,7 +28,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
                     for object in objects {
                         self.searchResults.append(object as PFObject)
                     }
-                    //self.SearchTableView.reloadData()
+                    self.SearchTableView.reloadData()
                 }
             } else {
                 // Log details of the failure
@@ -39,16 +40,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         loadData()
-        
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,68 +49,22 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     }
     
     // MARK: - Table view data source
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        
-        return searchResults.count
+        return self.searchResults.count
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:SearchTableViewCell = tableView.dequeueReusableCellWithIdentifier("searchCell", forIndexPath: indexPath) as SearchTableViewCell
-        let result:PFObject = self.searchResults[indexPath.row]
-        cell.NameLabel.text = result.objectForKey("username") as? String
-        
-        // Configure the cell...
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier("SearchCell") as SearchTableViewCell
+        if self.searchResults.count > 0 {
+            println(indexPath.row)
+            let result:PFObject = self.searchResults[indexPath.row]
+            cell.NameLabel.text = result.objectForKey("username") as? String
+            cell.timeLabel.text = result.objectForKey("time") as? String
+            cell.priceLabel.text = result.objectForKey("price") as? String
+            cell.descriptionLabel.text = result.objectForKey("description") as? String
+        }
         return cell
     }
-    
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return NO if you do not want the specified item to be editable.
-    return true
-    }
-    */
-    
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
-    // Delete the row from the data source
-    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
-    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
-    }
-    */
-    
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
-    }
-    */
-    
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return NO if you do not want the item to be re-orderable.
-    return true
-    }
-    */
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

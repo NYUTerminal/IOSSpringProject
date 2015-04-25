@@ -859,7 +859,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hCf-vs-emP" kind="presentation" id="mr1-Bo-Kd7"/>
+                                    <segue destination="hCf-vs-emP" kind="presentation" id="1pk-N2-hZh"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-Tx-KlH" userLabel="Profile Navigation Bar">
@@ -971,7 +971,13 @@
                                     <constraint firstAttribute="height" constant="60" id="ShU-Yd-YVR"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Search Results" id="VR1-B9-sN9"/>
+                                    <navigationItem title="Search Results" id="VR1-B9-sN9">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="FD3-b1-TfE">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="64s-b6-p2D"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97k-Af-NDU">
@@ -984,26 +990,32 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tyx-UP-0oc" id="wCA-bv-4bl">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZs-Rp-VF7">
-                                                    <rect key="frame" x="30" y="9" width="227" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-d5-g6t">
+                                                    <rect key="frame" x="29" y="25" width="161" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkh-la-PgR">
-                                                    <rect key="frame" x="292" y="10" width="98" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkM-UZ-1VT">
+                                                    <rect key="frame" x="226" y="25" width="59" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-ki-7eG">
-                                                    <rect key="frame" x="429" y="9" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-4p-bkp">
+                                                    <rect key="frame" x="29" y="78" width="552" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-d7-Dhz">
-                                                    <rect key="frame" x="30" y="88" width="514" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xot-kj-xTb">
+                                                    <rect key="frame" x="333" y="24" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2L-aG-e6Z">
+                                                    <rect key="frame" x="285" y="25" width="40" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1011,15 +1023,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="NameLabel" destination="AZs-Rp-VF7" id="Yaq-Us-GgO"/>
-                                            <outlet property="descriptionLabel" destination="4KC-d7-Dhz" id="SwB-Fw-YE4"/>
-                                            <outlet property="nameOfThePersonLabel" destination="AZs-Rp-VF7" id="OMm-OW-V1O"/>
-                                            <outlet property="priceLabel" destination="Nfb-ki-7eG" id="2eZ-gm-lR9"/>
-                                            <outlet property="timeLabel" destination="pkh-la-PgR" id="Iqo-PP-5jV"/>
-                                            <outlet property="tripDescriptionLabel" destination="4KC-d7-Dhz" id="Lo3-DN-LgJ"/>
-                                            <outlet property="tripPriceLabel" destination="Nfb-ki-7eG" id="PHZ-t4-iDM"/>
-                                            <outlet property="tripTime" destination="pkh-la-PgR" id="CTO-5F-7Xe"/>
-                                            <outlet property="tripTimeLabel" destination="pkh-la-PgR" id="yc0-ZE-PaG"/>
+                                            <outlet property="NameLabel" destination="ypc-d5-g6t" id="WHC-b6-qje"/>
+                                            <outlet property="descriptionLabel" destination="3PQ-4p-bkp" id="fgt-m2-arh"/>
+                                            <outlet property="priceLabel" destination="Q2L-aG-e6Z" id="pdA-fz-Lux"/>
+                                            <outlet property="timeLabel" destination="dkM-UZ-1VT" id="uBA-aN-emw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1059,4 +1066,7 @@
         <image name="Settings-75" width="25" height="25"/>
         <image name="User Male Circle-75" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="64s-b6-p2D"/>
+    </inferredMetricsTieBreakers>
 </document>

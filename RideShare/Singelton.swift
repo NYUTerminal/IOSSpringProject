@@ -15,6 +15,8 @@ class Singelton {
     
     var loginEmailId:String = ""
     
+    var searchResults:[PFObject] = []
+    
     class var sharedInstance: Singelton {
         
         struct Static {
