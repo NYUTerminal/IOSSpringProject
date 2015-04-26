@@ -84,6 +84,10 @@
 		CBADFF1A1AED06340048A3F9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADFF141AED06340048A3F9 /* ParseUI.framework */; };
 		CBADFF1C1AED06F40048A3F9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADFF1B1AED06F40048A3F9 /* StoreKit.framework */; };
 		CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5181A9BF4F4000C66DF /* Social.framework */; };
+		CBADFF201AED0B5A0048A3F9 /* No Food-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF1E1AED0B5A0048A3F9 /* No Food-100.png */; };
+		CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF1F1AED0B5A0048A3F9 /* Pizza-100.png */; };
+		CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF221AED0BA00048A3F9 /* Chat-50.png */; };
+		CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +183,10 @@
 		CBADFF131AED06340048A3F9 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		CBADFF141AED06340048A3F9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		CBADFF1B1AED06F40048A3F9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CBADFF1E1AED0B5A0048A3F9 /* No Food-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No Food-100.png"; sourceTree = "<group>"; };
+		CBADFF1F1AED0B5A0048A3F9 /* Pizza-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pizza-100.png"; sourceTree = "<group>"; };
+		CBADFF221AED0BA00048A3F9 /* Chat-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat-50.png"; sourceTree = "<group>"; };
+		CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +326,10 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */,
+				CBADFF221AED0BA00048A3F9 /* Chat-50.png */,
+				CBADFF1E1AED0B5A0048A3F9 /* No Food-100.png */,
+				CBADFF1F1AED0B5A0048A3F9 /* Pizza-100.png */,
 				CBADFDE11AECE72A0048A3F9 /* Back-25.png */,
 				CBADFDDD1AECE46C0048A3F9 /* Back-75.png */,
 				CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */,
@@ -534,6 +546,7 @@
 				CB4B92351AE9CAB70017A579 /* Settings-25.png in Resources */,
 				CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */,
 				CB4B921D1AE9C46D0017A579 /* No Animals.png in Resources */,
+				CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */,
 				CB4B92441AE9CFD10017A579 /* Carpool-25.png in Resources */,
 				CB4B92401AE9CEFA0017A579 /* Offer-75.png in Resources */,
 				CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */,
@@ -541,12 +554,15 @@
 				CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */,
 				CB4B92191AE9C46D0017A579 /* date.png in Resources */,
 				CB4B92181AE9C46D0017A579 /* currentlocation.png in Resources */,
+				CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */,
 				CB4B92461AE9CFD10017A579 /* Carpool-75.png in Resources */,
+				CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */,
 				CB4B92341AE9CAB70017A579 /* Group-75.png in Resources */,
 				CB4B92321AE9CAB70017A579 /* Group-25.png in Resources */,
 				CB4B92301AE9CAB70017A579 /* Cars-50.png in Resources */,
 				CB4B924A1AE9D0310017A579 /* Search-25.png in Resources */,
 				CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */,
+				CBADFF201AED0B5A0048A3F9 /* No Food-100.png in Resources */,
 				CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */,
 				CB4B92331AE9CAB70017A579 /* Group-50.png in Resources */,
 				CB4B92391AE9CAB70017A579 /* User Male Circle-50.png in Resources */,
