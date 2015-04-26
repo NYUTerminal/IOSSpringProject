@@ -35,6 +35,10 @@
 		60EF1D451AED9B2300FCCDA2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D2B1AED9B2300FCCDA2 /* TransitionManager.swift */; };
 		60EF1D461AED9B2300FCCDA2 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D2C1AED9B2300FCCDA2 /* TransitionZoom.swift */; };
 		60EF1D471AED9B2300FCCDA2 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D2D1AED9B2300FCCDA2 /* UnwindSegue.swift */; };
+		60EF1D491AEDA02D00FCCDA2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF1D481AEDA02D00FCCDA2 /* FBSDKCoreKit.framework */; };
+		60EF1D4B1AEDA05A00FCCDA2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF1D4A1AEDA05A00FCCDA2 /* FBSDKLoginKit.framework */; };
+		60EF1D4D1AEDA07100FCCDA2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF1D4C1AEDA07100FCCDA2 /* FBSDKShareKit.framework */; };
+		60EF1D4F1AEDA08300FCCDA2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF1D4E1AEDA08300FCCDA2 /* Bolts.framework */; };
 		CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70C1A941FDB00D7997D /* AppDelegate.swift */; };
 		CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C70E1A941FDB00D7997D /* ViewController.swift */; };
 		CB08C7121A941FDB00D7997D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7101A941FDB00D7997D /* Main.storyboard */; };
@@ -156,6 +160,10 @@
 		60EF1D2B1AED9B2300FCCDA2 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		60EF1D2C1AED9B2300FCCDA2 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		60EF1D2D1AED9B2300FCCDA2 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		60EF1D481AEDA02D00FCCDA2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../kushaljogi/Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		60EF1D4A1AEDA05A00FCCDA2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../kushaljogi/Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		60EF1D4C1AEDA07100FCCDA2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../kushaljogi/Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		60EF1D4E1AEDA08300FCCDA2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../kushaljogi/Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		CB08C7071A941FDB00D7997D /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C70B1A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C70C1A941FDB00D7997D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +255,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EF1D4F1AEDA08300FCCDA2 /* Bolts.framework in Frameworks */,
+				60EF1D4D1AEDA07100FCCDA2 /* FBSDKShareKit.framework in Frameworks */,
+				60EF1D4B1AEDA05A00FCCDA2 /* FBSDKLoginKit.framework in Frameworks */,
+				60EF1D491AEDA02D00FCCDA2 /* FBSDKCoreKit.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
 				CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */,
@@ -383,6 +395,10 @@
 		CB44B4FD1A9BF417000C66DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60EF1D4E1AEDA08300FCCDA2 /* Bolts.framework */,
+				60EF1D4C1AEDA07100FCCDA2 /* FBSDKShareKit.framework */,
+				60EF1D4A1AEDA05A00FCCDA2 /* FBSDKLoginKit.framework */,
+				60EF1D481AEDA02D00FCCDA2 /* FBSDKCoreKit.framework */,
 				CBADFF1B1AED06F40048A3F9 /* StoreKit.framework */,
 				CBADFF0E1AED06340048A3F9 /* parse-library-1.7.1 */,
 				CBADFF0C1AECFEFB0048A3F9 /* GoogleMaps.bundle */,
@@ -846,6 +862,7 @@
 					/Users/MeanMachine/Documents/NYU,
 					"Classes/SecondSem/IOS/IOSSpringResources/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
+					/Users/kushaljogi/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -872,6 +889,7 @@
 					/Users/MeanMachine/Documents/NYU,
 					"Classes/SecondSem/IOS/IOSSpringResources/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
+					/Users/kushaljogi/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
