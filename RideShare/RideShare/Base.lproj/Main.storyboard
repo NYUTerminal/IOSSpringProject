@@ -77,10 +77,27 @@
                                                 </variation>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUd-2c-3YT">
-                                                <rect key="frame" x="257" y="463" width="46" height="30"/>
-                                                <state key="normal" title="Create">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="130" y="463.5" width="300" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="6bO-nS-W2E"/>
+                                                    <constraint firstAttribute="height" constant="30" id="rI1-VD-TJI"/>
+                                                </constraints>
+                                                <state key="normal" title="Create" backgroundImage="ButtonBack">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6bO-nS-W2E"/>
+                                                        <exclude reference="rI1-VD-TJI"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="6bO-nS-W2E"/>
+                                                        <include reference="rI1-VD-TJI"/>
+                                                    </mask>
+                                                </variation>
                                                 <connections>
                                                     <action selector="createOffer:" destination="7J3-4T-2A3" eventType="touchUpInside" id="uxz-dV-XBY"/>
                                                 </connections>
@@ -137,7 +154,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-sE-Toj">
-                                                <rect key="frame" x="130" y="253" width="76" height="21"/>
+                                                <rect key="frame" x="130" y="253" width="76" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -181,7 +198,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="M1E-sE-Toj" firstAttribute="top" secondItem="Tdh-C3-JyR" secondAttribute="bottom" constant="25" id="3L9-rR-VzB"/>
                                             <constraint firstItem="3We-0L-Rbw" firstAttribute="top" secondItem="Tdh-C3-JyR" secondAttribute="bottom" constant="25" id="3vL-dW-rVq"/>
@@ -270,6 +287,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9qR-Oi-tcN"/>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Offer" id="Qya-fg-ezl"/>
                                 </items>
@@ -338,8 +358,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BrooklynBridge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LAK-xW-yyx" userLabel="BackGround">
                                 <rect key="frame" x="0.0" y="0.0" width="2000" height="2000"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-Ma-VVx">
-                                <rect key="frame" x="10" y="70" width="580" height="471"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-FE-04P" userLabel="OfferNavigation">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Oqc-3f-Dex"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Settings" id="UXK-5z-Xdy"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-Ma-VVx">
+                                <rect key="frame" x="10" y="72" width="580" height="471"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-tD-MYf">
                                         <rect key="frame" x="140" y="60" width="300" height="30"/>
@@ -459,7 +491,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="RmA-Ix-JB2" secondAttribute="centerX" id="1TN-CX-7I8"/>
                                     <constraint firstItem="hhk-i1-zUG" firstAttribute="leading" secondItem="irA-zn-RCv" secondAttribute="trailing" constant="41" id="3yo-vt-R9d"/>
@@ -503,15 +535,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-FE-04P" userLabel="OfferNavigation">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Oqc-3f-Dex"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Settings" id="UXK-5z-Xdy"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -640,6 +663,9 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                                     </constraint>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Profile" id="JiT-d3-OGj"/>
                                 </items>
@@ -911,6 +937,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="6gJ-a5-E8I"/>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Friends Trips" id="wwo-36-c5H"/>
                                 </items>
@@ -968,15 +997,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-J6-CS3" userLabel="BackGround">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="8jN-J6-CS3" userLabel="BackGround">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-bk-Drf">
                                 <rect key="frame" x="10" y="60" width="580" height="481"/>
-                                <color key="backgroundColor" red="0.90344854797979801" green="0.90344854797979801" blue="0.90344854797979801" alpha="0.94000000000000006" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-1V-QCt">
+                                        <rect key="frame" x="140" y="330" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="cNM-yf-fus"/>
+                                            <constraint firstAttribute="height" constant="30" id="jeT-2S-c8B"/>
+                                        </constraints>
+                                        <state key="normal" title="Search" backgroundImage="ButtonBack">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hCf-vs-emP" kind="presentation" id="1pk-N2-hZh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="Dgd-1V-QCt" secondAttribute="centerX" id="IaR-5u-jcq"/>
+                                </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Source" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-d6-DDz" userLabel="Source">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Source" minimumFontSize="17" background="TextBackNew" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-d6-DDz" userLabel="Source">
                                 <rect key="frame" x="150" y="190" width="300" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7bT-bs-eNk"/>
                                     <constraint firstAttribute="height" constant="30" id="WIp-jm-uMd"/>
@@ -984,7 +1032,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-2p-CSp" userLabel="Destination">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Destination" minimumFontSize="17" background="TextBack2" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-2p-CSp" userLabel="Destination">
                                 <rect key="frame" x="150" y="245" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aaP-Df-AdN"/>
@@ -993,7 +1041,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjC-3B-zbT" userLabel="Date">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Date" minimumFontSize="17" background="TextBack2" translatesAutoresizingMaskIntoConstraints="NO" id="EjC-3B-zbT" userLabel="Date">
                                 <rect key="frame" x="150" y="328" width="125" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aLW-dt-LNc"/>
@@ -1002,7 +1050,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InM-8V-RVA" userLabel="Time">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Time" minimumFontSize="17" background="TextBack2" translatesAutoresizingMaskIntoConstraints="NO" id="InM-8V-RVA" userLabel="Time">
                                 <rect key="frame" x="325" y="328" width="125" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="VQN-aE-Hqx"/>
@@ -1019,15 +1067,6 @@
                                     <constraint firstAttribute="width" constant="50" id="gav-4C-nZi"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-1V-QCt">
-                                <rect key="frame" x="276" y="390" width="48" height="30"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hCf-vs-emP" kind="presentation" id="1pk-N2-hZh"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-Tx-KlH" userLabel="Profile Navigation Bar">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                 <constraints>
@@ -1035,6 +1074,9 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                                     </constraint>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Search" id="esN-Ex-HwY"/>
                                 </items>
@@ -1070,11 +1112,9 @@
                             <constraint firstAttribute="centerX" secondItem="cL8-UD-eGf" secondAttribute="centerX" id="8og-VG-G3E"/>
                             <constraint firstAttribute="trailing" secondItem="XSg-Tx-KlH" secondAttribute="trailing" id="8pL-Bn-YVB"/>
                             <constraint firstAttribute="trailing" secondItem="9BW-bk-Drf" secondAttribute="trailing" constant="10" id="DME-mI-ozV"/>
-                            <constraint firstItem="Dgd-1V-QCt" firstAttribute="top" secondItem="cL8-UD-eGf" secondAttribute="bottom" constant="75" id="DWF-mP-2Bm"/>
                             <constraint firstItem="iyD-x0-DAQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gas-Ke-NQY"/>
                             <constraint firstAttribute="bottom" secondItem="8jN-J6-CS3" secondAttribute="bottom" id="Gev-nt-xWx"/>
                             <constraint firstAttribute="trailing" secondItem="8jN-J6-CS3" secondAttribute="trailing" id="Kau-fT-pPU"/>
-                            <constraint firstAttribute="centerX" secondItem="Dgd-1V-QCt" secondAttribute="centerX" id="Ore-mX-e7S"/>
                             <constraint firstItem="NVF-2p-CSp" firstAttribute="top" secondItem="UGG-d6-DDz" secondAttribute="bottom" constant="25" id="QpJ-4Z-UCa"/>
                             <constraint firstItem="EjC-3B-zbT" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="53" id="Spw-Mi-AbY"/>
                             <constraint firstAttribute="centerX" secondItem="NVF-2p-CSp" secondAttribute="centerX" id="TLU-qP-j2Z"/>
@@ -1084,6 +1124,7 @@
                             <constraint firstAttribute="centerX" secondItem="UGG-d6-DDz" secondAttribute="centerX" id="aWy-FU-NkM"/>
                             <constraint firstItem="InM-8V-RVA" firstAttribute="leading" secondItem="cL8-UD-eGf" secondAttribute="trailing" id="cYj-Mu-nCd"/>
                             <constraint firstItem="8jN-J6-CS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f5u-pl-ylc"/>
+                            <constraint firstItem="Dgd-1V-QCt" firstAttribute="top" secondItem="EjC-3B-zbT" secondAttribute="bottom" constant="32" id="fD6-1Y-bNm"/>
                             <constraint firstItem="9BW-bk-Drf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fTb-9o-emV"/>
                             <constraint firstItem="cL8-UD-eGf" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="10" id="jan-e4-eab"/>
                             <constraint firstItem="XSg-Tx-KlH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o4e-Uj-UEa"/>
@@ -1119,7 +1160,7 @@
             </objects>
             <point key="canvasLocation" x="43" y="-2231"/>
         </scene>
-        <!--Search Results Table View Controller-->
+        <!--Search-->
         <scene sceneID="2pe-Fj-L9b">
             <objects>
                 <viewController id="hCf-vs-emP" customClass="SearchResultsTableViewController" customModule="RideShare" customModuleProvider="target" sceneMemberID="viewController">
@@ -1139,9 +1180,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ShU-Yd-YVR"/>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Search Results" id="VR1-B9-sN9">
-                                        <barButtonItem key="leftBarButtonItem" image="Back-25" id="FD3-b1-TfE">
+                                        <barButtonItem key="leftBarButtonItem" image="Left-50" id="FD3-b1-TfE">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="presentation" id="64s-b6-p2D"/>
                                             </connections>
@@ -1149,7 +1193,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97k-Af-NDU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97k-Af-NDU">
                                 <rect key="frame" x="10" y="100" width="580" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1190,9 +1234,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="NameLabel" destination="ypc-d5-g6t" id="WHC-b6-qje"/>
                                             <outlet property="descriptionLabel" destination="3PQ-4p-bkp" id="fgt-m2-arh"/>
@@ -1279,6 +1323,8 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search-50" id="HhS-Gv-RBa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="SearchTableView" destination="97k-Af-NDU" id="pQ9-bp-HHE"/>
                     </connections>
@@ -1287,7 +1333,7 @@
             </objects>
             <point key="canvasLocation" x="811" y="-2234"/>
         </scene>
-        <!--Ride View Controller-->
+        <!--Search-->
         <scene sceneID="NuE-Ye-2fl">
             <objects>
                 <viewController id="q6V-1t-J9i" customClass="RideViewController" customModule="RideShare" customModuleProvider="target" sceneMemberID="viewController">
@@ -1308,13 +1354,16 @@
                                     <constraint firstAttribute="height" constant="60" id="MOe-Cg-NPS"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QC3-qs-2eo"/>
                                 </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686274509807" green="0.41960784313725491" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Ride" id="4Dj-2W-3xO">
                                         <barButtonItem key="leftBarButtonItem" image="Back-25" id="oQa-Ei-Pxe"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQp-9q-cRc">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQp-9q-cRc">
                                 <rect key="frame" x="10" y="70" width="580" height="520"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-9z-t3I" userLabel="Message Table">
@@ -1341,7 +1390,7 @@
                                         <color key="backgroundColor" red="1" green="0.96452898089156902" blue="0.27641712903994919" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="yDx-pr-UVa" firstAttribute="leading" secondItem="cQp-9q-cRc" secondAttribute="leading" constant="5" id="3vT-pJ-fFu"/>
                                     <constraint firstAttribute="trailing" secondItem="yDx-pr-UVa" secondAttribute="trailing" constant="5" id="9ob-eo-T1f"/>
@@ -1371,6 +1420,8 @@
                             <constraint firstItem="0Di-2f-0QG" firstAttribute="top" secondItem="wkx-lu-JyF" secondAttribute="top" id="ye9-Ny-ZVV"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search-50" id="PwL-tk-TLv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUs-Gk-PUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1382,21 +1433,26 @@
         <image name="Back-25" width="25" height="25"/>
         <image name="Back-75" width="75" height="75"/>
         <image name="BlackBackGround" width="2000" height="2000"/>
-        <image name="BrooklynBridge" width="1440" height="900"/>
         <image name="BrooklynBridge.jpg" width="1440" height="900"/>
+        <image name="ButtonBack" width="300" height="30"/>
         <image name="Carpool-75" width="25" height="25"/>
         <image name="Chat-50.png" width="50" height="50"/>
         <image name="Forward-75.png" width="75" height="75"/>
         <image name="Group-75" width="25" height="25"/>
+        <image name="Left-50" width="50" height="50"/>
         <image name="No Animals" width="100" height="100"/>
         <image name="Pizza-100" width="100" height="100"/>
         <image name="ProfileBack" width="800" height="100"/>
+        <image name="Search-50" width="25" height="25"/>
         <image name="Search-75" width="25" height="25"/>
         <image name="Settings-75" width="25" height="25"/>
+        <image name="TextBack2" width="300" height="30"/>
+        <image name="TextBackNew" width="300" height="30"/>
         <image name="User Male Circle-75" width="25" height="25"/>
         <image name="music.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="64s-b6-p2D"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.92549019607843142" green="0.42745098039215684" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
 </document>
