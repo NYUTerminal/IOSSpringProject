@@ -16,6 +16,13 @@
 		266C79E11AEF5F51007BF37F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF11AEEF9C700A01542 /* FBSDKLoginKit.framework */; };
 		266C79E21AEF5F51007BF37F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF21AEEF9C700A01542 /* FBSDKMessengerShareKit.framework */; };
 		266C79E31AEF5F51007BF37F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF31AEEF9C700A01542 /* FBSDKShareKit.framework */; };
+		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
+		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
+		266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E81AEF6BB3007BF37F /* Like@1x.png */; };
+		266C79EC1AEF6BB3007BF37F /* Like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E91AEF6BB3007BF37F /* Like@2x.png */; };
+		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
+		266C79F01AEF6C97007BF37F /* Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EE1AEF6C97007BF37F /* Chat-100.png */; };
+		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		60EF1D2E1AED9B2300FCCDA2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D131AED9B2300FCCDA2 /* BlurView.swift */; };
 		60EF1D2F1AED9B2300FCCDA2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D141AED9B2300FCCDA2 /* DesignableButton.swift */; };
 		60EF1D301AED9B2300FCCDA2 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D151AED9B2300FCCDA2 /* DesignableImageView.swift */; };
@@ -149,6 +156,13 @@
 		00E58EF21AEEF9C700A01542 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = SOURCE_ROOT; };
 		00E58EF31AEEF9C700A01542 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FacebookSDK/FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
 		0EA49977E917F1B7AAC367C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-50.png"; sourceTree = "<group>"; };
+		266C79E61AEF6B21007BF37F /* Us Dollar-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-100.png"; sourceTree = "<group>"; };
+		266C79E81AEF6BB3007BF37F /* Like@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@1x.png"; path = "../Like@1x.png"; sourceTree = "<group>"; };
+		266C79E91AEF6BB3007BF37F /* Like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@2x.png"; path = "../Like@2x.png"; sourceTree = "<group>"; };
+		266C79EA1AEF6BB3007BF37F /* Like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@3x.png"; path = "../Like@3x.png"; sourceTree = "<group>"; };
+		266C79EE1AEF6C97007BF37F /* Chat-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat-100.png"; sourceTree = "<group>"; };
+		266C79EF1AEF6C97007BF37F /* Clock-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-100.png"; sourceTree = "<group>"; };
 		60EF1D131AED9B2300FCCDA2 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		60EF1D141AED9B2300FCCDA2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		60EF1D151AED9B2300FCCDA2 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
@@ -475,6 +489,10 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				266C79EE1AEF6C97007BF37F /* Chat-100.png */,
+				266C79EF1AEF6C97007BF37F /* Clock-100.png */,
+				266C79E61AEF6B21007BF37F /* Us Dollar-100.png */,
+				266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */,
 				CBCC7F771AED8160003C7875 /* TextBackNew.png */,
 				CBCC7F751AED7E63003C7875 /* Left-50.png */,
 				CBCC7F701AED7C65003C7875 /* ButtonBack.png */,
@@ -527,6 +545,9 @@
 				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
+				266C79E81AEF6BB3007BF37F /* Like@1x.png */,
+				266C79E91AEF6BB3007BF37F /* Like@2x.png */,
+				266C79EA1AEF6BB3007BF37F /* Like@3x.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -693,6 +714,7 @@
 				CBCC7F761AED7E63003C7875 /* Left-50.png in Resources */,
 				CB4B92201AE9C46D0017A579 /* time.png in Resources */,
 				60EF1D371AED9B2300FCCDA2 /* Info.plist in Resources */,
+				266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */,
 				60EF1D3A1AED9B2300FCCDA2 /* LoadingView.xib in Resources */,
 				CB4B923E1AE9CEFA0017A579 /* Offer-24.png in Resources */,
 				CB4B92371AE9CAB70017A579 /* Settings-75.png in Resources */,
@@ -708,6 +730,7 @@
 				CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */,
 				CB4B921D1AE9C46D0017A579 /* No Animals.png in Resources */,
 				CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */,
+				266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */,
 				CB4B92441AE9CFD10017A579 /* Carpool-25.png in Resources */,
 				CB4B92401AE9CEFA0017A579 /* Offer-75.png in Resources */,
 				CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */,
@@ -722,15 +745,20 @@
 				CB4B92321AE9CAB70017A579 /* Group-25.png in Resources */,
 				CB4B92301AE9CAB70017A579 /* Cars-50.png in Resources */,
 				CB4B924A1AE9D0310017A579 /* Search-25.png in Resources */,
+				266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */,
 				CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */,
 				CBADFF201AED0B5A0048A3F9 /* No Food-100.png in Resources */,
+				266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */,
 				CBCC7F731AED7C65003C7875 /* ButtonBack.png in Resources */,
 				CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */,
 				CB4B92331AE9CAB70017A579 /* Group-50.png in Resources */,
 				CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */,
 				CB4B92391AE9CAB70017A579 /* User Male Circle-50.png in Resources */,
+				266C79EC1AEF6BB3007BF37F /* Like@2x.png in Resources */,
 				CBADFDE21AECE72A0048A3F9 /* Back-25.png in Resources */,
 				CB4B921B1AE9C46D0017A579 /* location.png in Resources */,
+				266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */,
+				266C79F01AEF6C97007BF37F /* Chat-100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
