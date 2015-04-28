@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
 		00E58EED1AEEF97D00A01542 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */; };
@@ -138,6 +139,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsTableViewController.swift; path = ../SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		0068C8321AEA118F0028870A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
 		00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = ../GoogleMapsFramework/GoogleMaps.framework; sourceTree = SOURCE_ROOT; };
@@ -543,6 +545,7 @@
 				CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */,
 				CB60D5021AE58B360026CD01 /* OfferViewController.swift */,
 				CB60D5001AE58B260026CD01 /* SettingsViewController.swift */,
+				000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -808,6 +811,7 @@
 				60EF1D331AED9B2300FCCDA2 /* DesignableTextField.swift in Sources */,
 				60EF1D451AED9B2300FCCDA2 /* TransitionManager.swift in Sources */,
 				CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */,
+				000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */,
 				0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */,
 				60EF1D411AED9B2300FCCDA2 /* SpringLabel.swift in Sources */,
 				60EF1D401AED9B2300FCCDA2 /* SpringImageView.swift in Sources */,
