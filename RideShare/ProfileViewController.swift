@@ -13,6 +13,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     @IBOutlet weak var username: UITextField!
     
+    @IBOutlet weak var assa: UITextField!
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var pass1: UITextField!
