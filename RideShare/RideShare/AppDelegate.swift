@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         //GMSServices.provideAPIKey("AIzaSyB5S5g1jiQu2oX30WQBKBsav9B7YZasqnY");
         Parse.setApplicationId("KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH", clientKey: "gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl")
        //[Parse setApplicationId:@"KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH"clientKey:@"gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl"];
