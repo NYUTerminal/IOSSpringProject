@@ -19,7 +19,6 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
 
     @IBOutlet weak var pass2: UITextField!
     
-    
     @IBOutlet weak var status: UILabel!
     
     override func viewDidLoad() {
