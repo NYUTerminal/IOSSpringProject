@@ -9,7 +9,7 @@
 import Foundation
 
 
-class ProfileViewController : UIViewController, GMSMapViewDelegate {
+class ProfileViewController : UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var username: UITextField!
     
