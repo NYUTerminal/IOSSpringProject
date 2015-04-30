@@ -20,9 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //GMSServices.provideAPIKey("AIzaSyB5S5g1jiQu2oX30WQBKBsav9B7YZasqnY");
         Parse.setApplicationId("KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH", clientKey: "gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl")
        //[Parse setApplicationId:@"KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH"clientKey:@"gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl"];
+        FBLoginView.self
+        
+        FBProfilePictureView.self
+        
         return true
     }
-
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject?) -> Bool {
+        var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
+        return wasHandled
+    }
     func applicationWillResignActive(application: UIApplication) {
 
 

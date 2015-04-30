@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uRX-xV-hA3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1166,6 +1166,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7J-F5-fLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="710" y="1579"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="xqW-vr-Qz1">
+            <objects>
+                <viewController title="SignUp" id="EC7-sq-cqq" customClass="signUpViewController" customModule="RideShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uXB-nA-deb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXd-eD-smz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Z5-YU-fwa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiD-GM-lRk" customClass="FBLoginView">
+                                <rect key="frame" x="150" y="280" width="300" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wbe-F0-Gkr"/>
+                                    <constraint firstAttribute="width" constant="300" id="ryU-uS-AjX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="JiD-GM-lRk" secondAttribute="centerY" id="DtS-aj-hBK"/>
+                            <constraint firstAttribute="centerX" secondItem="JiD-GM-lRk" secondAttribute="centerX" id="opV-Dk-IUC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fbLoginView" destination="JiD-GM-lRk" id="5BE-1D-ktf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="650-Yp-SWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="2536"/>
         </scene>
         <!--Accepted Offers View Controller-->
         <scene sceneID="Mmn-FV-VpM">
