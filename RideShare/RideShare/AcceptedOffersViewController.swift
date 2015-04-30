@@ -31,7 +31,7 @@ class AcceptedOffersViewController: UIViewController, UITableViewDelegate , UITa
                     self.acceptedOffersTableView.reloadData()
                 }
             } else {
-                // Log details of the failure
+                
                 println("Error: \(error) \(error.userInfo!)")
             }
         }
