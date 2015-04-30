@@ -63,15 +63,6 @@ class RideViewController: UIViewController /*, GMSMapViewDelegate */{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("messagecell") as UITableViewCell
         //let cell = tableView.dequeueReusableCellWithIdentifier("PostCell" , forIndexPath: indexPath) as UITableViewCell
-        let post = techFeeds[indexPath.row]
-        
-        if HNManager.sharedManager().hasUserReadPost(post) {
-            stylePostCellAsRead(cell)
-        }
-        
-        cell.textLabel.text = post.Title
-        cell.detailTextLabel?.text = "\(post.Points) points by \(post.Username)"
-        
         return cell
     }
     
