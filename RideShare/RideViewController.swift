@@ -39,11 +39,13 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     @IBOutlet weak var messageTable: UITableView!
     @IBOutlet weak var messageBox: UITextField!
+    
+    
     override func viewDidLoad() {
         fetchMessages()
         fetchSettingsOfOffer()
-        fetchOffer()
-        getNumberOfMessages()
+        //fetchOffer()
+        //getNumberOfMessages()
     }
     
     func getNumberOfMessages(){
