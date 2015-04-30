@@ -27,10 +27,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     @IBOutlet weak var money: UILabel!
     @IBOutlet weak var likes: UILabel!
     @IBOutlet weak var messages: UILabel!
-    
-    
-    
-    
     @IBOutlet weak var music: UIImageView!
     @IBOutlet weak var pizza: UIImageView!
     @IBOutlet weak var dog: UIImageView!
@@ -39,7 +35,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     var pizza1 = true
     var dog1 = true
     var chat1:Bool = true
-    
     var searchObj:PFObject!
     
     @IBOutlet weak var messageTable: UITableView!
@@ -48,6 +43,31 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         fetchMessages()
         fetchSettingsOfOffer()
         fetchOffer()
+        getNumberOfMessages()
+    }
+    
+    func getNumberOfMessages(){
+        var query = PFQuery(className:"Message")
+        query.whereKey("offerId", equalTo:self.offerId)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+            if error == nil {
+                if let objects = objects as? [PFObject] {
+                    self.messages.text = "\(objects.count)"
+                }
+            }
+        }
+        
+        var query2 = PFQuery(className:"Offer")
+        query2.whereKey("objectId", equalTo:offerId)
+        query2.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                let object = object as PFObject!
+                var countLikes = object.valueForKey("likes") as Int!
+                self.likes.text = "\(countLikes)"
+            }
+        }
     }
     
     
@@ -62,11 +82,11 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 self.source.text = object.valueForKey("source") as String!
                 self.money.text = object.valueForKey("money") as String!
                 println(object.valueForKey("description") as? String)
-                self.desc.text = object.valueForKey("description") as String!
+                //self.desc.text = object.valueForKey("description") as String!
+                self.timeago.text = object.valueForKey("time") as String!
+                self.time.text = object.valueForKey("time") as String!
             }
         }
-        
-        
     }
     
     func fetchSettingsOfOffer(){
@@ -110,9 +130,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                     self.dog.image = UIImage(named: "Dog.png") as UIImage?
                     self.dog1 = true
                 }
-                
-                
-                
             }
         }
     }
