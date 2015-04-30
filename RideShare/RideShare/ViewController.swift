@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, GMSMapViewDelegate , UITextFieldDelegate{
+class ViewController: UIViewController , UITextFieldDelegate{
     
     
     @IBOutlet weak var source: UITextField!
@@ -21,7 +21,7 @@ class ViewController: UIViewController, GMSMapViewDelegate , UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        time.delegate=self
+        //time.delegate=self
     }
 
     override func didReceiveMemoryWarning() {

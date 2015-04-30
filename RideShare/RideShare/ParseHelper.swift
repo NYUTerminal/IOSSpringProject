@@ -22,7 +22,7 @@ class ParseHelper{
                 user.address=PFObject.valueForKey("address") as String!
             } else {
                 // Log details of the failure
-                println("Error: \(error!) \(error!.userInfo!)")
+                //println("Error: \(error!) \(error!.userInfo?)")
             }
         }
         return user
@@ -30,7 +30,7 @@ class ParseHelper{
     
     
     func getMessages(offer_id:String) -> [Message] {
-        var query = PFQuery(className:"message")
+        var query = PFQuery(className:"Message")
         var messageList:[Message] = []
         query.whereKey("offerId", equalTo:offer_id)
         query.findObjectsInBackgroundWithBlock {
@@ -39,11 +39,11 @@ class ParseHelper{
                 if let objects = objects as? [PFObject] {
                     for object in objects {
                         var messageObject:Message = Message()
-                        messageObject.date = object.valueForKey("from") as String!
+                        messageObject.date = object.valueForKey("date") as String!
                         messageObject.from = object.valueForKey("from") as String!
-                        messageObject.to = object.valueForKey("from") as String!
-                        messageObject.offerId = object.valueForKey("from") as String!
-                        messageObject.numberOfLikes = object.valueForKey("from") as Int!
+                        messageObject.to = object.valueForKey("to") as String!
+                        messageObject.offerId = object.valueForKey("offerId") as String!
+                        messageObject.numberOfLikes = object.valueForKey("likes") as Int!
                         messageList.append(messageObject)
                     }
                 }
@@ -66,6 +66,7 @@ class ParseHelper{
         message["time"] = messageObj.time
         message["offerId"] = messageObj.offerId
         message["likes"] = messageObj.numberOfLikes
+        message["message"] = messageObj.message
         message.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
