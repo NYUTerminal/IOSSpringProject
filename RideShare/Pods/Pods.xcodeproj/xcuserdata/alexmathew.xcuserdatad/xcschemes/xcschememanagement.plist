@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-HockeySDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-Parse.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,12 +32,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>254161F1C897482549424526</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36D473F6EC48644010384E2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A70BD9E5B6E174A1B6A36AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8EE52ED95EB6C05D17E720EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CA5A4B623BB77FF1224465FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB8971D4386538FB90F6BE51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA44BDF1F51AE83ABD05F70A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
