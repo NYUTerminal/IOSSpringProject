@@ -17,7 +17,9 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
     
     func loadData() {
         myOffers = []
+        
         var findmyOffers = PFQuery(className: "Offer")
+        findmyOffers.whereKey("username", equalTo:"Tom")
         findmyOffers.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
