@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */; };
+		0059E6B11AF1DC880020A27B /* MyOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */; };
+		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
@@ -151,6 +153,8 @@
 
 /* Begin PBXFileReference section */
 		000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersViewController.swift; sourceTree = "<group>"; };
+		0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewCell.swift; sourceTree = "<group>"; };
 		0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsTableViewController.swift; path = ../SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		0068C8321AEA118F0028870A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
 		00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = ../GoogleMapsFramework/GoogleMaps.framework; sourceTree = SOURCE_ROOT; };
@@ -580,6 +584,8 @@
 				CB9272941AF1E08700AC7E18 /* Message.swift */,
 				CB9272981AF1EC4200AC7E18 /* ParseHelper.swift */,
 				CB92729A1AF1F23E00AC7E18 /* User.swift */,
+				0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */,
+				0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -826,7 +832,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EF1D301AED9B2300FCCDA2 /* DesignableImageView.swift in Sources */,
+				0059E6B11AF1DC880020A27B /* MyOffersViewController.swift in Sources */,
 				60EF1D321AED9B2300FCCDA2 /* DesignableTabBarController.swift in Sources */,
+				0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */,
 				60EF1D3D1AED9B2300FCCDA2 /* Spring.swift in Sources */,
 				60EF1D461AED9B2300FCCDA2 /* TransitionZoom.swift in Sources */,
 				CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */,
