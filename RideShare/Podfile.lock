@@ -5,14 +5,17 @@ PODS:
   - Bolts/AppLinks (1.1.5):
     - Bolts/Tasks
   - Bolts/Tasks (1.1.5)
+  - HockeySDK (3.6.4)
   - Parse (1.7.2):
     - Bolts (~> 1.1)
 
 DEPENDENCIES:
+  - HockeySDK (~> 3.6.4)
   - Parse
 
 SPEC CHECKSUMS:
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  HockeySDK: c07cdd580296737edcd0963e292c19885a53f563
   Parse: e1959adb9fe2fcd4736dac20b3ac691d47a4f06c
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.36.3
