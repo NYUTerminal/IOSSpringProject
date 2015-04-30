@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000488761AF201B400BB8BD6 /* AcceptedOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */; };
+		0004887A1AF2028400BB8BD6 /* AcceptedOffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */; };
 		000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */; };
 		0059E6B11AF1DC880020A27B /* MyOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */; };
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
@@ -152,6 +154,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedOffersViewController.swift; sourceTree = "<group>"; };
+		000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedOffersCell.swift; sourceTree = "<group>"; };
 		000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersViewController.swift; sourceTree = "<group>"; };
 		0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewCell.swift; sourceTree = "<group>"; };
@@ -586,6 +590,8 @@
 				CB92729A1AF1F23E00AC7E18 /* User.swift */,
 				0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */,
 				0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */,
+				000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */,
+				000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -832,6 +838,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EF1D301AED9B2300FCCDA2 /* DesignableImageView.swift in Sources */,
+				0004887A1AF2028400BB8BD6 /* AcceptedOffersCell.swift in Sources */,
 				0059E6B11AF1DC880020A27B /* MyOffersViewController.swift in Sources */,
 				60EF1D321AED9B2300FCCDA2 /* DesignableTabBarController.swift in Sources */,
 				0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */,
@@ -871,6 +878,7 @@
 				60EF1D401AED9B2300FCCDA2 /* SpringImageView.swift in Sources */,
 				60EF1D311AED9B2300FCCDA2 /* DesignableLabel.swift in Sources */,
 				60EF1D3F1AED9B2300FCCDA2 /* SpringButton.swift in Sources */,
+				000488761AF201B400BB8BD6 /* AcceptedOffersViewController.swift in Sources */,
 				60EF1D2F1AED9B2300FCCDA2 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
