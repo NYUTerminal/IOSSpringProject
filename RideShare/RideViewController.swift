@@ -37,4 +37,13 @@ class RideViewController: UIViewController /*, GMSMapViewDelegate */{
     }
     
     
+    
+    func getMessages(){
+        
+        
+    }
+    
+    
+    
+    
 }

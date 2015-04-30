@@ -184,6 +184,9 @@
                                                         <include reference="yMH-e1-irN"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="getDate:" destination="7J3-4T-2A3" eventType="editingDidEnd" id="NhM-eh-HV1"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Time" minimumFontSize="17" background="TextBack2" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-EQ-6ng">
                                                 <rect key="frame" x="315" y="298" width="125" height="30"/>
@@ -194,6 +197,9 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="getTime:" destination="7J3-4T-2A3" eventType="editingDidEnd" id="Gsg-db-k2Q"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vac-hp-1r9">
                                                 <rect key="frame" x="265" y="298" width="50" height="30"/>
@@ -347,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0d-82-kBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="-1451"/>
+            <point key="canvasLocation" x="44" y="-1530"/>
         </scene>
         <!--Settings-->
         <scene sceneID="OfN-at-Uu6">
@@ -1127,7 +1133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hT-AS-X4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="-762"/>
+            <point key="canvasLocation" x="43" y="-763"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kK2-or-axj">
@@ -1218,6 +1224,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="getDate:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="m44-0s-FKz"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="   Time" minimumFontSize="17" background="TextBack2" translatesAutoresizingMaskIntoConstraints="NO" id="InM-8V-RVA" userLabel="Time">
                                 <rect key="frame" x="325" y="315" width="125" height="30"/>
@@ -1228,6 +1237,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="getTime:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="6ki-RP-SQu"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-UD-eGf" userLabel="GapBetweendateandtime">
                                 <rect key="frame" x="275" y="285" width="50" height="30"/>
@@ -1325,6 +1337,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Search" image="Search-75" id="PVj-FL-4dQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="date" destination="EjC-3B-zbT" id="rhA-1d-F0M"/>
+                        <outlet property="destination" destination="NVF-2p-CSp" id="lvb-FG-u6S"/>
+                        <outlet property="source" destination="UGG-d6-DDz" id="4Kq-ZV-KtQ"/>
+                        <outlet property="time" destination="InM-8V-RVA" id="FQc-PD-P6P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1949,6 +1967,7 @@
                 <exit id="wgR-tE-VZj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2314" y="-2172"/>
+
         </scene>
     </scenes>
     <resources>

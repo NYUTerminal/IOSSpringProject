@@ -9,7 +9,7 @@
 import Foundation
 
 
-class OfferViewController: UIViewController, GMSMapViewDelegate {
+class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDelegate {
     
     @IBOutlet weak var rideName: UITextField!
     
@@ -27,16 +27,48 @@ class OfferViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var carType: UITextField!
     
-    
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
+//        super.viewDidLoad()
+//        //date.text =
+//        var formatter = NSDateFormatter()
+//        formatter.dateFormat = "mm-dd-yyyy"
+//        
+//        var currentDate =    self.datePicker.date
+//        date.text = formatter.stringFromDate(currentDate)
         // Do any additional setup after loading the view, typically from a nib.
+        //getCurrrentDate()
+        time.delegate=self
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+
+    func getDatePicker(){
+        date.resignFirstResponder()
+        DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date) {
+            (date) -> Void in
+            self.date.text = "\(date)"
+        }
+    }
+    
+    func getTimePicker(){
+        time.resignFirstResponder()
+        DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Time) {
+            (date) -> Void in
+            self.date.text = "\(date)"
+        }
+    }
+    
+    @IBAction func getDate(sender: UITextField) {
+        getDatePicker()
+    }
+
+
+    @IBAction func getTime(sender: UITextField) {
+        getTimePicker()
     }
     
     @IBAction func createOffer(sender: AnyObject) {

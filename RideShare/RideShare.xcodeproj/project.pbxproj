@@ -12,12 +12,6 @@
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
-		266C79DE1AEF5F51007BF37F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EEE1AEEF9C700A01542 /* Bolts.framework */; };
-		266C79DF1AEF5F51007BF37F /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EEF1AEEF9C700A01542 /* FBAudienceNetwork.framework */; };
-		266C79E01AEF5F51007BF37F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF01AEEF9C700A01542 /* FBSDKCoreKit.framework */; };
-		266C79E11AEF5F51007BF37F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF11AEEF9C700A01542 /* FBSDKLoginKit.framework */; };
-		266C79E21AEF5F51007BF37F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF21AEEF9C700A01542 /* FBSDKMessengerShareKit.framework */; };
-		266C79E31AEF5F51007BF37F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF31AEEF9C700A01542 /* FBSDKShareKit.framework */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
 		266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E81AEF6BB3007BF37F /* Like@1x.png */; };
@@ -103,7 +97,6 @@
 		CB4B924E1AE9D5A20017A579 /* BrooklynBridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */; };
 		CB4B92521AE9D7230017A579 /* tanrantulNebula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */; };
 		CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5001AE58B260026CD01 /* SettingsViewController.swift */; };
-		CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5021AE58B360026CD01 /* OfferViewController.swift */; };
 		CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */; };
 		CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60D5061AE58B610026CD01 /* ProfileViewController.swift */; };
 		CB8283431AE08E2300645AD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8283421AE08E2300645AD3 /* AVFoundation.framework */; };
@@ -129,6 +122,14 @@
 		CBADFF201AED0B5A0048A3F9 /* No Food-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF1E1AED0B5A0048A3F9 /* No Food-100.png */; };
 		CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF1F1AED0B5A0048A3F9 /* Pizza-100.png */; };
 		CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF221AED0BA00048A3F9 /* Chat-50.png */; };
+		CBBC544C1AF17DFA00452CA0 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */; };
+		CBBC544E1AF182E300452CA0 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */; };
+		CBBC544F1AF1DC5C00452CA0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EEE1AEEF9C700A01542 /* Bolts.framework */; };
+		CBBC54501AF1DC5C00452CA0 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EEF1AEEF9C700A01542 /* FBAudienceNetwork.framework */; };
+		CBBC54511AF1DC5C00452CA0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF01AEEF9C700A01542 /* FBSDKCoreKit.framework */; };
+		CBBC54521AF1DC5C00452CA0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF11AEEF9C700A01542 /* FBSDKLoginKit.framework */; };
+		CBBC54531AF1DC5C00452CA0 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF21AEEF9C700A01542 /* FBSDKMessengerShareKit.framework */; };
+		CBBC54541AF1DC5C00452CA0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E58EF31AEEF9C700A01542 /* FBSDKShareKit.framework */; };
 		CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */; };
 		CBCC7F731AED7C65003C7875 /* ButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F701AED7C65003C7875 /* ButtonBack.png */; };
 		CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F711AED7C65003C7875 /* TextBack2.png */; };
@@ -258,7 +259,6 @@
 		CB4B924D1AE9D5A20017A579 /* BrooklynBridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrooklynBridge.jpg; sourceTree = "<group>"; };
 		CB4B92501AE9D7230017A579 /* tanrantulNebula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tanrantulNebula.jpg; sourceTree = "<group>"; };
 		CB60D5001AE58B260026CD01 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
-		CB60D5021AE58B360026CD01 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
 		CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTripsViewController.swift; path = ../FriendTripsViewController.swift; sourceTree = "<group>"; };
 		CB60D5061AE58B610026CD01 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		CB8283421AE08E2300645AD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -284,6 +284,8 @@
 		CBADFF1E1AED0B5A0048A3F9 /* No Food-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No Food-100.png"; sourceTree = "<group>"; };
 		CBADFF1F1AED0B5A0048A3F9 /* Pizza-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pizza-100.png"; sourceTree = "<group>"; };
 		CBADFF221AED0BA00048A3F9 /* Chat-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat-50.png"; sourceTree = "<group>"; };
+		CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferViewController.swift; path = ../OfferViewController.swift; sourceTree = "<group>"; };
+		CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileBack.png; sourceTree = "<group>"; };
 		CBCC7F701AED7C65003C7875 /* ButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBack.png; sourceTree = "<group>"; };
 		CBCC7F711AED7C65003C7875 /* TextBack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBack2.png; sourceTree = "<group>"; };
@@ -297,12 +299,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266C79DE1AEF5F51007BF37F /* Bolts.framework in Frameworks */,
-				266C79DF1AEF5F51007BF37F /* FBAudienceNetwork.framework in Frameworks */,
-				266C79E01AEF5F51007BF37F /* FBSDKCoreKit.framework in Frameworks */,
-				266C79E11AEF5F51007BF37F /* FBSDKLoginKit.framework in Frameworks */,
-				266C79E21AEF5F51007BF37F /* FBSDKMessengerShareKit.framework in Frameworks */,
-				266C79E31AEF5F51007BF37F /* FBSDKShareKit.framework in Frameworks */,
+				CBBC544F1AF1DC5C00452CA0 /* Bolts.framework in Frameworks */,
+				CBBC54501AF1DC5C00452CA0 /* FBAudienceNetwork.framework in Frameworks */,
+				CBBC54511AF1DC5C00452CA0 /* FBSDKCoreKit.framework in Frameworks */,
+				CBBC54521AF1DC5C00452CA0 /* FBSDKLoginKit.framework in Frameworks */,
+				CBBC54531AF1DC5C00452CA0 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				CBBC54541AF1DC5C00452CA0 /* FBSDKShareKit.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
 				CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */,
@@ -559,6 +561,8 @@
 		CB95BA391ACB5AC000DDEB65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */,
+				CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */,
 				CBADFDE31AECEAED0048A3F9 /* RideViewController.swift */,
 				0068C8321AEA118F0028870A /* SearchTableViewCell.swift */,
 				0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */,
@@ -566,7 +570,6 @@
 				CB08C70E1A941FDB00D7997D /* ViewController.swift */,
 				CB60D5061AE58B610026CD01 /* ProfileViewController.swift */,
 				CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */,
-				CB60D5021AE58B360026CD01 /* OfferViewController.swift */,
 				CB60D5001AE58B260026CD01 /* SettingsViewController.swift */,
 				000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */,
 				0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */,
@@ -826,8 +829,9 @@
 				CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */,
 				60EF1D3B1AED9B2300FCCDA2 /* Misc.swift in Sources */,
 				60EF1D391AED9B2300FCCDA2 /* LoadingView.swift in Sources */,
-				CB60D5031AE58B360026CD01 /* OfferViewController.swift in Sources */,
 				CB08C70D1A941FDB00D7997D /* AppDelegate.swift in Sources */,
+				CBBC544C1AF17DFA00452CA0 /* OfferViewController.swift in Sources */,
+				CBBC544E1AF182E300452CA0 /* DatePickerDialog.swift in Sources */,
 				60EF1D441AED9B2300FCCDA2 /* SpringView.swift in Sources */,
 				60EF1D2E1AED9B2300FCCDA2 /* BlurView.swift in Sources */,
 				60EF1D351AED9B2300FCCDA2 /* DesignableView.swift in Sources */,
@@ -995,7 +999,10 @@
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1028,7 +1035,10 @@
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
