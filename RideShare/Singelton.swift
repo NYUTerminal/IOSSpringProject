@@ -17,6 +17,8 @@ class Singelton {
     
     var searchResults:[PFObject] = []
     
+    var loginUserId:String = ""
+    
     class var sharedInstance: Singelton {
         
         struct Static {

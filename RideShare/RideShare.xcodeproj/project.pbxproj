@@ -105,6 +105,10 @@
 		CB82834D1AE08EE100645AD3 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB82834C1AE08EE100645AD3 /* libc++.dylib */; };
 		CB82834F1AE08EE900645AD3 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB82834E1AE08EE900645AD3 /* libicucore.dylib */; };
 		CB8283511AE08EF800645AD3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8283501AE08EF800645AD3 /* OpenGLES.framework */; };
+		CB9272951AF1E08700AC7E18 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9272941AF1E08700AC7E18 /* Message.swift */; };
+		CB9272971AF1E1D600AC7E18 /* Calendar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9272961AF1E1D600AC7E18 /* Calendar-50.png */; };
+		CB9272991AF1EC4200AC7E18 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9272981AF1EC4200AC7E18 /* ParseHelper.swift */; };
+		CB92729B1AF1F23E00AC7E18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB92729A1AF1F23E00AC7E18 /* User.swift */; };
 		CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDD1AECE46C0048A3F9 /* Back-75.png */; };
 		CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */; };
 		CBADFDE21AECE72A0048A3F9 /* Back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDE11AECE72A0048A3F9 /* Back-25.png */; };
@@ -159,9 +163,9 @@
 		0EA49977E917F1B7AAC367C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-50.png"; sourceTree = "<group>"; };
 		266C79E61AEF6B21007BF37F /* Us Dollar-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-100.png"; sourceTree = "<group>"; };
-		266C79E81AEF6BB3007BF37F /* Like@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@1x.png"; path = "../Like@1x.png"; sourceTree = "<group>"; };
-		266C79E91AEF6BB3007BF37F /* Like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@2x.png"; path = "../Like@2x.png"; sourceTree = "<group>"; };
-		266C79EA1AEF6BB3007BF37F /* Like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Like@3x.png"; path = "../Like@3x.png"; sourceTree = "<group>"; };
+		266C79E81AEF6BB3007BF37F /* Like@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@1x.png"; sourceTree = "<group>"; };
+		266C79E91AEF6BB3007BF37F /* Like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@2x.png"; sourceTree = "<group>"; };
+		266C79EA1AEF6BB3007BF37F /* Like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@3x.png"; sourceTree = "<group>"; };
 		266C79EE1AEF6C97007BF37F /* Chat-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat-100.png"; sourceTree = "<group>"; };
 		266C79EF1AEF6C97007BF37F /* Clock-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-100.png"; sourceTree = "<group>"; };
 		60EF1D131AED9B2300FCCDA2 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -265,6 +269,10 @@
 		CB82834C1AE08EE100645AD3 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		CB82834E1AE08EE900645AD3 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		CB8283501AE08EF800645AD3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CB9272941AF1E08700AC7E18 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CB9272961AF1E1D600AC7E18 /* Calendar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-50.png"; sourceTree = "<group>"; };
+		CB9272981AF1EC4200AC7E18 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		CB92729A1AF1F23E00AC7E18 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBADFDDD1AECE46C0048A3F9 /* Back-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-75.png"; sourceTree = "<group>"; };
 		CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forward-75.png"; sourceTree = "<group>"; };
 		CBADFDE11AECE72A0048A3F9 /* Back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-25.png"; sourceTree = "<group>"; };
@@ -491,6 +499,10 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CB9272961AF1E1D600AC7E18 /* Calendar-50.png */,
+				266C79E81AEF6BB3007BF37F /* Like@1x.png */,
+				266C79E91AEF6BB3007BF37F /* Like@2x.png */,
+				266C79EA1AEF6BB3007BF37F /* Like@3x.png */,
 				266C79EE1AEF6C97007BF37F /* Chat-100.png */,
 				266C79EF1AEF6C97007BF37F /* Clock-100.png */,
 				266C79E61AEF6B21007BF37F /* Us Dollar-100.png */,
@@ -547,9 +559,6 @@
 				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
-				266C79E81AEF6BB3007BF37F /* Like@1x.png */,
-				266C79E91AEF6BB3007BF37F /* Like@2x.png */,
-				266C79EA1AEF6BB3007BF37F /* Like@3x.png */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -568,6 +577,9 @@
 				CB60D5041AE58B490026CD01 /* FriendTripsViewController.swift */,
 				CB60D5001AE58B260026CD01 /* SettingsViewController.swift */,
 				000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */,
+				CB9272941AF1E08700AC7E18 /* Message.swift */,
+				CB9272981AF1EC4200AC7E18 /* ParseHelper.swift */,
+				CB92729A1AF1F23E00AC7E18 /* User.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -725,6 +737,7 @@
 				CB4B923A1AE9CAB70017A579 /* User Male Circle-75.png in Resources */,
 				CB4B92381AE9CAB70017A579 /* User Male Circle-25.png in Resources */,
 				CB4B922F1AE9CAB70017A579 /* Cars-25.png in Resources */,
+				CB9272971AF1E1D600AC7E18 /* Calendar-50.png in Resources */,
 				CB4B920D1AE992690017A579 /* ios-linen.jpg in Resources */,
 				CB4780E41AEF335900F7A9C6 /* Podfile in Resources */,
 				CB4B924E1AE9D5A20017A579 /* BrooklynBridge.jpg in Resources */,
@@ -817,6 +830,7 @@
 				60EF1D3D1AED9B2300FCCDA2 /* Spring.swift in Sources */,
 				60EF1D461AED9B2300FCCDA2 /* TransitionZoom.swift in Sources */,
 				CB60D5051AE58B490026CD01 /* FriendTripsViewController.swift in Sources */,
+				CB9272991AF1EC4200AC7E18 /* ParseHelper.swift in Sources */,
 				60EF1D341AED9B2300FCCDA2 /* DesignableTextView.swift in Sources */,
 				CB08C70F1A941FDB00D7997D /* ViewController.swift in Sources */,
 				60EF1D3B1AED9B2300FCCDA2 /* Misc.swift in Sources */,
@@ -837,9 +851,11 @@
 				CBADFDE41AECEAED0048A3F9 /* RideViewController.swift in Sources */,
 				60EF1D3E1AED9B2300FCCDA2 /* SpringAnimation.swift in Sources */,
 				60EF1D381AED9B2300FCCDA2 /* KeyboardLayoutConstraint.swift in Sources */,
+				CB92729B1AF1F23E00AC7E18 /* User.swift in Sources */,
 				CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */,
 				60EF1D331AED9B2300FCCDA2 /* DesignableTextField.swift in Sources */,
 				60EF1D451AED9B2300FCCDA2 /* TransitionManager.swift in Sources */,
+				CB9272951AF1E08700AC7E18 /* Message.swift in Sources */,
 				CB60D5071AE58B610026CD01 /* ProfileViewController.swift in Sources */,
 				000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */,
 				0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */,

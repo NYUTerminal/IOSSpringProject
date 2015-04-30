@@ -11,6 +11,12 @@ import Foundation
 
 class RideViewController: UIViewController /*, GMSMapViewDelegate */{
     
+    var messageList:[Message] = []
+    
+    var offerId:String = ""
+    
+    var offerUserId:String = ""
+    
     override func viewDidLoad() {
 //        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
 //            longitude: 151.20, zoom: 6)
@@ -37,12 +43,37 @@ class RideViewController: UIViewController /*, GMSMapViewDelegate */{
     }
     
     
-    
-    func getMessages(){
+    func fetchMessages(){
+        self.messageList = ParseHelper().getMessages(offerId)
         
         
     }
+
     
+    
+    
+
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messageList.count
+    }
+
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("messagecell") as UITableViewCell
+        //let cell = tableView.dequeueReusableCellWithIdentifier("PostCell" , forIndexPath: indexPath) as UITableViewCell
+        let post = techFeeds[indexPath.row]
+        
+        if HNManager.sharedManager().hasUserReadPost(post) {
+            stylePostCellAsRead(cell)
+        }
+        
+        cell.textLabel.text = post.Title
+        cell.detailTextLabel?.text = "\(post.Points) points by \(post.Username)"
+        
+        return cell
+    }
     
     
     
