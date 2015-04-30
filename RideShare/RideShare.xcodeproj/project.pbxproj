@@ -21,7 +21,6 @@
 		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
-		60DD46A41AF1FFA000E8AD10 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
 		60EF1D2E1AED9B2300FCCDA2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D131AED9B2300FCCDA2 /* BlurView.swift */; };
 		60EF1D2F1AED9B2300FCCDA2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D141AED9B2300FCCDA2 /* DesignableButton.swift */; };
@@ -56,6 +55,7 @@
 		CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7131A941FDB00D7997D /* Images.xcassets */; };
 		CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7151A941FDB00D7997D /* LaunchScreen.xib */; };
 		CB08C7231A941FDB00D7997D /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C7221A941FDB00D7997D /* RideShareTests.swift */; };
+		CB371DB91AF2777500A8CDCC /* Location-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB371DB81AF2777500A8CDCC /* Location-100.png */; };
 		CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5081A9BF4A3000C66DF /* Accounts.framework */; };
 		CB44B50B1A9BF4AC000C66DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */; };
 		CB44B50D1A9BF4B6000C66DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B50C1A9BF4B6000C66DF /* CFNetwork.framework */; };
@@ -122,6 +122,7 @@
 		CB98DB021AF22DD800359658 /* No-Pizza-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DAFE1AF22DD800359658 /* No-Pizza-100.png */; };
 		CB98DB041AF22DFB00359658 /* No-Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB031AF22DFB00359658 /* No-Chat-100.png */; };
 		CB98DB061AF22E2600359658 /* Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB051AF22E2600359658 /* Chat-100.png */; };
+		CBACD9C61AF2A017006F0E95 /* CarPool2-large.png in Resources */ = {isa = PBXBuildFile; fileRef = CBACD9C51AF2A017006F0E95 /* CarPool2-large.png */; };
 		CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDD1AECE46C0048A3F9 /* Back-75.png */; };
 		CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */; };
 		CBADFDE21AECE72A0048A3F9 /* Back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDE11AECE72A0048A3F9 /* Back-25.png */; };
@@ -139,6 +140,7 @@
 		CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF221AED0BA00048A3F9 /* Chat-50.png */; };
 		CBBC544C1AF17DFA00452CA0 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */; };
 		CBBC544E1AF182E300452CA0 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */; };
+		CBC98AA91AF2993C00E7BDAD /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */; };
 		CBCC7F731AED7C65003C7875 /* ButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F701AED7C65003C7875 /* ButtonBack.png */; };
 		CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F711AED7C65003C7875 /* TextBack2.png */; };
@@ -213,6 +215,7 @@
 		CB08C71C1A941FDB00D7997D /* RideShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C7211A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C7221A941FDB00D7997D /* RideShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareTests.swift; sourceTree = "<group>"; };
+		CB371DB81AF2777500A8CDCC /* Location-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location-100.png"; sourceTree = "<group>"; };
 		CB44B5081A9BF4A3000C66DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CB44B50C1A9BF4B6000C66DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -281,6 +284,7 @@
 		CB98DAFE1AF22DD800359658 /* No-Pizza-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No-Pizza-100.png"; sourceTree = "<group>"; };
 		CB98DB031AF22DFB00359658 /* No-Chat-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "No-Chat-100.png"; sourceTree = "<group>"; };
 		CB98DB051AF22E2600359658 /* Chat-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat-100.png"; sourceTree = "<group>"; };
+		CBACD9C51AF2A017006F0E95 /* CarPool2-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CarPool2-large.png"; sourceTree = "<group>"; };
 		CBADFDDD1AECE46C0048A3F9 /* Back-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-75.png"; sourceTree = "<group>"; };
 		CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forward-75.png"; sourceTree = "<group>"; };
 		CBADFDE11AECE72A0048A3F9 /* Back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-25.png"; sourceTree = "<group>"; };
@@ -311,8 +315,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC98AA91AF2993C00E7BDAD /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
-				60DD46A41AF1FFA000E8AD10 /* FacebookSDK.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
 				CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */,
@@ -422,6 +426,7 @@
 		CB08C7091A941FDB00D7997D /* RideShare */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B92081AE845910017A579 /* Singelton.swift */,
 				CB44B5221A9BF98A000C66DF /* RideShare-Bridging-Header.h */,
 				CB95BA391ACB5AC000DDEB65 /* Controller */,
 				CB9272A21AF1FDD200AC7E18 /* Objects */,
@@ -493,6 +498,8 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CBACD9C51AF2A017006F0E95 /* CarPool2-large.png */,
+				CB371DB81AF2777500A8CDCC /* Location-100.png */,
 				CB98DB051AF22E2600359658 /* Chat-100.png */,
 				CB98DB031AF22DFB00359658 /* No-Chat-100.png */,
 				CB98DAFC1AF22DD800359658 /* No-Dog-100.png */,
@@ -574,7 +581,6 @@
 		CB95BA391ACB5AC000DDEB65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CB4B92081AE845910017A579 /* Singelton.swift */,
 				CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */,
 				CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */,
 				CBADFDE31AECEAED0048A3F9 /* RideViewController.swift */,
@@ -761,6 +767,8 @@
 				CB4B92351AE9CAB70017A579 /* Settings-25.png in Resources */,
 				CB4B924C1AE9D0310017A579 /* Search-75.png in Resources */,
 				CB4B921D1AE9C46D0017A579 /* No Animals.png in Resources */,
+				CB371DB91AF2777500A8CDCC /* Location-100.png in Resources */,
+				CBACD9C61AF2A017006F0E95 /* CarPool2-large.png in Resources */,
 				CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */,
 				CB98DB021AF22DD800359658 /* No-Pizza-100.png in Resources */,
 				266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */,
@@ -1021,25 +1029,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2",
-					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
-					/Users/MeanMachine/Documents/NYU,
-					"Classes/SecondSem/IOS/IOSSpringResources/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					/Users/kushaljogi/Documents/FacebookSDK,
-					/Users/alexmathew/Desktop/IOSSpringProject/GoogleMapsFramework,
-					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/GitHub/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					"/Users/MeanMachine/Documents/NYU\\ Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK",
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1062,25 +1053,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2",
-					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
-					/Users/MeanMachine/Documents/NYU,
-					"Classes/SecondSem/IOS/IOSSpringResources/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					/Users/kushaljogi/Documents/FacebookSDK,
-					/Users/alexmathew/Desktop/IOSSpringProject/GoogleMapsFramework,
-					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
-					/Users/GitHub/IOSSpringProject/FacebookSDK,
-					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					"/Users/MeanMachine/Documents/NYU\\ Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK",
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

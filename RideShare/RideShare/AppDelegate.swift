@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        //[Parse setApplicationId:@"KIDfvIr5BERUpEglPgqxUu8ruXv8GkqEgkHzQGMH"clientKey:@"gXO5TwPqi4yRJ64ZJm9w1kFtCupRbIEsiE4n5BPl"];
         FBLoginView.self
         
-        FBProfilePictureView.self
+       FBProfilePictureView.self
         
         return true
     }

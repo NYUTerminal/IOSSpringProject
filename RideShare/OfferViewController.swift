@@ -27,6 +27,12 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
     
     @IBOutlet weak var carType: UITextField!
     
+    @IBOutlet weak var money: UITextField!
+    
+    var userName = Singelton.sharedInstance.loginUserName
+    
+    var userId = Singelton.sharedInstance.loginUserId
+    
     override func viewDidLoad() {
 //        super.viewDidLoad()
 //        //date.text =
@@ -82,7 +88,10 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
             offerClass["time"] = time.text
             offerClass["carNumber"] = carNumber.text
             offerClass["carType"] = carType.text
-            offerClass["username"] = Singelton.sharedInstance.loginUserName
+            offerClass["money"] = money.text
+            offerClass["username"] = userName
+            offerClass["description"] = rideName.text
+            offerClass["userId"] = userId
             offerClass.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {

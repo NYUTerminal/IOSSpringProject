@@ -17,6 +17,8 @@ class Singelton {
     
     var searchResults:[PFObject] = []
     
+    var offerId:String = ""
+    
     //Login with fixed user for now
     var loginUserId:String = "8s2KylF9oe"
     

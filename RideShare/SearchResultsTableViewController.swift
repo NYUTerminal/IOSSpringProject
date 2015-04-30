@@ -66,5 +66,5 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         }
         return cell
     }
-    
+
 }

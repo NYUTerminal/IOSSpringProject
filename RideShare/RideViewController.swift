@@ -9,14 +9,14 @@
 import Foundation
 
 
-class RideViewController: UIViewController , UITableViewDelegate , UITableViewDataSource /*, GMSMapViewDelegate */{
+class RideViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     var messageList:[Message] = []
     
-    var offerId:String = "13arTCtsIy"
+    var offerId:String = "ggNVlS5tO9"
     
     var offerUserId:String = ""
-    var offerCreateduserId = "8s2KylF9oe"
+    var offerCreatedUserId = "8s2KylF9oe"
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var desc: UILabel!
@@ -40,29 +40,39 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     var dog1 = true
     var chat1:Bool = true
     
+    var searchObj:PFObject!
+    
     @IBOutlet weak var messageTable: UITableView!
     @IBOutlet weak var messageBox: UITextField!
     override func viewDidLoad() {
-        //        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-        //            longitude: 151.20, zoom: 6)
-        //        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        //        mapView.myLocationEnabled = true
-        //        self.view = mapView
-        //
-        //        var marker = GMSMarker()
-        //        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        //        marker.title = "Sydney"
-        //        marker.snippet = "Australia"
-        //        marker.map = mapView
-        // Do any additional setup after loading the view, typically from a nib.
         fetchMessages()
-        fetchSEttingsOfOffer()
+        fetchSettingsOfOffer()
+        fetchOffer()
     }
     
-    func fetchSEttingsOfOffer(){
+    
+    func fetchOffer(){
+        var query = PFQuery(className:"Offer")
+        query.whereKey("objectId", equalTo:offerId)
+        query.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                let object = object as PFObject!
+                self.name.text = object.valueForKey("username") as String!
+                self.source.text = object.valueForKey("source") as String!
+                self.money.text = object.valueForKey("money") as String!
+                println(object.valueForKey("description") as? String)
+                self.desc.text = object.valueForKey("description") as String!
+            }
+        }
+        
+        
+    }
+    
+    func fetchSettingsOfOffer(){
         
         var query = PFQuery(className:"Settings")
-        query.whereKey("userId", equalTo:offerCreateduserId)
+        query.whereKey("userId", equalTo:offerCreatedUserId)
         query.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
