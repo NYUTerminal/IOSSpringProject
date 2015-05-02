@@ -29,12 +29,14 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
         println("User Logged In")
         println("Perform Segue")
-        
+        self.performSegueWithIdentifier("showView", sender: self)
         
     }
     
     func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
         println("User Name: \(user.name)")
+        println("User Name: \(user.first_name)")
+        println("User Name: \(user.last_name)")
         sharedData.loginUserName = user.name
         sharedData.firstname = user.first_name
         sharedData.lastname = user.last_name
@@ -42,6 +44,7 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
             if (error == nil){
                 self.sharedData.loginEmailId = user.objectForKey("email") as String
                 self.performSegueWithIdentifier("showView", sender: self)
+                println("Email: \(self.sharedData.loginEmailId)")
             }
         }
         
