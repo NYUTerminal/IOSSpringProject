@@ -12,6 +12,8 @@ import Foundation
 class Singelton {
     
     var loginUserName:String = ""
+    var firstname:String = ""
+    var lastname: String = ""
     
     var loginEmailId:String = ""
     

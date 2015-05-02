@@ -43,7 +43,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     override func viewDidLoad() {
         fetchMessages()
-        fetchSettingsOfOffer()
+        //fetchSettingsOfOffer()
         //fetchOffer()
         //getNumberOfMessages()
     }
