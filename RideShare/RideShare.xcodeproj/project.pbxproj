@@ -146,6 +146,8 @@
 		CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F711AED7C65003C7875 /* TextBack2.png */; };
 		CBCC7F761AED7E63003C7875 /* Left-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F751AED7E63003C7875 /* Left-50.png */; };
 		CBCC7F781AED8160003C7875 /* TextBackNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F771AED8160003C7875 /* TextBackNew.png */; };
+		CBECB24E1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */; };
+		CBECB24F1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -307,6 +309,8 @@
 		CBCC7F711AED7C65003C7875 /* TextBack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBack2.png; sourceTree = "<group>"; };
 		CBCC7F751AED7E63003C7875 /* Left-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left-50.png"; sourceTree = "<group>"; };
 		CBCC7F771AED8160003C7875 /* TextBackNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBackNew.png; sourceTree = "<group>"; };
+		CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-And-White-City-HD-Wallpaper.jpg"; sourceTree = "<group>"; };
+		CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
 		DB2EACB1D58E4C0C219111CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -574,6 +578,8 @@
 				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
+				CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */,
+				CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -782,6 +788,7 @@
 				CB98DB001AF22DD800359658 /* No-Dog-100.png in Resources */,
 				CB4B92181AE9C46D0017A579 /* currentlocation.png in Resources */,
 				CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */,
+				CBECB24E1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg in Resources */,
 				CB4B92461AE9CFD10017A579 /* Carpool-75.png in Resources */,
 				CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */,
 				CB4B92341AE9CAB70017A579 /* Group-75.png in Resources */,
@@ -793,6 +800,7 @@
 				CBADFF201AED0B5A0048A3F9 /* No Food-100.png in Resources */,
 				266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */,
 				CBCC7F731AED7C65003C7875 /* ButtonBack.png in Resources */,
+				CBECB24F1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg in Resources */,
 				CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */,
 				CB4B92331AE9CAB70017A579 /* Group-50.png in Resources */,
 				CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */,

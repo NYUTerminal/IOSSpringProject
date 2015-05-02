@@ -18,6 +18,9 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var date: UITextField!
     
     @IBOutlet weak var time: UITextField!
+    
+    var dateNS:NSDate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,12 +42,13 @@ class ViewController: UIViewController , UITextFieldDelegate{
     func getDatePicker(){
         date.resignFirstResponder()
         DatePickerDialog().show(title: "Pick Date", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date) {
-            (date) -> Void in
+            (tempDate) -> Void in
             var dateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "MM-dd-yyyy"
-            self.date.text = dateFormatter.stringFromDate(date)
-            self.date.text = "\(date)"
+            let strDate = dateFormatter.stringFromDate(tempDate)
+            self.date.text = "\(strDate)"
         }
+        
     }
     
     func getTimePicker(){
@@ -52,7 +56,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
         DatePickerDialog().show(title: "Pick Time", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Time) {
             (time) -> Void in
             var dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "HH:mm"
+            dateFormatter.dateFormat = "hh:mm:a"
             self.time.text = dateFormatter.stringFromDate(time)
             //self.time.text = "\(time)"
         }

@@ -55,16 +55,21 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
     func getDatePicker(){
         date.resignFirstResponder()
         DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date) {
-            (date) -> Void in
-            self.date.text = "\(date)"
+            (tempDate) -> Void in
+            var dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "MM-dd-yyyy"
+            let strDate = dateFormatter.stringFromDate(tempDate)
+            self.date.text = "\(strDate)"
         }
     }
     
     func getTimePicker(){
         time.resignFirstResponder()
         DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Time) {
-            (date) -> Void in
-            self.date.text = "\(date)"
+            (time) -> Void in
+            var dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "HH:mm"
+            self.time.text = dateFormatter.stringFromDate(time)
         }
     }
     

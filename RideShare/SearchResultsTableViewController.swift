@@ -41,6 +41,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        searchResults = []
     }
     
     override func didReceiveMemoryWarning() {
