@@ -10,6 +10,7 @@
 		000488761AF201B400BB8BD6 /* AcceptedOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */; };
 		0004887A1AF2028400BB8BD6 /* AcceptedOffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */; };
 		000A4F7C1AEF3CAD00D62C0E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A4F7B1AEF3CAD00D62C0E /* SignInViewController.swift */; };
+		0053CFEE1AF410F800232040 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		0059E6B11AF1DC880020A27B /* MyOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B01AF1DC880020A27B /* MyOffersViewController.swift */; };
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
@@ -140,7 +141,6 @@
 		CBADFF231AED0BA00048A3F9 /* Chat-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFF221AED0BA00048A3F9 /* Chat-50.png */; };
 		CBBC544C1AF17DFA00452CA0 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544B1AF17DF900452CA0 /* OfferViewController.swift */; };
 		CBBC544E1AF182E300452CA0 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC544D1AF182E300452CA0 /* DatePickerDialog.swift */; };
-		CBC98AA91AF2993C00E7BDAD /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBCC7F6E1AED6B94003C7875 /* ProfileBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F6D1AED6B94003C7875 /* ProfileBack.png */; };
 		CBCC7F731AED7C65003C7875 /* ButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F701AED7C65003C7875 /* ButtonBack.png */; };
 		CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F711AED7C65003C7875 /* TextBack2.png */; };
@@ -315,7 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC98AA91AF2993C00E7BDAD /* FacebookSDK.framework in Frameworks */,
+				0053CFEE1AF410F800232040 /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1030,7 +1030,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					"/Users/MeanMachine/Documents/NYU\\ Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK",
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1054,7 +1056,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					"/Users/MeanMachine/Documents/NYU\\ Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK",
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

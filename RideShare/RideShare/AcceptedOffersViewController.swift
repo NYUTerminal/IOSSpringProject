@@ -57,11 +57,13 @@ class AcceptedOffersViewController: UIViewController, UITableViewDelegate , UITa
         var cell = tableView.dequeueReusableCellWithIdentifier("AcceptedOffersCell") as AcceptedOffersCell
         if self.acceptedOffers.count > 0 {
             println(indexPath.row)
+            
             let result:PFObject = self.acceptedOffers[indexPath.row]
+            var source = result.objectForKey("source") as? String
+            var destination = result.objectForKey("destination") as? String
+            var via =  result.objectForKey("via") as? String
             cell.userCreatedLabel.text = result.objectForKey("userCreated") as? String
-            cell.sourceLabel.text = result.objectForKey("source") as? String
-            cell.destinationLabel.text = result.objectForKey("destination") as? String
-            cell.viaLabel.text = result.objectForKey("via") as? String
+            cell.sourceLabel.text = " \(source!) to \(destination!) via \(via!)" //result.objectForKey("source") as? String
             cell.timeLabel.text = result.objectForKey("time") as? String
             cell.descriptionLabel.text = result.objectForKey("description") as? String
             
