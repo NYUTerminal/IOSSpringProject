@@ -11,9 +11,7 @@ import UIKit
 class AcceptedOffersCell: UITableViewCell {
     @IBOutlet weak var userCreatedLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
-    @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var viaLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
    

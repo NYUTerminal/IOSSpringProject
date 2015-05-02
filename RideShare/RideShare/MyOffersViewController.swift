@@ -19,7 +19,7 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
         myOffers = []
         
         var findmyOffers = PFQuery(className: "Offer")
-        findmyOffers.whereKey("username", equalTo:"Tom")
+       // findmyOffers.whereKey("username", equalTo:"Tom")
         findmyOffers.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -62,10 +62,17 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
         if self.myOffers.count > 0 {
             println(indexPath.row)
             let result:PFObject = self.myOffers[indexPath.row]
+            var source = result.objectForKey("source") as? String
+            var destination = result.objectForKey("destination") as? String
+            var via =  result.objectForKey("via") as? String
+
             cell.timeLabel.text = result.objectForKey("time") as? String
-            cell.sourceLabel.text = result.objectForKey("source") as? String
-            cell.destinationLabel.text = result.objectForKey("destination") as? String
+            cell.sourceLabel.text = "\(source!) to \(destination!) via \(via!)" //result.objectForKey("source") as? String
             cell.descriptionLabel.text = result.objectForKey("description") as? String
+            cell.priceLabel.text = result.objectForKey("money") as? String
+            cell.departureDateLabel.text = result.objectForKey("departureDate") as? String
+            cell.rideNameLabel.text = result.objectForKey("rideName") as? String
+            
         }
         return cell
     }
