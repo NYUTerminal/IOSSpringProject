@@ -9,11 +9,15 @@
 import UIKit
 
 class MyOffersTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var rideNameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
-    @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var departureDateLabel: UILabel!
     
+    
+    @IBOutlet weak var priceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         

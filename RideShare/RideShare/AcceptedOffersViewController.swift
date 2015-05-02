@@ -63,7 +63,7 @@ class AcceptedOffersViewController: UIViewController, UITableViewDelegate , UITa
             var destination = result.objectForKey("destination") as? String
             var via =  result.objectForKey("via") as? String
             cell.userCreatedLabel.text = result.objectForKey("userCreated") as? String
-            cell.sourceLabel.text = " \(source!) to \(destination!) via \(via!)" //result.objectForKey("source") as? String
+            cell.sourceLabel.text = "\(source!) to \(destination!) via \(via!)" //result.objectForKey("source") as? String
             cell.timeLabel.text = result.objectForKey("time") as? String
             cell.descriptionLabel.text = result.objectForKey("description") as? String
             
