@@ -22,7 +22,6 @@
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
-		60DD46A71AF3273C00E8AD10 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		60DD46A91AF334B100E8AD10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A81AF334B100E8AD10 /* SecondViewController.swift */; };
 		60EF1D2E1AED9B2300FCCDA2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D131AED9B2300FCCDA2 /* BlurView.swift */; };
 		60EF1D2F1AED9B2300FCCDA2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF1D141AED9B2300FCCDA2 /* DesignableButton.swift */; };
@@ -57,6 +56,7 @@
 		CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7131A941FDB00D7997D /* Images.xcassets */; };
 		CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7151A941FDB00D7997D /* LaunchScreen.xib */; };
 		CB08C7231A941FDB00D7997D /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C7221A941FDB00D7997D /* RideShareTests.swift */; };
+		CB1F27CF1AF5A6DE00BC31F1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CB371DB91AF2777500A8CDCC /* Location-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB371DB81AF2777500A8CDCC /* Location-100.png */; };
 		CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5081A9BF4A3000C66DF /* Accounts.framework */; };
 		CB44B50B1A9BF4AC000C66DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */; };
@@ -321,7 +321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DD46A71AF3273C00E8AD10 /* FacebookSDK.framework in Frameworks */,
+				CB1F27CF1AF5A6DE00BC31F1 /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1043,9 +1043,16 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/GitHub/IOSSpringProject/FacebookSDK,
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 				);
@@ -1072,9 +1079,16 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Documents/NYU,
-					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/GitHub/IOSSpringProject/FacebookSDK,
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Documents/NYU,
+					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 				);

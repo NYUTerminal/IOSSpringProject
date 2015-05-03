@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldT-36-oMz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-iphone-5s-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="uk1-js-sFZ" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="uk1-js-sFZ" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xi-hb-rYK">
@@ -283,7 +283,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Vac-hp-1r9" firstAttribute="leading" secondItem="63R-jV-AKp" secondAttribute="trailing" constant="100" id="0uA-g4-iIm"/>
                                             <constraint firstItem="M1E-sE-Toj" firstAttribute="top" secondItem="Tdh-C3-JyR" secondAttribute="bottom" constant="25" id="3L9-rR-VzB"/>
@@ -460,7 +460,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BrooklynBridge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LAK-xW-yyx" userLabel="BackGround">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="LAK-xW-yyx" userLabel="BackGround">
                                 <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-FE-04P" userLabel="OfferNavigation">
@@ -617,7 +617,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="RmA-Ix-JB2" secondAttribute="centerX" id="1TN-CX-7I8"/>
                                     <constraint firstItem="hhk-i1-zUG" firstAttribute="leading" secondItem="irA-zn-RCv" secondAttribute="trailing" constant="41" id="3yo-vt-R9d"/>
@@ -897,7 +897,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EZS-Ec-0jS" userLabel="BackGround">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="EZS-Ec-0jS" userLabel="BackGround">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ql1-DX-oJi" userLabel="Profile Navigation Bar">
@@ -1824,7 +1824,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hCf-vs-emP" kind="presentation" id="1pk-N2-hZh"/>
+                                            <segue destination="hCf-vs-emP" kind="show" id="1pk-N2-hZh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2035,7 +2035,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hX4-Je-E2l" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="hX4-Je-E2l" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="FAL-iX-fVl">
@@ -2203,7 +2203,7 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="NameLabel" destination="ypc-d5-g6t" id="WHC-b6-qje"/>
                                             <outlet property="descriptionLabel" destination="3PQ-4p-bkp" id="fgt-m2-arh"/>
@@ -2313,7 +2313,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Di-2f-0QG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="0Di-2f-0QG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="uks-fY-plP" userLabel="Ride Navigation Bar">
@@ -2814,7 +2814,6 @@
         <image name="Search-50" width="25" height="25"/>
         <image name="Search-75" width="25" height="25"/>
         <image name="Settings-75" width="25" height="25"/>
-        <image name="Star-iphone-5s-wallpaper-ilikewallpaper_com" width="640" height="1136"/>
         <image name="TextBack2" width="300" height="30"/>
         <image name="Us Dollar-100.png" width="100" height="100"/>
         <image name="Us Dollar-50" width="50" height="50"/>
