@@ -56,7 +56,6 @@
 		CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7131A941FDB00D7997D /* Images.xcassets */; };
 		CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7151A941FDB00D7997D /* LaunchScreen.xib */; };
 		CB08C7231A941FDB00D7997D /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C7221A941FDB00D7997D /* RideShareTests.swift */; };
-		CB1F27CF1AF5A6DE00BC31F1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CB371DB91AF2777500A8CDCC /* Location-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB371DB81AF2777500A8CDCC /* Location-100.png */; };
 		CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5081A9BF4A3000C66DF /* Accounts.framework */; };
 		CB44B50B1A9BF4AC000C66DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */; };
@@ -124,6 +123,7 @@
 		CB98DB021AF22DD800359658 /* No-Pizza-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DAFE1AF22DD800359658 /* No-Pizza-100.png */; };
 		CB98DB041AF22DFB00359658 /* No-Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB031AF22DFB00359658 /* No-Chat-100.png */; };
 		CB98DB061AF22E2600359658 /* Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB051AF22E2600359658 /* Chat-100.png */; };
+		CBA315A71AF5A8420019B7EE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBACD9C61AF2A017006F0E95 /* CarPool2-large.png in Resources */ = {isa = PBXBuildFile; fileRef = CBACD9C51AF2A017006F0E95 /* CarPool2-large.png */; };
 		CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDD1AECE46C0048A3F9 /* Back-75.png */; };
 		CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */; };
@@ -321,7 +321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1F27CF1AF5A6DE00BC31F1 /* FacebookSDK.framework in Frameworks */,
+				CBA315A71AF5A8420019B7EE /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1055,6 +1055,7 @@
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1091,6 +1092,7 @@
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
