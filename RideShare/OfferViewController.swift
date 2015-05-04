@@ -29,6 +29,8 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
     
     @IBOutlet weak var money: UITextField!
     
+    @IBOutlet weak var noOfSeats: UITextField!
+    
     var userName = Singelton.sharedInstance.loginUserName
     
     var userId = Singelton.sharedInstance.loginUserId
@@ -96,6 +98,7 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
             offerClass["money"] = money.text
             offerClass["username"] = userName
             offerClass["description"] = rideName.text
+            offerClass["noOfSeats"] = noOfSeats.text
             offerClass["userId"] = userId
             offerClass["likes"] = 0
             offerClass.saveInBackgroundWithBlock {

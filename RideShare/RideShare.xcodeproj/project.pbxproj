@@ -22,6 +22,7 @@
 		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		269405611AF7FDDE004BC285 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
+		269405631AF7FF6B004BC285 /* Living Room-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 269405621AF7FF6B004BC285 /* Living Room-100.png */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
 		60DD46A91AF334B100E8AD10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A81AF334B100E8AD10 /* SecondViewController.swift */; };
@@ -179,6 +180,7 @@
 		266C79E91AEF6BB3007BF37F /* Like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@2x.png"; sourceTree = "<group>"; };
 		266C79EA1AEF6BB3007BF37F /* Like@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@3x.png"; sourceTree = "<group>"; };
 		266C79EF1AEF6C97007BF37F /* Clock-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-100.png"; sourceTree = "<group>"; };
+		269405621AF7FF6B004BC285 /* Living Room-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Living Room-100.png"; sourceTree = "<group>"; };
 		60DD46A11AF1FF9300E8AD10 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = SOURCE_ROOT; };
 		60DD46A51AF2003500E8AD10 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 		CB4B920E1AE9927A0017A579 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				269405621AF7FF6B004BC285 /* Living Room-100.png */,
 				CB4B920A1AE991D90017A579 /* 13.jpg */,
 				CBADFDE11AECE72A0048A3F9 /* Back-25.png */,
 				CBADFDDD1AECE46C0048A3F9 /* Back-75.png */,
@@ -783,6 +786,7 @@
 				CBADFF211AED0B5A0048A3F9 /* Pizza-100.png in Resources */,
 				CB98DB021AF22DD800359658 /* No-Pizza-100.png in Resources */,
 				266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */,
+				269405631AF7FF6B004BC285 /* Living Room-100.png in Resources */,
 				CB4B92441AE9CFD10017A579 /* Carpool-25.png in Resources */,
 				CB4B92401AE9CEFA0017A579 /* Offer-75.png in Resources */,
 				CB98DB041AF22DFB00359658 /* No-Chat-100.png in Resources */,
