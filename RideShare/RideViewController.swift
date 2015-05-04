@@ -15,7 +15,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     var offerId:String = ""
     var messageOfferId:String = "13arTCtsIy"
-    
+    var userId = ""
     var offerUserId:String = ""
     var offerCreatedUserId = ""
     
@@ -43,6 +43,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     
     override func viewDidLoad() {
+        self.userId =  Singelton.sharedInstance.loginUserId
         self.offerId = Singelton.sharedInstance.offerId
         self.offerUserId = Singelton.sharedInstance.loginUserId
         println(self.offerId)
@@ -159,6 +160,8 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         println("messages fetched")
         var query = PFQuery(className:"Message")
         query.whereKey("offerId", equalTo:self.messageOfferId)
+        query.whereKey("to", equalTo:self.userId)
+        query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
@@ -170,7 +173,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                         messageObject.from = object.valueForKey("from") as String!
                         messageObject.to = object.valueForKey("to") as String!
                         messageObject.offerId = object.valueForKey("offerId") as String!
-                        messageObject.numberOfLikes = object.valueForKey("likes") as Int!
                         messageObject.message = object.valueForKey("message") as String!
                         self.messageList.append(messageObject)
                         self.messageTable.reloadData()
@@ -196,7 +198,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         cell.message.text = result.message
         cell.name.text = result.from
         cell.time.text = result.date
-        cell.likes.text = "\(result.numberOfLikes)"
         return cell
     }
     
@@ -206,12 +207,16 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         message.from = Singelton.sharedInstance.loginUserName
         message.to = offerUserId
         message.message = self.messageBox.text
-        message.date = "05-1-2015"
-        message.numberOfLikes = 1
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy:hh:mm:a"
+        var tempDate = NSDate()
+        let strDate = dateFormatter.stringFromDate(tempDate)
+        message.date = strDate
         message.offerId = "13arTCtsIy"
         message.time="8:15 pm"
         ParseHelper().saveMessage(message)
         self.messageBox.text = ""
+        messageList = []
         fetchMessages()
         self.messageTable.reloadData()
     }
