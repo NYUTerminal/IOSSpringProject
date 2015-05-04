@@ -101,7 +101,11 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
             offerClass.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
-                    // The object has been saved.
+                    let alertController = UIAlertController(title: "Offer Status", message:
+                        "New offer has been created!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
                 } else {
                     // There was a problem, check error.description
                 }

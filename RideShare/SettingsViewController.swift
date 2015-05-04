@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SettingsViewController: ViewController {
+class SettingsViewController: ViewController, UIAlertViewDelegate {
     
     @IBOutlet weak var address: UITextField!
     
@@ -134,14 +134,17 @@ class SettingsViewController: ViewController {
             settingsClass.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
-                    // The object has been saved.
+                    let alertController = UIAlertController(title: "Offer Status", message:
+                        "Settings Saved Successfully!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+
                 } else {
                     
                     // There was a problem, check error.description
                 }
             }
         }else if isSettingsFetched {
-            
             var settingsClass = PFQuery(className:"Settings")
             settingsClass.getObjectInBackgroundWithId(self.settingsId) {
                 (settingObj: PFObject?, error: NSError?) -> Void in
@@ -160,6 +163,11 @@ class SettingsViewController: ViewController {
                     settingObj["music"] = self.music
                     settingObj["chat"] = self.chat
                     settingObj.saveInBackgroundWithTarget(nil, selector: nil)
+                    let alertController = UIAlertController(title: "Setting Status", message:
+                        "Settings Successfully Updated!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+
                 }
             }
         }
