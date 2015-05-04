@@ -29,7 +29,7 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
         println("User Logged In")
         println("Perform Segue")
-        self.performSegueWithIdentifier("showView", sender: self)
+        self.performSegueWithIdentifier("userLoggedInSegue", sender: self)
         
     }
     
@@ -37,13 +37,13 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         println("User Name: \(user.name)")
         println("User Name: \(user.first_name)")
         println("User Name: \(user.last_name)")
-        sharedData.loginUserName = user.name
-        sharedData.firstname = user.first_name
-        sharedData.lastname = user.last_name
+        sharedData.loginUserName = user.name as String
+        sharedData.firstname = user.first_name as String
+        sharedData.lastname = user.last_name as String
+        sharedData.loginEmailId = user.objectForKey("email") as String
         FBRequestConnection.startForMeWithCompletionHandler { (connection, user, error) -> Void in
             if (error == nil){
-                self.sharedData.loginEmailId = user.objectForKey("email") as String
-                self.performSegueWithIdentifier("showView", sender: self)
+                //self.performSegueWithIdentifier("userLoggedInSegue", sender: self)
                 println("Email: \(self.sharedData.loginEmailId)")
             }
         }
@@ -60,15 +60,7 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         println("Error")
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if (segue.identifier == "showView"){
-            var vc: SecondViewController = segue.destinationViewController as SecondViewController
-            vc.firstName = sharedData.firstname
-            vc.lastName = sharedData.lastname
-            vc.email = sharedData.loginEmailId
-        }
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
