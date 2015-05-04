@@ -13,6 +13,8 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var noOfSeats: UILabel!
+    @IBOutlet weak var sourceDest: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

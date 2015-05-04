@@ -84,7 +84,11 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
             let result:PFObject = self.searchResults[indexPath.row]
             cell.NameLabel.text = result.objectForKey("username") as? String
             cell.timeLabel.text = result.objectForKey("time") as? String
+            let source:String = result.objectForKey("source") as String!
+            let destination:String = result.objectForKey("destination") as String!
+            cell.sourceDest.text = source + " to " + destination
             cell.priceLabel.text = result.objectForKey("money") as? String
+            cell.noOfSeats.text = result.objectForKey("noOfSeats") as? String
             cell.descriptionLabel.text = result.objectForKey("description") as? String
         }
         return cell
