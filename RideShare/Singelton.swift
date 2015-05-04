@@ -20,7 +20,9 @@ class Singelton {
     var searchResults:[PFObject] = []
     
     var offerId:String = ""
+    var offerUserId:String = ""
     var isFBLOgin:Bool =  false
+    var fbUserObj:FBGraphUser!
     
     //Login with fixed user for now
     var loginUserId:String = "8s2KylF9oe"

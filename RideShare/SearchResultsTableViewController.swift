@@ -101,6 +101,8 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         println(self.searchResults[self.indexSelected])
         println(self.searchResults[self.indexSelected].valueForKey("objectId") as String!)
         Singelton.sharedInstance.offerId = self.searchResults[self.indexSelected].valueForKey("objectId") as String!
+        Singelton.sharedInstance.offerUserId = self.searchResults[self.indexSelected].valueForKey("userId") as String!
+
     }
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

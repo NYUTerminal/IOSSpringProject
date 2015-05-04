@@ -41,15 +41,18 @@ class SettingsViewController: ViewController, UIAlertViewDelegate {
     
     var isSettingsFetched = false
     
-    var loginId = Singelton.sharedInstance.loginUserId
+    var loginId = ""
     
-    var loginUser = Singelton.sharedInstance.loginUserName
+    var loginUser = ""
     
     var settingsId:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginId = Singelton.sharedInstance.loginUserId
+        loginUser = Singelton.sharedInstance.loginUserName
         fetchSettings()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     

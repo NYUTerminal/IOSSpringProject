@@ -31,9 +31,9 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
     
     @IBOutlet weak var noOfSeats: UITextField!
     
-    var userName = Singelton.sharedInstance.loginUserName
+    var userName = ""
     
-    var userId = Singelton.sharedInstance.loginUserId
+    var userId = ""
     
     override func viewDidLoad() {
 //        super.viewDidLoad()
@@ -45,6 +45,8 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
 //        date.text = formatter.stringFromDate(currentDate)
         // Do any additional setup after loading the view, typically from a nib.
         //getCurrrentDate()
+        userName = Singelton.sharedInstance.loginUserName
+        userId = Singelton.sharedInstance.loginUserId
         time.delegate=self
     }
     

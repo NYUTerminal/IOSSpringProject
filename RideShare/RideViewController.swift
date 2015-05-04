@@ -44,6 +44,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     override func viewDidLoad() {
         self.offerId = Singelton.sharedInstance.offerId
+        self.offerUserId = Singelton.sharedInstance.loginUserId
         println(self.offerId)
         fetchMessages()
         fetchSettingsOfOffer()
@@ -100,7 +101,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func fetchSettingsOfOffer(){
         
         var query = PFQuery(className:"Settings")
-        query.whereKey("userId", equalTo:offerId)
+        query.whereKey("userId", equalTo:offerUserId)
         query.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
@@ -202,8 +203,8 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     @IBAction func sendMessage(sender: UIButton) {
         var message = Message()
-        message.from = "pLPqCLu0Ax"
-        message.to = "8s2KylF9oe"
+        message.from = Singelton.sharedInstance.loginUserName
+        message.to = offerUserId
         message.message = self.messageBox.text
         message.date = "05-1-2015"
         message.numberOfLikes = 1

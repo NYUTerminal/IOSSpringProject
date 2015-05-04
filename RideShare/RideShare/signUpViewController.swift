@@ -40,6 +40,9 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         sharedData.loginUserName = user.name as String
         sharedData.firstname = user.first_name as String
         sharedData.lastname = user.last_name as String
+        sharedData.fbUserObj = user
+        sharedData.loginUserId = user.objectForKey("email") as String
+        println(sharedData.loginUserId)
         sharedData.loginEmailId = user.objectForKey("email") as String
         sharedData.isFBLOgin = true
         FBRequestConnection.startForMeWithCompletionHandler { (connection, user, error) -> Void in
