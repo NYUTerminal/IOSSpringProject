@@ -15,6 +15,7 @@
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
 		262134051AF70C94006A9021 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
+		262134071AF70E7F006A9021 /* HelperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262134061AF70E7F006A9021 /* HelperFile.swift */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
 		266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E81AEF6BB3007BF37F /* Like@1x.png */; };
@@ -171,6 +172,7 @@
 		0068C8321AEA118F0028870A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
 		00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = ../GoogleMapsFramework/GoogleMaps.framework; sourceTree = SOURCE_ROOT; };
 		0EA49977E917F1B7AAC367C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		262134061AF70E7F006A9021 /* HelperFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFile.swift; sourceTree = "<group>"; };
 		266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-50.png"; sourceTree = "<group>"; };
 		266C79E61AEF6B21007BF37F /* Us Dollar-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Us Dollar-100.png"; sourceTree = "<group>"; };
 		266C79E81AEF6BB3007BF37F /* Like@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@1x.png"; sourceTree = "<group>"; };
@@ -608,6 +610,7 @@
 				CB9272A31AF1FFD000AC7E18 /* MessageTableViewCell.swift */,
 				000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */,
 				000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */,
+				262134061AF70E7F006A9021 /* HelperFile.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -893,6 +896,7 @@
 				CBADFDE41AECEAED0048A3F9 /* RideViewController.swift in Sources */,
 				60EF1D3E1AED9B2300FCCDA2 /* SpringAnimation.swift in Sources */,
 				60EF1D381AED9B2300FCCDA2 /* KeyboardLayoutConstraint.swift in Sources */,
+				262134071AF70E7F006A9021 /* HelperFile.swift in Sources */,
 				CB92729B1AF1F23E00AC7E18 /* User.swift in Sources */,
 				CB60D5011AE58B260026CD01 /* SettingsViewController.swift in Sources */,
 				60EF1D331AED9B2300FCCDA2 /* DesignableTextField.swift in Sources */,
