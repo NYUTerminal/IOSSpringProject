@@ -97,6 +97,7 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
             offerClass["username"] = userName
             offerClass["description"] = rideName.text
             offerClass["userId"] = userId
+            offerClass["likes"] = 0
             offerClass.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {

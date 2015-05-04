@@ -14,6 +14,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     var messageList:[Message] = []
     
     var offerId:String = "ggNVlS5tO9"
+    var messageOfferId:String = "13arTCtsIy"
     
     var offerUserId:String = ""
     var offerCreatedUserId = "8s2KylF9oe"
@@ -43,9 +44,9 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     override func viewDidLoad() {
         fetchMessages()
-        //fetchSettingsOfOffer()
-        //fetchOffer()
-        //getNumberOfMessages()
+        fetchSettingsOfOffer()
+        fetchOffer()
+        getNumberOfMessages()
     }
     
     func getNumberOfMessages(){
@@ -54,6 +55,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
+                println("Number of messages fetched")
                 if let objects = objects as? [PFObject] {
                     self.messages.text = "\(objects.count)"
                 }
@@ -65,6 +67,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         query2.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
+                println("Offer fetched")
                 let object = object as PFObject!
                 var countLikes = object.valueForKey("likes") as Int!
                 self.likes.text = "\(countLikes)"
@@ -79,6 +82,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         query.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
+                println("Offer fetched")
                 let object = object as PFObject!
                 self.name.text = object.valueForKey("username") as String!
                 self.source.text = object.valueForKey("source") as String!
@@ -98,6 +102,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         query.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
+                println("Settings fetched")
                 let object = object as PFObject!
                 self.chat1 = object.valueForKey("chat") as Bool!
                 self.dog1 = object.valueForKey("dog") as Bool!
@@ -148,13 +153,15 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     
     func fetchMessages(){
+        println("messages fetched")
         var query = PFQuery(className:"Message")
-        query.whereKey("offerId", equalTo:self.offerId)
+        query.whereKey("offerId", equalTo:self.messageOfferId)
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
                 if let objects = objects as? [PFObject] {
                     for object in objects {
+                        println("messages retrieved")
                         var messageObject:Message = Message()
                         messageObject.date = object.valueForKey("date") as String!
                         messageObject.from = object.valueForKey("from") as String!

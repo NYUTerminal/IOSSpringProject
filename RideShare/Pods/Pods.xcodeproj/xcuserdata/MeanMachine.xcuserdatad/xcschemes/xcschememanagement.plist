@@ -8,72 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-HockeySDK-HockeySDKResources.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-HockeySDK.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Pods-Parse.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>254161F1C897482549424526</key>
+		<key>49A7A33820808C83984E6B37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36D473F6EC48644010384E2D</key>
+		<key>4A60BE637601C1AC6921B170</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A70BD9E5B6E174A1B6A36AF</key>
+		<key>54E0E1882BB8EED3368E5AB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EE52ED95EB6C05D17E720EB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CA5A4B623BB77FF1224465FA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CB8971D4386538FB90F6BE51</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DA44BDF1F51AE83ABD05F70A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E65C7813DDC7CD9A7217060A</key>
+		<key>EE1DF55AFCE28CDA509EEF8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
