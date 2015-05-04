@@ -21,6 +21,8 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     
     var time:NSDate! = nil
     
+    var indexSelected:Int = 0
+    
     @IBOutlet weak var SearchTableView: UITableView!
     
     func loadData() {
@@ -87,5 +89,24 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         }
         return cell
     }
+    // MARK: - UITableViewDelegate Methods
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.indexSelected = indexPath.row
+        println(self.indexSelected)
+        println(self.searchResults[self.indexSelected])
+        println(self.searchResults[self.indexSelected].valueForKey("objectId") as String!)
+        Singelton.sharedInstance.offerId = self.searchResults[self.indexSelected].valueForKey("objectId") as String!
+    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if (segue.identifier == "searchresult") {
+//            let theDestination = (segue.destinationViewController as RideViewController)
+//            println("PreparingForSegue")
+//            let result:PFObject  = self.searchResults[self.indexSelected]
+//            println(result.objectForKey("objectId") as? String)
+//            theDestination.offerId = result.objectForKey("objectId") as String!
+//        }
+//    }
     
 }
