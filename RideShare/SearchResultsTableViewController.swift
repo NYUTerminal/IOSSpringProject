@@ -32,10 +32,10 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         if(self.destination != ""){
             findSearchResults.whereKey("destination", equalTo:"Sean Plott")
         }
-        if(self.date != ""){
+        if(self.date != nil){
             findSearchResults.whereKey("date", equalTo:"Sean Plott")
         }
-        if(self.time != ""){
+        if(self.time != nil){
             findSearchResults.whereKey("time", equalTo:"Sean Plott")
         }
         findSearchResults.findObjectsInBackgroundWithBlock {
@@ -48,7 +48,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
                     for object in objects {
                         self.searchResults.append(object as PFObject)
                     }
-                    //self.SearchTableView.reloadData()
+                    self.SearchTableView.reloadData()
                 }
             } else {
                 // Log details of the failure

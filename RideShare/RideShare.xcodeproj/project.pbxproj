@@ -14,6 +14,7 @@
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
+		262134051AF70C94006A9021 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
 		266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E81AEF6BB3007BF37F /* Like@1x.png */; };
@@ -123,7 +124,6 @@
 		CB98DB021AF22DD800359658 /* No-Pizza-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DAFE1AF22DD800359658 /* No-Pizza-100.png */; };
 		CB98DB041AF22DFB00359658 /* No-Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB031AF22DFB00359658 /* No-Chat-100.png */; };
 		CB98DB061AF22E2600359658 /* Chat-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB98DB051AF22E2600359658 /* Chat-100.png */; };
-		CBA315A71AF5A8420019B7EE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBACD9C61AF2A017006F0E95 /* CarPool2-large.png in Resources */ = {isa = PBXBuildFile; fileRef = CBACD9C51AF2A017006F0E95 /* CarPool2-large.png */; };
 		CBADFDDF1AECE46C0048A3F9 /* Back-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDD1AECE46C0048A3F9 /* Back-75.png */; };
 		CBADFDE01AECE46C0048A3F9 /* Forward-75.png in Resources */ = {isa = PBXBuildFile; fileRef = CBADFDDE1AECE46C0048A3F9 /* Forward-75.png */; };
@@ -321,7 +321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA315A71AF5A8420019B7EE /* FacebookSDK.framework in Frameworks */,
+				262134051AF70C94006A9021 /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1056,6 +1056,7 @@
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/Era/Desktop/era/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1093,6 +1094,7 @@
 					/Users/MeanMachine/Documents/NYU,
 					Classes/SecondSem/IOS/IOSSpringProject/FacebookSDK,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/Era/Desktop/era/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
