@@ -167,6 +167,139 @@ class calculatorBrain : UIViewController, UITableViewDataSource{
         return evaluate()
     }
     
+    var shuffledDeck = Array<Int>()
+    
+    var deck = Array<Int>()
+    
+    //var gameProperties = GameProperties.sharedInstance
+    
+    func buildDeck(var noOfDecks : Int) -> [Int]  {
+        //Validation for number of cards
+        var Suit = ["Spades","Hearts","Diamonds" , "Clubs"]
+        //var Card = ["1","2","3","4","5","6","7","8","9","10","10","10","10"]
+        var Card = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+        
+        for i in 1...noOfDecks
+        {
+            for suit in Suit
+            {
+                for card in Card {
+                    deck.append(card)
+                }
+            }
+        }
+        shuffle()
+        shuffledDeck = deck
+       // GameProperties.sharedInstance.deck = shuffledDeck
+        return shuffledDeck
+    }
+    
+    func shuffle() {
+        var temp: Int
+        for i in 0...(deck.count-1) {
+            let j = Int(arc4random_uniform(UnicodeScalarValue(deck.count)))
+            println(j)
+            temp = deck[i]
+            println(i,j)
+            deck[i]=deck[j]
+            deck[j]=temp
+            
+        }
+    }
+    
+    func shuffle<T>(var list: Array<T>) -> Array<T> {
+        for i in 0..<list.count {
+            let j = Int(arc4random_uniform(UInt32(list.count - i))) + i
+            list.insert(list.removeAtIndex(j), atIndex: i)
+        }
+        return list
+    }
+    
+    func getACardFromDeck() -> Int {
+        //return GameProperties.sharedInstance.deck.removeAtIndex(0)
+        return 0;
+    }
+
+    
+    var cardsInHand : [Int] = []
+    
+    //var handStatus : HandStatus
+    
+    var bet : Int = 0
+
+    
+    var handSum : Int {
+        get{
+            //Logic to get Ace as 1 or 11 is implemented below .
+            var tempCount : Int = 0
+            var acePresent:Bool = false
+            for card in cardsInHand {
+                if(card == 1){
+                    acePresent = true
+                }
+                if(card>10){
+                    tempCount += 10
+                    continue
+                }
+                tempCount += card
+            }
+            if(acePresent){
+                if(tempCount<21){
+                    if(tempCount+10<21){
+                        tempCount = tempCount+10
+                    }
+                }
+            }
+            //handSum = tempCount
+            return tempCount
+        }set{
+            self.handSum = newValue
+        }
+    }
+    
+    func isBlackJack() -> Bool {
+        var tempCount = handSum
+        if  tempCount == 21 {
+            return true
+        }
+        return false
+    }
+    
+    func isBusted() -> Bool {
+        var tempCount = handSum
+        
+        if tempCount > 21 {
+            return true
+        }
+        return false
+        
+    }
+    
+    
+    func getAllCardsInString(cardsInHand :[Int]) -> String {
+        if(cardsInHand.count==0){
+            return ""
+        }
+        var tempString = ""
+        if(cardsInHand[0]==1){
+            var tempString = String(cardsInHand[0])+"(11-Ace)"
+        }else{
+            tempString = String(cardsInHand[0])
+        }
+        
+        if(cardsInHand.count>1){
+            for i in 2...cardsInHand.count{
+                if(cardsInHand[i-1]==1){
+                    tempString = tempString + " , " + String(cardsInHand[i-1])+"(11-Ace)"
+                }else{
+                    tempString = tempString + " , " + String(cardsInHand[i-1])
+                }
+            }
+        }
+        return tempString
+    }
+
+    
     
 }
 
