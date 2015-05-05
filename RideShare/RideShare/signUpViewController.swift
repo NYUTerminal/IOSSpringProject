@@ -69,7 +69,7 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         sharedData.fbUserObj = user
         sharedData.loginUserId = user.objectForKey("email") as String
         let userFBID:AnyObject = user.objectForKey("id")!
-        let userImageURL = "https://graph.facebook.com/\(userFBID)/picture?type=small"
+        let userImageURL = "https://graph.facebook.com/\(userFBID)/picture?type=large"
         
         let url = NSURL(string:userImageURL)!
         

@@ -159,6 +159,8 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
                 
                 self.countryLabel.text = object.objectForKey("country") as String!
                 
+                self.stateLabel.text = object.objectForKey("state") as String!
+                
             }
             else {
                 // Log details of the failure
