@@ -22,9 +22,16 @@ class ViewController: UIViewController , UITextFieldDelegate{
     var dateNS:NSDate!
     
     override func viewDidLoad() {
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //time.delegate=self
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import MapKit
 
 class RideViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
@@ -40,18 +40,79 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     @IBOutlet weak var messageTable: UITableView!
     @IBOutlet weak var messageBox: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
     
     
     override func viewDidLoad() {
         self.userId =  Singelton.sharedInstance.loginUserId
         self.offerId = Singelton.sharedInstance.offerId
         self.offerUserId = Singelton.sharedInstance.loginUserId
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         println(self.offerId)
+        loadMapView()
         fetchMessages()
         fetchSettingsOfOffer()
         fetchOffer()
         getNumberOfMessages()
     }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func loadMapView(){
+        
+        super.viewDidLoad()
+        // 1
+        let location = CLLocationCoordinate2D(
+            latitude:  40.729698,
+            longitude: -73.99719
+        )
+        // 2
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegion(center: location, span: span)
+        mapView.setRegion(region, animated: true)
+        
+        //3
+        let annotation = MKPointAnnotation()
+        annotation.setCoordinate(location)
+        annotation.title = "Source"
+        annotation.subtitle = "RideShare"
+        mapView.addAnnotation(annotation)
+        
+        // 1
+        let location2 = CLLocationCoordinate2D(
+            latitude: 40.693611,
+            longitude: -73.986162
+        )
+        // 2
+        let span2 = MKCoordinateSpanMake(0.05, 0.05)
+        let region2 = MKCoordinateRegion(center: location2, span: span2)
+        mapView.setRegion(region2, animated: true)
+        
+        //3
+        let annotation2 = MKPointAnnotation()
+        annotation2.setCoordinate(location2)
+        annotation2.title = "Destination"
+        annotation2.subtitle = "RideShare"
+        mapView.addAnnotation(annotation2)
+    }
+    
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+        println("rendererForOverlay");
+        
+        if (overlay is MKPolyline) {
+            var pr = MKPolylineRenderer(overlay: overlay);
+            pr.strokeColor = UIColor.blueColor().colorWithAlphaComponent(0.5);
+            pr.lineWidth = 5;
+            return pr;
+        }
+        
+        return nil
+    }
+    
     
     func getNumberOfMessages(){
         var query = PFQuery(className:"Message")

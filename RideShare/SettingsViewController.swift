@@ -49,11 +49,18 @@ class SettingsViewController: ViewController, UIAlertViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         loginId = Singelton.sharedInstance.loginUserId
         loginUser = Singelton.sharedInstance.loginUserName
         fetchSettings()
 
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func fetchSettings(){

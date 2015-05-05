@@ -39,14 +39,35 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     @IBOutlet weak var myRidesLabel: UILabel!
     
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    @IBOutlet weak var cityLabel: UILabel!
+    
+    @IBOutlet weak var zipLabel: UILabel!
+        
+    @IBOutlet weak var countryLabel: UILabel!
+    
+    @IBOutlet weak var stateLabel: UILabel!
+    
+    
+    
     
     
     override func viewDidLoad() {
         userId = Singelton.sharedInstance.loginUserId
         userName = Singelton.sharedInstance.loginUserName
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         loadStatistics()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {

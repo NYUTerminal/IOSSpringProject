@@ -47,7 +47,14 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
         //getCurrrentDate()
         userName = Singelton.sharedInstance.loginUserName
         userId = Singelton.sharedInstance.loginUserId
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         time.delegate=self
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.

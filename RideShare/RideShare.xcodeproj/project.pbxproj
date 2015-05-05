@@ -15,7 +15,6 @@
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
 		262134071AF70E7F006A9021 /* HelperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262134061AF70E7F006A9021 /* HelperFile.swift */; };
-		26235F3B1AF8623A0009CFD3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
 		266C79EB1AEF6BB3007BF37F /* Like@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E81AEF6BB3007BF37F /* Like@1x.png */; };
@@ -123,6 +122,9 @@
 		CBCC7F741AED7C65003C7875 /* TextBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F711AED7C65003C7875 /* TextBack2.png */; };
 		CBCC7F761AED7E63003C7875 /* Left-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F751AED7E63003C7875 /* Left-50.png */; };
 		CBCC7F781AED8160003C7875 /* TextBackNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F771AED8160003C7875 /* TextBackNew.png */; };
+		CBE4504F1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE4504E1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg */; };
+		CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
+		CBE450541AF888260023058F /* blackwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE450531AF888260023058F /* blackwhite.jpg */; };
 		CBECB24E1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */; };
 		CBECB24F1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */; };
 		CBF776691AF7C46300853F64 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7764E1AF7C46300853F64 /* BlurView.swift */; };
@@ -288,6 +290,9 @@
 		CBCC7F711AED7C65003C7875 /* TextBack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBack2.png; sourceTree = "<group>"; };
 		CBCC7F751AED7E63003C7875 /* Left-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left-50.png"; sourceTree = "<group>"; };
 		CBCC7F771AED8160003C7875 /* TextBackNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBackNew.png; sourceTree = "<group>"; };
+		CBE4504E1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = il_fullxfull.575385481_jem4.jpg; sourceTree = "<group>"; };
+		CBE450501AF881AE0023058F /* il_fullxfull.575385481_jem4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = il_fullxfull.575385481_jem4.jpg; path = ../../il_fullxfull.575385481_jem4.jpg; sourceTree = "<group>"; };
+		CBE450531AF888260023058F /* blackwhite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blackwhite.jpg; path = ../../blackwhite.jpg; sourceTree = "<group>"; };
 		CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-And-White-City-HD-Wallpaper.jpg"; sourceTree = "<group>"; };
 		CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
 		CBF7764E1AF7C46300853F64 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -325,7 +330,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26235F3B1AF8623A0009CFD3 /* FacebookSDK.framework in Frameworks */,
+				CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -440,6 +445,7 @@
 		CB44B4FD1A9BF417000C66DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBE450501AF881AE0023058F /* il_fullxfull.575385481_jem4.jpg */,
 				60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */,
 				60DD46A11AF1FF9300E8AD10 /* Bolts.framework */,
 				00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */,
@@ -550,7 +556,9 @@
 			children = (
 				CB08C7151A941FDB00D7997D /* LaunchScreen.xib */,
 				CB08C7101A941FDB00D7997D /* Main.storyboard */,
+				CBE4504E1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg */,
 				CB08C7131A941FDB00D7997D /* Images.xcassets */,
+				CBE450531AF888260023058F /* blackwhite.jpg */,
 				CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */,
 				CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */,
 			);
@@ -773,6 +781,7 @@
 				CB4B92381AE9CAB70017A579 /* User Male Circle-25.png in Resources */,
 				CB4B922F1AE9CAB70017A579 /* Cars-25.png in Resources */,
 				CB98DB011AF22DD800359658 /* No-music.png in Resources */,
+				CBE450541AF888260023058F /* blackwhite.jpg in Resources */,
 				CB9272971AF1E1D600AC7E18 /* Calendar-50.png in Resources */,
 				CB4B920D1AE992690017A579 /* ios-linen.jpg in Resources */,
 				CB4780E41AEF335900F7A9C6 /* Podfile in Resources */,
@@ -819,6 +828,7 @@
 				CBADFDE21AECE72A0048A3F9 /* Back-25.png in Resources */,
 				CB4B921B1AE9C46D0017A579 /* location.png in Resources */,
 				266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */,
+				CBE4504F1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,7 +1062,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1076,7 +1086,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

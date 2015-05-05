@@ -25,6 +25,19 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     
     @IBOutlet weak var SearchTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
+        loadData()
+        searchResults = []
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     func loadData() {
         searchResults = []
         var findSearchResults = PFQuery(className: "Offer")
@@ -57,13 +70,6 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
                 println("Error: \(error) \(error.userInfo!)")
             }
         }
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadData()
-        searchResults = []
     }
     
     override func didReceiveMemoryWarning() {

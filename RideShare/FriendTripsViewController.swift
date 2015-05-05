@@ -4,6 +4,8 @@ import Foundation
 class FriendTripsViewController : UIViewController {
     
     override func viewDidLoad() {
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         getFriendsList()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -11,6 +13,11 @@ class FriendTripsViewController : UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func getFriendsList(){

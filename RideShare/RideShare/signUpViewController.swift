@@ -20,10 +20,17 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view, typically from a nib.
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile","email","user_friends"]
         
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
