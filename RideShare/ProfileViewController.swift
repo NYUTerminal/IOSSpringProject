@@ -127,6 +127,9 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         getAcceptedRides()
         getMyRides()
         getMessageCount()
+        profilePic.image = Singelton.sharedInstance.profilePic
+        
+        
         //        var query2 = PFQuery(className:"AcceptedOffers")
         //        query.whereKey("userCreated", equalTo:userId)
         //        query.countObjectsInBackgroundWithBlock {

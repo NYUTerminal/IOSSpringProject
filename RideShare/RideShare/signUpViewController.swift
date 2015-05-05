@@ -33,6 +33,25 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         view.endEditing(true)
     }
     
+    func fbRequestCompletionHandler(connection:FBRequestConnection!, result:AnyObject!, error:NSError!){
+        if let gotError = error{
+            
+        }else{
+            let userFBID:AnyObject = result.valueForKey("id")!
+            let userImageURL = "https://graph.facebook.com/\(userFBID)/picture?type=small"
+            
+            let url = NSURL(string:userImageURL)!
+            
+            let imageData = NSData(contentsOfURL: url)
+            
+            let image = UIImage(data: imageData!)
+            
+            sharedData.profilePic = image
+            
+        }
+    }
+
+    
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
         println("User Logged In")
         println("Perform Segue")
@@ -49,6 +68,16 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         sharedData.lastname = user.last_name as String
         sharedData.fbUserObj = user
         sharedData.loginUserId = user.objectForKey("email") as String
+        let userFBID:AnyObject = user.objectForKey("id")!
+        let userImageURL = "https://graph.facebook.com/\(userFBID)/picture?type=small"
+        
+        let url = NSURL(string:userImageURL)!
+        
+        let imageData = NSData(contentsOfURL: url)
+        
+        let image = UIImage(data: imageData!)
+        
+        sharedData.profilePic = image
         println(sharedData.loginUserId)
         sharedData.loginEmailId = user.objectForKey("email") as String
         sharedData.isFBLOgin = true

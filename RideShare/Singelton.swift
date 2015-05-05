@@ -20,6 +20,7 @@ class Singelton {
     var offerUserId:String = ""
     var isFBLOgin:Bool =  false
     var fbUserObj:FBGraphUser!
+    var profilePic: UIImage!
     
     //Login with fixed user for now
     var loginUserId:String = "8s2KylF9oe"

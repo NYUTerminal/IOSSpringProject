@@ -14,6 +14,7 @@
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
+		007AA0481AF8FCD4007512D7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007AA0471AF8FCD4007512D7 /* FacebookSDK.framework */; };
 		262134071AF70E7F006A9021 /* HelperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262134061AF70E7F006A9021 /* HelperFile.swift */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
@@ -124,7 +125,6 @@
 		CBCC7F761AED7E63003C7875 /* Left-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F751AED7E63003C7875 /* Left-50.png */; };
 		CBCC7F781AED8160003C7875 /* TextBackNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F771AED8160003C7875 /* TextBackNew.png */; };
 		CBE4504F1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE4504E1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg */; };
-		CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBE450541AF888260023058F /* blackwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE450531AF888260023058F /* blackwhite.jpg */; };
 		CBECB24E1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */; };
 		CBECB24F1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */; };
@@ -174,6 +174,7 @@
 		0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewCell.swift; sourceTree = "<group>"; };
 		0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsTableViewController.swift; path = ../SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		0068C8321AEA118F0028870A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = ../SearchTableViewCell.swift; sourceTree = "<group>"; };
+		007AA0471AF8FCD4007512D7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = ../GoogleMapsFramework/GoogleMaps.framework; sourceTree = SOURCE_ROOT; };
 		0EA49977E917F1B7AAC367C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		262134061AF70E7F006A9021 /* HelperFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFile.swift; sourceTree = "<group>"; };
@@ -185,7 +186,6 @@
 		266C79EF1AEF6C97007BF37F /* Clock-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-100.png"; sourceTree = "<group>"; };
 		269405621AF7FF6B004BC285 /* Living Room-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Living Room-100.png"; sourceTree = "<group>"; };
 		60DD46A11AF1FF9300E8AD10 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
-		60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = SOURCE_ROOT; };
 		60DD46A51AF2003500E8AD10 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		60DD46A81AF334B100E8AD10 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A6901099C30055A00C1E8C3D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,7 +332,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */,
+				007AA0481AF8FCD4007512D7 /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -447,8 +447,8 @@
 		CB44B4FD1A9BF417000C66DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007AA0471AF8FCD4007512D7 /* FacebookSDK.framework */,
 				CBE450501AF881AE0023058F /* il_fullxfull.575385481_jem4.jpg */,
-				60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */,
 				60DD46A11AF1FF9300E8AD10 /* Bolts.framework */,
 				00E58EEC1AEEF97D00A01542 /* GoogleMaps.framework */,
 				CBADFF1B1AED06F40048A3F9 /* StoreKit.framework */,
@@ -1067,6 +1067,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1091,6 +1092,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
