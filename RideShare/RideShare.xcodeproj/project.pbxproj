@@ -23,6 +23,7 @@
 		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		269405631AF7FF6B004BC285 /* Living Room-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 269405621AF7FF6B004BC285 /* Living Room-100.png */; };
+		6000FCA61AF8FFDC001B6E3A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
 		60DD46A91AF334B100E8AD10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A81AF334B100E8AD10 /* SecondViewController.swift */; };
@@ -333,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007AA0481AF8FCD4007512D7 /* FacebookSDK.framework in Frameworks */,
+
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1093,6 +1095,7 @@
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
+
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
