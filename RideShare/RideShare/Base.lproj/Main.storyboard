@@ -1073,7 +1073,7 @@
                                     <navigationItem title="Profile" id="JiT-d3-OGj"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-zh-uAG" userLabel="ProfileCover">
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-zh-uAG" userLabel="ProfileCover">
                                 <rect key="frame" x="10" y="70" width="580" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="bna-E7-sF4">
@@ -1162,7 +1162,7 @@
                                             <rect key="frame" x="25" y="-93" width="51.5" height="20.5"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZipCode :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrC-sl-njx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrC-sl-njx">
                                         <rect key="frame" x="25" y="148" width="76" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1412,10 +1412,11 @@
                                     <rect key="frame" x="81" y="241" width="20" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-I9-K8M">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5499999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-I9-K8M">
                                 <rect key="frame" x="277" y="186" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.36419108577923476" blue="0.13610855832660196" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="277" y="186" width="45.5" height="20.5"/>
@@ -1586,9 +1587,9 @@
                         <outlet property="messageLabel" destination="lWn-yn-uic" id="awf-ep-V4D"/>
                         <outlet property="myRidesLabel" destination="Siv-rD-9I4" id="qhn-Tn-6PX"/>
                         <outlet property="nameLabel" destination="YwN-I9-K8M" id="6kh-5v-YEo"/>
+                        <outlet property="phoneLabel" destination="b4L-ac-Es0" id="vUT-aW-63k"/>
                         <outlet property="profilePic" destination="91p-A1-ydD" id="qo3-gv-W84"/>
                         <outlet property="stateLabel" destination="vfa-8h-xZU" id="f8z-Ji-VTP"/>
-                        <outlet property="zipLabel" destination="b4L-ac-Es0" id="6JM-Rc-eR1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cF3-6O-0nl" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -49,7 +49,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     @IBOutlet weak var cityLabel: UILabel!
     
-    @IBOutlet weak var zipLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     
     @IBOutlet weak var countryLabel: UILabel!
     
@@ -67,6 +67,11 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
         loadStatistics()
+        self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 2;
+        self.profilePic.clipsToBounds = true;
+
+        self.profilePic.layer.borderWidth = 3.0;
+        self.profilePic.layer.borderColor = UIColor.grayColor().CGColor
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -161,6 +166,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
                 
                 self.stateLabel.text = object.objectForKey("state") as String!
                 
+                self.phoneLabel.text = object.objectForKey("mobile") as String!
             }
             else {
                 // Log details of the failure
@@ -240,6 +246,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
             let image = UIImage(data: imageData!)
             
             profilePic.image = image
+            
             
         }
     }
