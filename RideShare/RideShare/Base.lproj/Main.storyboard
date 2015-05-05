@@ -1414,8 +1414,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5499999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-I9-K8M">
                                 <rect key="frame" x="277" y="186" width="46" height="21"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">

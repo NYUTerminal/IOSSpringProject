@@ -67,7 +67,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
         loadStatistics()
-        self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 2;
+        self.profilePic.layer.cornerRadius = self.profilePic.frame.size.width / 1.75;
         self.profilePic.clipsToBounds = true;
 
         self.profilePic.layer.borderWidth = 3.0;
