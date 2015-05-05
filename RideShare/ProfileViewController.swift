@@ -14,6 +14,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var assa: UITextField!
+    
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var pass1: UITextField!
@@ -31,6 +32,14 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     var userName:String!
     
     var userId:String!
+    
+    @IBOutlet weak var aceptedLabel: UILabel!
+    
+    @IBOutlet weak var favLabel: UILabel!
+    
+    @IBOutlet weak var myRidesLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         userId = Singelton.sharedInstance.loginUserId
@@ -96,19 +105,20 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         query.countObjectsInBackgroundWithBlock {
             (count: Int32, error: NSError?) -> Void in
             if error == nil {
-              self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+                println("\(count)")
+              //self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
             }
         }
         
-        var query2 = PFQuery(className:"AcceptedOffers")
-        query.whereKey("userCreated", equalTo:userId)
-        query.countObjectsInBackgroundWithBlock {
-            (count: Int32, error: NSError?) -> Void in
-            if error == nil {
-                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
-            }
-        }
-        
+//        var query2 = PFQuery(className:"AcceptedOffers")
+//        query.whereKey("userCreated", equalTo:userId)
+//        query.countObjectsInBackgroundWithBlock {
+//            (count: Int32, error: NSError?) -> Void in
+//            if error == nil {
+//                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
+//            }
+//        }
+//        
 //        var query3 = PFQuery(className:"AcceptedOffers")
 //        query.whereKey("userAccepted", equalTo:userId)
 //        query.countObjectsInBackgroundWithBlock {
@@ -128,6 +138,43 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
 //        }
         
         
+    }
+    
+    @IBAction func getFavRides(sender: UIButton) {
+        var query = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userAccepted", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                println("\(count)")
+                self.aceptedLabel.text = "\(count)"
+            }
+        }
+    }
+    
+    @IBAction func getAcceptedRides(sender: UIButton) {
+        var query = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userAccepted", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                println("\(count)")
+                self.aceptedLabel.text = "\(count)"
+            }
+        }
+    }
+    
+    
+    @IBAction func getMyRides(sender: UIButton) {
+        var query = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userCreated", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                println("\(count)")
+                self.myRidesLabel.text = "\(count)"
+            }
+        }
     }
     
     
