@@ -14,7 +14,6 @@
 		0059E6B31AF1DE9F0020A27B /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059E6B21AF1DE9F0020A27B /* MyOffersTableViewCell.swift */; };
 		0068C82F1AEA00940028870A /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C82E1AEA00940028870A /* SearchResultsTableViewController.swift */; };
 		0068C8331AEA118F0028870A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068C8321AEA118F0028870A /* SearchTableViewCell.swift */; };
-		007AA0481AF8FCD4007512D7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007AA0471AF8FCD4007512D7 /* FacebookSDK.framework */; };
 		262134071AF70E7F006A9021 /* HelperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262134061AF70E7F006A9021 /* HelperFile.swift */; };
 		266C79E51AEF6B0E007BF37F /* Us Dollar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E41AEF6B0E007BF37F /* Us Dollar-50.png */; };
 		266C79E71AEF6B21007BF37F /* Us Dollar-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79E61AEF6B21007BF37F /* Us Dollar-100.png */; };
@@ -23,7 +22,7 @@
 		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		269405631AF7FF6B004BC285 /* Living Room-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 269405621AF7FF6B004BC285 /* Living Room-100.png */; };
-		6000FCA61AF8FFDC001B6E3A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
+		60D744F91AF9595900C4F3CA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007AA0471AF8FCD4007512D7 /* FacebookSDK.framework */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
 		60DD46A91AF334B100E8AD10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A81AF334B100E8AD10 /* SecondViewController.swift */; };
@@ -333,9 +332,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007AA0481AF8FCD4007512D7 /* FacebookSDK.framework in Frameworks */,
-
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
+				60D744F91AF9595900C4F3CA /* FacebookSDK.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
 				CB44B5211A9BF51A000C66DF /* libsqlite3.dylib in Frameworks */,
@@ -1070,6 +1068,7 @@
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
+					/Users/GitHub/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1095,7 +1094,7 @@
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
 					/Users/alexmathew/Desktop/IOSSpringProject/FacebookSDK,
-
+					/Users/GitHub/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
