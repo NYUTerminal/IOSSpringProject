@@ -86,7 +86,14 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 if (segue.identifier == "searchResults") {
                     Singelton.sharedInstance.source = self.source.text
                     Singelton.sharedInstance.destination = self.destination.text
+                    if(self.date.text != "") {
                     Singelton.sharedInstance.date = self.date.text
+                    }else{
+                        var dateFormatter = NSDateFormatter()
+                        dateFormatter.dateFormat = "MM-dd-yyyy"
+                        let strDate = dateFormatter.stringFromDate(NSDate())
+                       Singelton.sharedInstance.date = strDate
+                    }
                     Singelton.sharedInstance.time = self.time.text
                     //self.performSegueWithIdentifier("searchResults", sender: self)
                 }
