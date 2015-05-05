@@ -63,7 +63,7 @@ class signUpViewController: UIViewController, FBLoginViewDelegate {
         println("User Name: \(user.name)")
         println("User Name: \(user.first_name)")
         println("User Name: \(user.last_name)")
-        sharedData.loginUserName = user.name as String
+        Singelton.sharedInstance.loginUserName = user.name as String
         sharedData.firstname = user.first_name as String
         sharedData.lastname = user.last_name as String
         sharedData.fbUserObj = user

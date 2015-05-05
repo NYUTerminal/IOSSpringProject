@@ -33,6 +33,10 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     var userId:String!
     
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var aceptedLabel: UILabel!
     
     @IBOutlet weak var favLabel: UILabel!
@@ -128,6 +132,13 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         getMyRides()
         getMessageCount()
         profilePic.image = Singelton.sharedInstance.profilePic
+        
+        //sharedData.loginUserName = user.name as String
+        nameLabel.text = Singelton.sharedInstance.loginUserName
+        
+        
+        emailLabel.text = Singelton.sharedInstance.loginUserId
+        
         
         
         //        var query2 = PFQuery(className:"AcceptedOffers")

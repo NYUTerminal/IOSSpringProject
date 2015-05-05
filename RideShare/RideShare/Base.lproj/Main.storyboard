@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EC7-sq-cqq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EC7-sq-cqq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1349,7 +1349,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-rD-9I4">
                                 <rect key="frame" x="518" y="437" width="20" height="20"/>
-                                                                <constraints>
+                                <constraints>
                                     <constraint firstAttribute="width" constant="20" id="7lP-3V-mGY"/>
                                     <constraint firstAttribute="height" constant="20" id="lYo-N5-Q4T"/>
                                 </constraints>
@@ -1375,7 +1375,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMT-jD-ESX">
                                 <rect key="frame" x="488" y="432" width="30" height="30"/>
-
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aGB-eP-dUY"/>
                                     <constraint firstAttribute="width" constant="30" id="qiZ-OV-X24"/>
@@ -1416,7 +1415,6 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6r-6H-wcO">
                                 <rect key="frame" x="108" y="437" width="20" height="20"/>
-
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="3sL-f3-FEA"/>
                                     <constraint firstAttribute="width" constant="20" id="dsr-aD-NXt"/>
@@ -1439,7 +1437,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-52-J7d">
                                 <rect key="frame" x="698" y="437" width="20" height="20"/>
-
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="GrL-0b-Ybo"/>
                                     <constraint firstAttribute="height" constant="20" id="UgM-92-dIO"/>
@@ -1453,7 +1450,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUT-cO-vWD">
                                 <rect key="frame" x="288" y="432" width="30" height="30"/>
-
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="5Vl-pw-9Xb"/>
                                     <constraint firstAttribute="height" constant="30" id="gLd-QH-SSo"/>
@@ -1593,6 +1589,7 @@
                         <outlet property="favLabel" destination="a6r-6H-wcO" id="qI1-Rr-4Iq"/>
                         <outlet property="messageLabel" destination="lWn-yn-uic" id="awf-ep-V4D"/>
                         <outlet property="myRidesLabel" destination="Siv-rD-9I4" id="qhn-Tn-6PX"/>
+                        <outlet property="nameLabel" destination="YwN-I9-K8M" id="6kh-5v-YEo"/>
                         <outlet property="profilePic" destination="91p-A1-ydD" id="qo3-gv-W84"/>
                         <outlet property="stateLabel" destination="vfa-8h-xZU" id="f8z-Ji-VTP"/>
                         <outlet property="zipLabel" destination="b4L-ac-Es0" id="6JM-Rc-eR1"/>
@@ -1617,7 +1614,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="il_fullxfull.575385481_jem4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5I8-aO-fNs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-dG-ZKR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-dG-ZKR">
                                 <rect key="frame" x="16" y="105" width="568" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
