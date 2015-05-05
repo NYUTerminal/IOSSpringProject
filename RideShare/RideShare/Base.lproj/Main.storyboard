@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EC7-sq-cqq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EC7-sq-cqq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1296,7 +1296,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="5I8-aO-fNs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BrooklynBridge" translatesAutoresizingMaskIntoConstraints="NO" id="5I8-aO-fNs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-dG-ZKR">
@@ -1987,7 +1987,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationBlack" translatesAutoresizingMaskIntoConstraints="NO" id="uci-zj-UJe">
-                                <rect key="frame" x="150" y="198" width="25" height="25"/>
+                                <rect key="frame" x="150" y="158" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="MNL-lo-3HQ"/>
                                     <constraint firstAttribute="width" constant="25" id="VsN-ZF-5dC"/>
@@ -2055,7 +2055,7 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="l7N-Ix-Sw0">
-                                <rect key="frame" x="155" y="317" width="25" height="25"/>
+                                <rect key="frame" x="155" y="326" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="0gJ-fD-8hz"/>
                                     <constraint firstAttribute="width" constant="25" id="bsa-XF-T26"/>
@@ -2091,7 +2091,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock-100" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-Z7-ist">
-                                <rect key="frame" x="308" y="317" width="25" height="25"/>
+                                <rect key="frame" x="308" y="327" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="ibO-r8-QhS"/>
                                     <constraint firstAttribute="height" constant="25" id="m1b-UP-g8e"/>
@@ -2103,7 +2103,7 @@
                             <constraint firstItem="8jN-J6-CS3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="19F-9a-TUf"/>
                             <constraint firstAttribute="centerY" secondItem="cL8-UD-eGf" secondAttribute="centerY" id="58t-wf-VWo"/>
                             <constraint firstItem="InM-8V-RVA" firstAttribute="top" secondItem="NVF-2p-CSp" secondAttribute="bottom" constant="50" id="6iZ-I5-AcI"/>
-                            <constraint firstItem="l7N-Ix-Sw0" firstAttribute="top" secondItem="cL8-UD-eGf" secondAttribute="bottom" constant="2" id="7pr-fv-m2b">
+                            <constraint firstItem="l7N-Ix-Sw0" firstAttribute="top" secondItem="cL8-UD-eGf" secondAttribute="bottom" constant="11" id="7pr-fv-m2b">
                                 <variation key="heightClass=regular-widthClass=regular" constant="12"/>
                             </constraint>
                             <constraint firstItem="cL8-UD-eGf" firstAttribute="leading" secondItem="uci-zj-UJe" secondAttribute="trailing" constant="120" id="8YO-cK-NEs">
@@ -2130,7 +2130,7 @@
                             </constraint>
                             <constraint firstItem="8jN-J6-CS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f5u-pl-ylc"/>
                             <constraint firstItem="Dgd-1V-QCt" firstAttribute="top" secondItem="EjC-3B-zbT" secondAttribute="bottom" constant="50" id="fD6-1Y-bNm"/>
-                            <constraint firstItem="U9B-Z7-ist" firstAttribute="top" secondItem="cL8-UD-eGf" secondAttribute="bottom" constant="2" id="fGx-ut-zOu">
+                            <constraint firstItem="U9B-Z7-ist" firstAttribute="top" secondItem="cL8-UD-eGf" secondAttribute="bottom" constant="12" id="fGx-ut-zOu">
                                 <variation key="heightClass=regular-widthClass=regular" constant="12"/>
                             </constraint>
                             <constraint firstItem="9BW-bk-Drf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fTb-9o-emV"/>
@@ -2143,7 +2143,7 @@
                             </constraint>
                             <constraint firstItem="iyD-x0-DAQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tGh-Ta-gbo"/>
                             <constraint firstItem="cL8-UD-eGf" firstAttribute="leading" secondItem="EjC-3B-zbT" secondAttribute="trailing" id="tmG-7m-Mr7"/>
-                            <constraint firstItem="cL8-UD-eGf" firstAttribute="top" secondItem="uci-zj-UJe" secondAttribute="bottom" constant="62" id="xgQ-OO-ilY">
+                            <constraint firstItem="cL8-UD-eGf" firstAttribute="top" secondItem="uci-zj-UJe" secondAttribute="bottom" constant="102" id="xgQ-OO-ilY">
                                 <variation key="heightClass=regular-widthClass=regular" constant="92"/>
                             </constraint>
                             <constraint firstItem="XSg-Tx-KlH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zQ5-hb-fpM"/>
