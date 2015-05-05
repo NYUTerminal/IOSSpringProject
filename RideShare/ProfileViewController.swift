@@ -198,8 +198,8 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     
     func getMyRides(){
-        var query = PFQuery(className:"AcceptedOffers")
-        query.whereKey("userCreated", equalTo:userId)
+        var query = PFQuery(className:"Offer")
+        query.whereKey("userId", equalTo:userId)
         query.countObjectsInBackgroundWithBlock {
             (count: Int32, error: NSError?) -> Void in
             if error == nil {
