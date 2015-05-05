@@ -22,6 +22,7 @@
 		266C79ED1AEF6BB3007BF37F /* Like@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EA1AEF6BB3007BF37F /* Like@3x.png */; };
 		266C79F11AEF6C97007BF37F /* Clock-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 266C79EF1AEF6C97007BF37F /* Clock-100.png */; };
 		269405631AF7FF6B004BC285 /* Living Room-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 269405621AF7FF6B004BC285 /* Living Room-100.png */; };
+		6000FCA61AF8FFDC001B6E3A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A11AF1FF9300E8AD10 /* Bolts.framework */; };
 		60DD46A61AF2003500E8AD10 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A51AF2003500E8AD10 /* signUpViewController.swift */; };
 		60DD46A91AF334B100E8AD10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A81AF334B100E8AD10 /* SecondViewController.swift */; };
@@ -124,7 +125,6 @@
 		CBCC7F761AED7E63003C7875 /* Left-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F751AED7E63003C7875 /* Left-50.png */; };
 		CBCC7F781AED8160003C7875 /* TextBackNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7F771AED8160003C7875 /* TextBackNew.png */; };
 		CBE4504F1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE4504E1AF8813E0023058F /* il_fullxfull.575385481_jem4.jpg */; };
-		CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD46A31AF1FFA000E8AD10 /* FacebookSDK.framework */; };
 		CBE450541AF888260023058F /* blackwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE450531AF888260023058F /* blackwhite.jpg */; };
 		CBECB24E1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24C1AF4615300A1B838 /* Black-And-White-City-HD-Wallpaper.jpg */; };
 		CBECB24F1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBECB24D1AF4615300A1B838 /* Star-iphone-5s-wallpaper-ilikewallpaper_com.jpg */; };
@@ -332,7 +332,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE450521AF881C30023058F /* FacebookSDK.framework in Frameworks */,
+				6000FCA61AF8FFDC001B6E3A /* FacebookSDK.framework in Frameworks */,
 				60DD46A21AF1FF9300E8AD10 /* Bolts.framework in Frameworks */,
 				CBADFF1D1AED072F0048A3F9 /* Social.framework in Frameworks */,
 				CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */,
@@ -1067,6 +1067,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/GitHub/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1091,6 +1092,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1.7.1",
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
+					/Users/GitHub/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
