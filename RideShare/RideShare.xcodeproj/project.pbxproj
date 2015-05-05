@@ -33,7 +33,6 @@
 		CB08C7141A941FDB00D7997D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7131A941FDB00D7997D /* Images.xcassets */; };
 		CB08C7171A941FDB00D7997D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB08C7151A941FDB00D7997D /* LaunchScreen.xib */; };
 		CB08C7231A941FDB00D7997D /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08C7221A941FDB00D7997D /* RideShareTests.swift */; };
-		CB23D7FC1AF8C2C800AD9B84 /* FBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23D7FB1AF8C2C800AD9B84 /* FBHelper.swift */; };
 		CB371DB91AF2777500A8CDCC /* Location-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CB371DB81AF2777500A8CDCC /* Location-100.png */; };
 		CB44B5091A9BF4A3000C66DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B5081A9BF4A3000C66DF /* Accounts.framework */; };
 		CB44B50B1A9BF4AC000C66DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */; };
@@ -199,7 +198,6 @@
 		CB08C71C1A941FDB00D7997D /* RideShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08C7211A941FDB00D7997D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB08C7221A941FDB00D7997D /* RideShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareTests.swift; sourceTree = "<group>"; };
-		CB23D7FB1AF8C2C800AD9B84 /* FBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBHelper.swift; sourceTree = "<group>"; };
 		CB371DB81AF2777500A8CDCC /* Location-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location-100.png"; sourceTree = "<group>"; };
 		CB44B5081A9BF4A3000C66DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CB44B50A1A9BF4AC000C66DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -590,7 +588,6 @@
 				000488751AF201B400BB8BD6 /* AcceptedOffersViewController.swift */,
 				000488791AF2028400BB8BD6 /* AcceptedOffersCell.swift */,
 				262134061AF70E7F006A9021 /* HelperFile.swift */,
-				CB23D7FB1AF8C2C800AD9B84 /* FBHelper.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -915,7 +912,6 @@
 				CBF7766A1AF7C46300853F64 /* DesignableButton.swift in Sources */,
 				CBADFDE41AECEAED0048A3F9 /* RideViewController.swift in Sources */,
 				CBF776771AF7C46300853F64 /* SoundPlayer.swift in Sources */,
-				CB23D7FC1AF8C2C800AD9B84 /* FBHelper.swift in Sources */,
 				CBF776741AF7C46300853F64 /* LoadingView.swift in Sources */,
 				262134071AF70E7F006A9021 /* HelperFile.swift in Sources */,
 				CB92729B1AF1F23E00AC7E18 /* User.swift in Sources */,
