@@ -1056,7 +1056,6 @@
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/RideShare/Spring,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/RideShare/,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1084,7 +1083,6 @@
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/RideShare/Spring,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/RideShare/,
 					/Users/MeanMachine/Desktop/IOS/IOSSpringProject/FacebookSDK,
-					/Users/Era/Desktop/IOSSpringProject/FacebookSDK,
 				);
 				INFOPLIST_FILE = RideShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

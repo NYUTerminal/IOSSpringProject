@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class calculatorBrain : UIViewController, UITableViewDataSource{
+class calculatorBrain : UIViewController{
     
     
     let devCourses = [
@@ -48,27 +48,7 @@ class calculatorBrain : UIViewController, UITableViewDataSource{
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
-        
-        if indexPath.section == 0 {
-            let (courseTitle,courseAuthor) = devCourses[indexPath.row]
-            cell.textLabel?.text = courseTitle
-            cell.detailTextLabel?.text = courseAuthor
-        } else {
-            let (courseTitle,courseAuthor) = webCourses[indexPath.row]
-            cell.textLabel?.text = courseTitle
-            cell.detailTextLabel?.text = courseAuthor
-        }
-        
-        // Retrieve an image
-        var myImage = UIImage(named: "CellIcon")
-        cell.imageView?.image = myImage
-        
-        
-        return cell
-    }
+
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
