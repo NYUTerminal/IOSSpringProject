@@ -18,7 +18,7 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var pass1: UITextField!
-
+    
     @IBOutlet weak var pass2: UITextField!
     
     @IBOutlet weak var status: UILabel!
@@ -46,12 +46,14 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var cityLabel: UILabel!
     
     @IBOutlet weak var zipLabel: UILabel!
-        
+    
     @IBOutlet weak var countryLabel: UILabel!
     
     @IBOutlet weak var stateLabel: UILabel!
     
+    @IBOutlet weak var profilePic: UIImageView!
     
+    @IBOutlet weak var messageLabel: UILabel!
     
     
     
@@ -121,59 +123,42 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     func loadStatistics(){
         
-        var query = PFQuery(className:"AcceptedOffers")
-        query.whereKey("userAccepted", equalTo:userId)
-        query.countObjectsInBackgroundWithBlock {
-            (count: Int32, error: NSError?) -> Void in
-            if error == nil {
-                println("\(count)")
-              //self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
-            }
-        }
-        
-//        var query2 = PFQuery(className:"AcceptedOffers")
-//        query.whereKey("userCreated", equalTo:userId)
-//        query.countObjectsInBackgroundWithBlock {
-//            (count: Int32, error: NSError?) -> Void in
-//            if error == nil {
-//                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
-//            }
-//        }
-//        
-//        var query3 = PFQuery(className:"AcceptedOffers")
-//        query.whereKey("userAccepted", equalTo:userId)
-//        query.countObjectsInBackgroundWithBlock {
-//            (count: Int32, error: NSError?) -> Void in
-//            if error == nil {
-//                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
-//            }
-//        }
-//        
-//        var query4 = PFQuery(className:"AcceptedOffers")
-//        query.whereKey("userAccepted", equalTo:userId)
-//        query.countObjectsInBackgroundWithBlock {
-//            (count: Int32, error: NSError?) -> Void in
-//            if error == nil {
-//                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
-//            }
-//        }
+        getFavRides()
+        getAcceptedRides()
+        getMyRides()
+        getMessageCount()
+        //        var query2 = PFQuery(className:"AcceptedOffers")
+        //        query.whereKey("userCreated", equalTo:userId)
+        //        query.countObjectsInBackgroundWithBlock {
+        //            (count: Int32, error: NSError?) -> Void in
+        //            if error == nil {
+        //                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
+        //            }
+        //        }
+        //
+        //        var query3 = PFQuery(className:"AcceptedOffers")
+        //        query.whereKey("userAccepted", equalTo:userId)
+        //        query.countObjectsInBackgroundWithBlock {
+        //            (count: Int32, error: NSError?) -> Void in
+        //            if error == nil {
+        //                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+        //            }
+        //        }
+        //
+        //        var query4 = PFQuery(className:"AcceptedOffers")
+        //        query.whereKey("userAccepted", equalTo:userId)
+        //        query.countObjectsInBackgroundWithBlock {
+        //            (count: Int32, error: NSError?) -> Void in
+        //            if error == nil {
+        //                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+        //            }
+        //        }
         
         
     }
     
-    @IBAction func getFavRides(sender: UIButton) {
-        var query = PFQuery(className:"AcceptedOffers")
-        query.whereKey("userAccepted", equalTo:userId)
-        query.countObjectsInBackgroundWithBlock {
-            (count: Int32, error: NSError?) -> Void in
-            if error == nil {
-                println("\(count)")
-                self.aceptedLabel.text = "\(count)"
-            }
-        }
-    }
     
-    @IBAction func getAcceptedRides(sender: UIButton) {
+    func getFavRides(){
         var query = PFQuery(className:"AcceptedOffers")
         query.whereKey("userAccepted", equalTo:userId)
         query.countObjectsInBackgroundWithBlock {
@@ -186,7 +171,33 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     }
     
     
-    @IBAction func getMyRides(sender: UIButton) {
+    func getAcceptedRides(){
+        var query = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userAccepted", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                println("\(count)")
+                self.aceptedLabel.text = "\(count)"
+            }
+        }
+    }
+    
+    func getMessageCount(){
+        var query = PFQuery(className:"Message")
+        query.whereKey("to", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                println("\(count)")
+                self.messageLabel.text = "\(count)"
+            }
+        }
+    }
+    
+    
+    
+    func getMyRides(){
         var query = PFQuery(className:"AcceptedOffers")
         query.whereKey("userCreated", equalTo:userId)
         query.countObjectsInBackgroundWithBlock {
@@ -198,5 +209,29 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         }
     }
     
+    func fbRequestCompletionHandler(connection:FBRequestConnection!, result:AnyObject!, error:NSError!){
+        if let gotError = error{
+            
+        }else{
+            let userFBID:AnyObject = result.valueForKey("id")!
+            let userImageURL = "https://graph.facebook.com/\(userFBID)/picture?type=small"
+            
+            let url = NSURL(string:userImageURL)!
+            
+            let imageData = NSData(contentsOfURL: url)
+            
+            let image = UIImage(data: imageData!)
+            
+            profilePic.image = image
+            
+        }
+    }
+    
+    
+    @IBAction func getMessage(sender: UIButton) {
+    }
+    
+    @IBAction func getFavRides(sender: UIButton) {
+    }
     
 }

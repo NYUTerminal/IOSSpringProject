@@ -27,16 +27,16 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-        view.addGestureRecognizer(tap)
+//        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+//        view.addGestureRecognizer(tap)
         loadData()
         searchResults = []
     }
     
-    func DismissKeyboard(){
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
+//    func DismissKeyboard(){
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        view.endEditing(true)
+//    }
     
     func loadData() {
         searchResults = []
@@ -108,7 +108,7 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         println(self.searchResults[self.indexSelected].valueForKey("objectId") as String!)
         Singelton.sharedInstance.offerId = self.searchResults[self.indexSelected].valueForKey("objectId") as String!
         Singelton.sharedInstance.offerUserId = self.searchResults[self.indexSelected].valueForKey("userId") as String!
-
+        self.performSegueWithIdentifier("searchresult", sender: self)
     }
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

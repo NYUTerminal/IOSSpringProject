@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController , UITextFieldDelegate{
+class ViewController: UIViewController , UITextFieldDelegate {
     
     
     @IBOutlet weak var source: UITextField!
@@ -18,6 +18,8 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var date: UITextField!
     
     @IBOutlet weak var time: UITextField!
+    
+    @IBOutlet weak var myPicker: UIPickerView!
     
     var dateNS:NSDate!
     
@@ -81,7 +83,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
     func getCurrentLocation(){
         
     }
-
+    
 
 }
 

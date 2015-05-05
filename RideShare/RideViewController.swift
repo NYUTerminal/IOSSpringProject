@@ -37,16 +37,26 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     var dog1 = true
     var chat1:Bool = true
     var searchObj:PFObject!
-    
+    var sourcetext = ""
+    var destination = ""
+    var via = ""
+    var offerDescription = ""
+    //var rideJoined = [String: Bool]()
     @IBOutlet weak var messageTable: UITableView!
     @IBOutlet weak var messageBox: UITextField!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var addToFavButton: UIButton!
+    @IBOutlet weak var joinRideButton: UIButton!
+    var joinedRidePFObject:PFObject!
+    var rideJoinedFlag = false
+    
     
     
     override func viewDidLoad() {
+        println("Ride View VIEW DID LOAD")
         self.userId =  Singelton.sharedInstance.loginUserId
         self.offerId = Singelton.sharedInstance.offerId
-        self.offerUserId = Singelton.sharedInstance.loginUserId
+        self.offerUserId = Singelton.sharedInstance.offerUserId
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
         println(self.offerId)
@@ -55,6 +65,27 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         fetchSettingsOfOffer()
         fetchOffer()
         getNumberOfMessages()
+        checkRideJoinedOrNot()
+    }
+    
+    func checkRideJoinedOrNot(){
+        println("checkRideJoinedOrNot");
+        var query = PFQuery(className:"AcceptedOffers")
+        println(offerId)
+        println(userId)
+        query.whereKey("offerObjectId", equalTo:offerId)
+        query.whereKey("userAccepted", equalTo:userId)
+        query.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                println("Offer fetched to delete bro")
+                self.rideJoinedFlag = true
+                let object = object as PFObject!
+                self.joinedRidePFObject = object
+                self.joinRideButton.setBackgroundImage(UIImage(named: "DropRideBack"), forState: UIControlState.Normal)
+                self.joinRideButton.setTitle("Drop Ride!" , forState: UIControlState.Normal)
+            }
+        }
     }
     
     func DismissKeyboard(){
@@ -101,8 +132,6 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     }
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
-        println("rendererForOverlay");
-        
         if (overlay is MKPolyline) {
             var pr = MKPolylineRenderer(overlay: overlay);
             pr.strokeColor = UIColor.blueColor().colorWithAlphaComponent(0.5);
@@ -115,6 +144,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     
     func getNumberOfMessages(){
+         println("number of messages1");
         var query = PFQuery(className:"Message")
         query.whereKey("offerId", equalTo:self.offerId)
         query.findObjectsInBackgroundWithBlock {
@@ -126,7 +156,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 }
             }
         }
-        
+        println("number of messages2");
         var query2 = PFQuery(className:"Offer")
         query2.whereKey("objectId", equalTo:offerId)
         query2.getFirstObjectInBackgroundWithBlock {
@@ -142,6 +172,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     
     func fetchOffer(){
+        println("fetching offer123");
         var query = PFQuery(className:"Offer")
         query.whereKey("objectId", equalTo:offerId)
         query.getFirstObjectInBackgroundWithBlock {
@@ -150,9 +181,13 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 //println("Offer fetched")
                 let object = object as PFObject!
                 self.name.text = object.valueForKey("username") as String!
-                self.source.text = object.valueForKey("source") as String!
+                let source:String = object.objectForKey("source") as String!
+                self.destination = object.objectForKey("destination") as String!
+                self.sourcetext  = object.objectForKey("source") as String!
+                self.via = object.objectForKey("via") as String!
+                self.offerDescription = "Happy Journey!!"
+                self.source.text = source + " to " + self.destination
                 self.money.text = object.valueForKey("money") as String!
-                println(object.valueForKey("description") as? String)
                 //self.desc.text = object.valueForKey("description") as String!
                 self.timeago.text = object.valueForKey("time") as String!
                 self.time.text = object.valueForKey("time") as String!
@@ -161,7 +196,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     }
     
     func fetchSettingsOfOffer(){
-        
+        println("fetching Settings123");
         var query = PFQuery(className:"Settings")
         query.whereKey("userId", equalTo:offerUserId)
         query.getFirstObjectInBackgroundWithBlock {
@@ -218,7 +253,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     
     func fetchMessages(){
-        println("messages fetched")
+        println("fetching Messages123");
         var query = PFQuery(className:"Message")
         query.whereKey("offerId", equalTo:self.messageOfferId)
         query.whereKey("to", equalTo:self.userId)
@@ -282,6 +317,50 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         self.messageTable.reloadData()
     }
     
+    @IBAction func joinRide(sender: UIButton) {
+        var acceptedOffers = PFObject(className:"AcceptedOffers")
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy:hh:mm:a"
+        var tempDate = NSDate()
+        let strDate = dateFormatter.stringFromDate(tempDate)
+        acceptedOffers["time"] = strDate
+        acceptedOffers["source"] = sourcetext
+        acceptedOffers["destination"] = self.destination
+        acceptedOffers["via"] = self.via
+        acceptedOffers["description"] = self.offerDescription
+        if(joinedRidePFObject == nil || !rideJoinedFlag){
+            acceptedOffers["offerObjectId"] = offerId
+            acceptedOffers["userAccepted"] = userId
+            acceptedOffers["userCreated"] = offerUserId
+            acceptedOffers.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    let alertController = UIAlertController(title: "Join Ride!", message:
+                        "Hurrey Successfully Joined Ride!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    self.joinRideButton.setBackgroundImage(UIImage(named: "DropRideBack"), forState: UIControlState.Normal)
+                    self.joinRideButton.setTitle("Drop Ride!" , forState: UIControlState.Normal)
+                    self.checkRideJoinedOrNot()
+                    self.rideJoinedFlag = true
+                } else {
+                    // There was a problem, check error.description
+                }
+            }
+        }else{
+            rideJoinedFlag = false
+            self.joinRideButton.setBackgroundImage(UIImage(named: "AcceptRideBack"), forState: UIControlState.Normal)
+            self.joinRideButton.setTitle("Join Ride" , forState: UIControlState.Normal)
+            //Ideally delete object
+            acceptedOffers.deleteInBackgroundWithTarget(self.joinedRidePFObject, selector: nil)
+        }
+    }
     
+    
+    @IBAction func addToFav(sender: UIButton) {
+        
+        
+        
+    }
     
 }
