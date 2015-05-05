@@ -255,8 +255,8 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func fetchMessages(){
         println("fetching Messages123");
         var query = PFQuery(className:"Message")
-        query.whereKey("offerId", equalTo:self.messageOfferId)
-        query.whereKey("to", equalTo:self.userId)
+        query.whereKey("offerId", equalTo:self.offerId)
+        //query.whereKey("to", equalTo:self.userId)
         query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
@@ -264,6 +264,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                 if let objects = objects as? [PFObject] {
                     for object in objects {
                         //println("messages retrieved")
+                        if( object.valueForKey("from") as String! == self.userId ||  object.valueForKey("to") as String! == self.offerUserId){
                         var messageObject:Message = Message()
                         messageObject.date = object.valueForKey("date") as String!
                         messageObject.from = object.valueForKey("from") as String!
@@ -272,6 +273,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                         messageObject.message = object.valueForKey("message") as String!
                         self.messageList.append(messageObject)
                         self.messageTable.reloadData()
+                        }
                     }
                 }
                 
@@ -300,7 +302,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     @IBAction func sendMessage(sender: UIButton) {
         var message = Message()
-        message.from = Singelton.sharedInstance.loginUserName
+        message.from = Singelton.sharedInstance.loginUserId
         message.to = offerUserId
         message.message = self.messageBox.text
         var dateFormatter = NSDateFormatter()

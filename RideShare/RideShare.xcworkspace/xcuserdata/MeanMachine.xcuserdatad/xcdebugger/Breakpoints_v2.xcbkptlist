@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RideViewController.swift"
-            timestampString = "452511221.598944"
+            timestampString = "452550804.652132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "joinRide(_:)"
             landmarkType = "5">
          </BreakpointContent>
