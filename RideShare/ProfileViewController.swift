@@ -141,32 +141,33 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
         
         
         
-        //        var query2 = PFQuery(className:"AcceptedOffers")
-        //        query.whereKey("userCreated", equalTo:userId)
-        //        query.countObjectsInBackgroundWithBlock {
-        //            (count: Int32, error: NSError?) -> Void in
-        //            if error == nil {
-        //                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
-        //            }
-        //        }
-        //
-        //        var query3 = PFQuery(className:"AcceptedOffers")
-        //        query.whereKey("userAccepted", equalTo:userId)
-        //        query.countObjectsInBackgroundWithBlock {
-        //            (count: Int32, error: NSError?) -> Void in
-        //            if error == nil {
-        //                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
-        //            }
-        //        }
-        //
-        //        var query4 = PFQuery(className:"AcceptedOffers")
-        //        query.whereKey("userAccepted", equalTo:userId)
-        //        query.countObjectsInBackgroundWithBlock {
-        //            (count: Int32, error: NSError?) -> Void in
-        //            if error == nil {
-        //                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
-        //            }
-        //        }
+                var query = PFQuery(className:"Settings")
+              query.whereKey("userId", equalTo: Singelton.sharedInstance.loginUserId)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                var object:PFObject!
+                for(var i=0;i<objects.count;i++)
+                {
+                     object=objects[i] as PFObject;
+            }
+                
+                
+                self.addressLabel.text = object.objectForKey("address") as String!
+                
+                self.cityLabel.text = object.objectForKey("city") as String!
+                
+                self.countryLabel.text = object.objectForKey("country") as String!
+                
+            }
+            else {
+                // Log details of the failure
+                println("Error: \(error) \(error.userInfo!)")
+            }
+        }
+       
+        
+        //stateLabel.t
         
         
     }
