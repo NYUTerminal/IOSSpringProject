@@ -750,6 +750,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="pUF-54-elb" firstAttribute="top" secondItem="DXE-Kg-3Eq" secondAttribute="bottom" constant="100" id="0PN-GN-2gU">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="75"/>
                                         <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                                     </constraint>
                                     <constraint firstAttribute="centerX" secondItem="RmA-Ix-JB2" secondAttribute="centerX" id="1TN-CX-7I8"/>
@@ -1100,6 +1101,9 @@
                                         <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="399" y="197" width="50" height="20.5"/>
                                         </variation>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="299" y="97" width="38" height="20.5"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="240" y="192" width="50" height="20.5"/>
                                         </variation>
@@ -1183,6 +1187,9 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="457" y="197" width="130" height="20.5"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="345" y="97" width="42" height="20.5"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="298" y="192" width="77" height="20.5"/>
