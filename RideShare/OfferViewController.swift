@@ -110,6 +110,12 @@ class OfferViewController: UIViewController, GMSMapViewDelegate , UITextFieldDel
             offerClass["noOfSeats"] = noOfSeats.text
             offerClass["userId"] = userId
             offerClass["likes"] = 0
+            let dateTime = date.text + " " + time.text
+            println(dateTime)
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+            println(dateFormatter.dateFromString(dateTime))
+            offerClass["departureDateFormat"] = dateFormatter.dateFromString(dateTime)
             offerClass.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {

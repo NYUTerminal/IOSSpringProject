@@ -19,8 +19,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     @IBOutlet weak var time: UITextField!
     
-    @IBOutlet weak var myPicker: UIPickerView!
-    
     var dateNS:NSDate!
     
     override func viewDidLoad() {
@@ -65,7 +63,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         DatePickerDialog().show(title: "Pick Time", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Time) {
             (time) -> Void in
             var dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "hh:mm:a"
+            dateFormatter.dateFormat = "HH:mm"
             self.time.text = dateFormatter.stringFromDate(time)
             //self.time.text = "\(time)"
         }
@@ -83,6 +81,16 @@ class ViewController: UIViewController , UITextFieldDelegate {
     func getCurrentLocation(){
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+                if (segue.identifier == "searchResults") {
+                    Singelton.sharedInstance.source = self.source.text
+                    Singelton.sharedInstance.destination = self.destination.text
+                    Singelton.sharedInstance.date = self.date.text
+                    Singelton.sharedInstance.time = self.time.text
+                    //self.performSegueWithIdentifier("searchResults", sender: self)
+                }
+            }
     
 
 }

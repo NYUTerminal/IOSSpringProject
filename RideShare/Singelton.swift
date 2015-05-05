@@ -14,11 +14,8 @@ class Singelton {
     var loginUserName:String = ""
     var firstname:String = ""
     var lastname: String = ""
-    
     var loginEmailId:String = ""
-    
     var searchResults:[PFObject] = []
-    
     var offerId:String = ""
     var offerUserId:String = ""
     var isFBLOgin:Bool =  false
@@ -26,6 +23,11 @@ class Singelton {
     
     //Login with fixed user for now
     var loginUserId:String = "8s2KylF9oe"
+    //SearchBasedParams
+    var source:String = ""
+    var destination:String = ""
+    var date:String = ""
+    var time:String = ""
     
     class var sharedInstance: Singelton {
         

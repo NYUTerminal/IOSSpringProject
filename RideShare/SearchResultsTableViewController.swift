@@ -19,40 +19,70 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
     
     var date:NSDate! = nil
     
+    var dateString:String = ""
+    
     var time:NSDate! = nil
     
     var indexSelected:Int = 0
     
     @IBOutlet weak var SearchTableView: UITableView!
     
+    @IBOutlet weak var searchedDate: UILabel!
+    
+    var userId:String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-//        view.addGestureRecognizer(tap)
+        //        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        //        view.addGestureRecognizer(tap)
+        userId = Singelton.sharedInstance.loginUserId
+        getSearchCriteria()
         loadData()
         searchResults = []
     }
     
-//    func DismissKeyboard(){
-//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-//        view.endEditing(true)
-//    }
+    //    func DismissKeyboard(){
+    //        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+    //        view.endEditing(true)
+    //    }
+    
+    func getSearchCriteria(){
+        source = Singelton.sharedInstance.source
+        destination = Singelton.sharedInstance.destination
+        let dateSing = Singelton.sharedInstance.date
+        dateString = dateSing
+        let time = Singelton.sharedInstance.time
+        let dateTime = dateSing + " " + time
+        println(dateTime)
+        println(source)
+        println(destination)
+        println(date)
+        self.searchedDate.text = dateTime
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        let dateNS = dateFormatter.dateFromString(dateTime)
+        self.date = dateNS
+        println(dateNS)
+    }
     
     func loadData() {
         searchResults = []
         var findSearchResults = PFQuery(className: "Offer")
         if(self.source != ""){
-            findSearchResults.whereKey("source", equalTo:"Sean Plott")
+            findSearchResults.whereKey("source", equalTo:source)
         }
         if(self.destination != ""){
-            findSearchResults.whereKey("destination", equalTo:"Sean Plott")
+            findSearchResults.whereKey("destination", equalTo:destination)
+        }
+        if(self.dateString != ""){
+            findSearchResults.whereKey("departureDate", equalTo:dateString)
         }
         if(self.date != nil){
-            findSearchResults.whereKey("date", equalTo:"Sean Plott")
+            findSearchResults.whereKey("departureDate", equalTo:dateString)
+            //findSearchResults.whereKey("departureDateFormat", greaterThanOrEqualTo:date)
         }
-        if(self.time != nil){
-            findSearchResults.whereKey("time", equalTo:"Sean Plott")
-        }
+        findSearchResults.whereKey("userId", notEqualTo:userId)
         findSearchResults.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -111,14 +141,14 @@ class SearchResultsTableViewController: UIViewController, UITableViewDelegate , 
         self.performSegueWithIdentifier("searchresult", sender: self)
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if (segue.identifier == "searchresult") {
-//            let theDestination = (segue.destinationViewController as RideViewController)
-//            println("PreparingForSegue")
-//            let result:PFObject  = self.searchResults[self.indexSelected]
-//            println(result.objectForKey("objectId") as? String)
-//            theDestination.offerId = result.objectForKey("objectId") as String!
-//        }
-//    }
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //        if (segue.identifier == "searchresult") {
+    //            let theDestination = (segue.destinationViewController as RideViewController)
+    //            println("PreparingForSegue")
+    //            let result:PFObject  = self.searchResults[self.indexSelected]
+    //            println(result.objectForKey("objectId") as? String)
+    //            theDestination.offerId = result.objectForKey("objectId") as String!
+    //        }
+    //    }
     
 }
