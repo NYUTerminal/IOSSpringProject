@@ -22,7 +22,20 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     @IBOutlet weak var status: UILabel!
     
+    @IBOutlet weak var favRides: UIButton!
+    
+    @IBOutlet weak var acceptedRides: UIButton!
+    
+    @IBOutlet weak var myRides: UIButton!
+    
+    var userName:String!
+    
+    var userId:String!
+    
     override func viewDidLoad() {
+        userId = Singelton.sharedInstance.loginUserId
+        userName = Singelton.sharedInstance.loginUserName
+        loadStatistics()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -72,6 +85,47 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     func validateFields(){
         
+        
+        
+    }
+    
+    func loadStatistics(){
+        
+        var query = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userAccepted", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+              self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+            }
+        }
+        
+        var query2 = PFQuery(className:"AcceptedOffers")
+        query.whereKey("userCreated", equalTo:userId)
+        query.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                self.myRides.setTitle("\(count)", forState: UIControlState.Normal)
+            }
+        }
+        
+//        var query3 = PFQuery(className:"AcceptedOffers")
+//        query.whereKey("userAccepted", equalTo:userId)
+//        query.countObjectsInBackgroundWithBlock {
+//            (count: Int32, error: NSError?) -> Void in
+//            if error == nil {
+//                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+//            }
+//        }
+//        
+//        var query4 = PFQuery(className:"AcceptedOffers")
+//        query.whereKey("userAccepted", equalTo:userId)
+//        query.countObjectsInBackgroundWithBlock {
+//            (count: Int32, error: NSError?) -> Void in
+//            if error == nil {
+//                self.acceptedRides.setTitle("\(count)", forState: UIControlState.Normal)
+//            }
+//        }
         
         
     }
