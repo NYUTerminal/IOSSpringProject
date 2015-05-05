@@ -15,9 +15,12 @@ class AcceptedOffersViewController: UIViewController, UITableViewDelegate , UITa
     
     @IBOutlet weak var acceptedOffersTableView: UITableView!
     
+    var userId = Singelton.sharedInstance.loginUserId
+    
     func loadData() {
         acceptedOffers = []
         var findacceptedOffers = PFQuery(className: "AcceptedOffers")
+        findacceptedOffers.whereKey("userAccepted", equalTo:userId)
         findacceptedOffers.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {

@@ -23,7 +23,7 @@ class Singelton {
     var profilePic: UIImage!
     
     //Login with fixed user for now
-    var loginUserId:String = "8s2KylF9oe"
+    var loginUserId:String = ""
     //SearchBasedParams
     var source:String = ""
     var destination:String = ""

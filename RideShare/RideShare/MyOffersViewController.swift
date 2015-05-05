@@ -15,11 +15,12 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
     
     @IBOutlet weak var myOffersTableView: UITableView!
     
+    var userId = Singelton.sharedInstance.loginUserId
     func loadData() {
         myOffers = []
         
         var findmyOffers = PFQuery(className: "Offer")
-       // findmyOffers.whereKey("username", equalTo:"Tom")
+        findmyOffers.whereKey("userId", equalTo:userId)
         findmyOffers.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -64,7 +65,7 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       var cell = tableView.dequeueReusableCellWithIdentifier("myOffersCell") as MyOffersTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("myOffersCell") as MyOffersTableViewCell
         
         if self.myOffers.count > 0 {
             println(indexPath.row)
@@ -72,7 +73,7 @@ class MyOffersViewController: UIViewController, UITableViewDelegate , UITableVie
             var source = result.objectForKey("source") as? String
             var destination = result.objectForKey("destination") as? String
             var via =  result.objectForKey("via") as? String
-
+            
             cell.timeLabel.text = result.objectForKey("time") as? String
             cell.sourceLabel.text = "\(source!) to \(destination!) via \(via!)" //result.objectForKey("source") as? String
             cell.descriptionLabel.text = result.objectForKey("description") as? String

@@ -255,15 +255,18 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     func fetchMessages(){
         println("fetching Messages123");
         var query = PFQuery(className:"Message")
-        query.whereKey("offerId", equalTo:self.messageOfferId)
-        query.whereKey("to", equalTo:self.userId)
+        query.whereKey("offerId", equalTo:self.offerId)
+        //query.whereKey("to", equalTo:self.userId)
         query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
                 if let objects = objects as? [PFObject] {
                     for object in objects {
-                        //println("messages retrieved")
+                        println("messages retrieved")
+                        println(object)
+                        if( object.valueForKey("from") as String! == self.userId ||  object.valueForKey("to") as String! == self.offerUserId){
+                            println(object)
                         var messageObject:Message = Message()
                         messageObject.date = object.valueForKey("date") as String!
                         messageObject.from = object.valueForKey("from") as String!
@@ -272,6 +275,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
                         messageObject.message = object.valueForKey("message") as String!
                         self.messageList.append(messageObject)
                         self.messageTable.reloadData()
+                        }
                     }
                 }
                 
@@ -300,7 +304,7 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
     
     @IBAction func sendMessage(sender: UIButton) {
         var message = Message()
-        message.from = Singelton.sharedInstance.loginUserName
+        message.from = Singelton.sharedInstance.loginUserId
         message.to = offerUserId
         message.message = self.messageBox.text
         var dateFormatter = NSDateFormatter()
@@ -308,8 +312,12 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         var tempDate = NSDate()
         let strDate = dateFormatter.stringFromDate(tempDate)
         message.date = strDate
-        message.offerId = "13arTCtsIy"
-        message.time="8:15 pm"
+        message.offerId = self.offerId
+        var dateFormatter1 = NSDateFormatter()
+        dateFormatter1.dateFormat = "hh:mm:a"
+        var tempDate2 = NSDate()
+        let timeStamp = dateFormatter1.stringFromDate(tempDate2)
+        message.time = timeStamp
         ParseHelper().saveMessage(message)
         self.messageBox.text = ""
         messageList = []
