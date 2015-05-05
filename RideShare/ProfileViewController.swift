@@ -253,9 +253,11 @@ class ProfileViewController : UIViewController, UINavigationControllerDelegate, 
     
     
     @IBAction func getMessage(sender: UIButton) {
+        getMessageCount()
     }
     
     @IBAction func getFavRides(sender: UIButton) {
+        getFavRides()
     }
     
 }

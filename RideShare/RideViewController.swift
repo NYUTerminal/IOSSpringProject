@@ -263,8 +263,10 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
             if error == nil {
                 if let objects = objects as? [PFObject] {
                     for object in objects {
-                        //println("messages retrieved")
+                        println("messages retrieved")
+                        println(object)
                         if( object.valueForKey("from") as String! == self.userId ||  object.valueForKey("to") as String! == self.offerUserId){
+                            println(object)
                         var messageObject:Message = Message()
                         messageObject.date = object.valueForKey("date") as String!
                         messageObject.from = object.valueForKey("from") as String!
@@ -310,8 +312,12 @@ class RideViewController: UIViewController , UITableViewDelegate , UITableViewDa
         var tempDate = NSDate()
         let strDate = dateFormatter.stringFromDate(tempDate)
         message.date = strDate
-        message.offerId = "13arTCtsIy"
-        message.time="8:15 pm"
+        message.offerId = self.offerId
+        var dateFormatter1 = NSDateFormatter()
+        dateFormatter1.dateFormat = "hh:mm:a"
+        var tempDate2 = NSDate()
+        let timeStamp = dateFormatter1.stringFromDate(tempDate2)
+        message.time = timeStamp
         ParseHelper().saveMessage(message)
         self.messageBox.text = ""
         messageList = []
