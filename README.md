@@ -1,18 +1,25 @@
 # IOSSpringProject
 An idea to implement an app using which people can share a ride in an effective way .
-Instructions to run the project : 
+Instructions to run the project : <br>
 <h3>
-1) Clone the project and go to RideShare folder to open the project.
-2) Install Cocoapods using sudo get install cocopods (Input your password for admin rights)
-3) Open RideShare.xcworkspace 
-4) Click on the project and go to General and scroll down to Linked Frameworks and Libraries.
-5) select add and choose FacebookSDK.framework from FaceBookSDK folder.
-6) If the Projects shows any swift permission denied erros then please verify framework search paths and remove any unnecessary ones.
-7) Run it on the device you want.
+1) Clone the project and go to RideShare folder to open the project.<br>
+2) Install Cocoapods using sudo get install cocopods (Input your password for admin rights)<br>
+3) Open RideShare.xcworkspace <br>
+4) Click on the project and go to General and scroll down to Linked Frameworks and Libraries.<br>
+5) select add and choose FacebookSDK.framework from FaceBookSDK folder.<br>
+6) If the Projects shows any swift permission denied erros then please verify framework search paths and remove any unnecessary ones.<br>
+7) Run it on the device you want.<br>
 </h3>
 
 
-Team Members : 
+<h1>Team Members : </h1>
+Praveen Mareedu
+Era Chaudhary
+Kushal Jogi
+Alex Mathew
+
+
+<h3>SCREENS</h3>
 LoginScreen With FaceBook:
 ![Alt text](https://github.com/NYUTerminal/IOSSpringProject/blob/master/AppScreens/FBLogin.png)
 Search Screen:
