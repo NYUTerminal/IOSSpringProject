@@ -1,5 +1,5 @@
 # IOSSpringProject
-An idea to implement an app using which people can share a ride in an effective way .
+<h1>An idea to implement an app using which people can share a ride in an effective way .</h1><br>
 Instructions to run the project : <br>
 <h3>
 1) Clone the project and go to RideShare folder to open the project.<br>
@@ -12,11 +12,11 @@ Instructions to run the project : <br>
 </h3>
 
 
-<h1>Team Members : </h1>
-Praveen Mareedu
-Era Chaudhary
-Kushal Jogi
-Alex Mathew
+<h1>Team Members : </h1><br>
+Praveen Mareedu<br>
+Era Chaudhary<br>
+Kushal Jogi<br>
+Alex Mathew<br>
 
 
 <h3>SCREENS</h3>
