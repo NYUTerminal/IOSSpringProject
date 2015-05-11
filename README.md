@@ -2,6 +2,10 @@
 <h1>An idea to implement an app using which people can share a ride in an effective way .</h1><br>
 Instructions to run the project : <br>
 <h3>
+Prototype Screens could be found at : http://invis.io/6Q2EFDY4F <br>
+We have used tethr kit to build the UI elements in this project . Kit can be found at : http://www.invisionapp.com/tethr <br>
+</h3>
+<h3>
 1) Clone the project and go to RideShare folder to open the project.<br>
 2) Install Cocoapods using sudo get install cocopods (Input your password for admin rights)<br>
 3) Open RideShare.xcworkspace <br>
