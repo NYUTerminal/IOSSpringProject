@@ -16,13 +16,6 @@ We have used tethr kit to build the UI elements in this project . Kit can be fou
 </h3>
 
 
-<h1>Team Members : </h1><br>
-Praveen Mareedu<br>
-Era Chaudhary<br>
-Kushal Jogi<br>
-Alex Mathew<br>
-
-
 <h3>SCREENS</h3>
 LoginScreen With FaceBook:
 ![Alt text](https://github.com/NYUTerminal/IOSSpringProject/blob/master/AppScreens/FBLogin.png)
